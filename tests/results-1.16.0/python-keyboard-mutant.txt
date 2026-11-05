@@ -1,0 +1,18 @@
+test_azerty_queued_z_undoes_without_closing_tab (test_keyboard.KeyboardActualFrameTests.test_azerty_queued_z_undoes_without_closing_tab) ... FAIL
+
+======================================================================
+FAIL: test_azerty_queued_z_undoes_without_closing_tab (test_keyboard.KeyboardActualFrameTests.test_azerty_queued_z_undoes_without_closing_tab)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/python-studio/tests/test_keyboard.py", line 355, in test_azerty_queued_z_undoes_without_closing_tab
+    self.assert_undo_no_close("queue")
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/home/user/python-studio/tests/test_keyboard.py", line 349, in assert_undo_no_close
+    self.assertIs(self.app.buf, b)
+    ~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+AssertionError: <editor.buffer.TextBuffer object at 0x7f3152eed480> is not <editor.buffer.TextBuffer object at 0x7f3152eed220>
+
+----------------------------------------------------------------------
+Ran 1 test in 0.559s
+
+FAILED (failures=1)

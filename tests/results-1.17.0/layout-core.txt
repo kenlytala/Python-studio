@@ -1,0 +1,6 @@
+OK 129660 explorer bounds/scroll cases: decoration removed, full list height, last file reachable
+OK 103350 context popup positions and persistent Quit button bounds
+OK 4944 resize states: status bar flush with final window pixel
+OK 384 panel geometries + full-width/full-height recovery
+OK 9600 tab bars: active tab visible, + / Run / ... never overlap, menu shown or hidden
+OK 4900 scrollbar geometry states: bounded thumbs, minimum grip, endpoints, roundtrip, monotonic mapping, zero/short/8-Mi-cell content

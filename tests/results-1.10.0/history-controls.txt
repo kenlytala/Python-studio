@@ -1,0 +1,2 @@
+OK 325 actual Ctrl+Alt+Up/Down keyboard checks: queued/held/repeat, left/right modifiers, reverse, visual columns, simultaneous UTF-8 input/undo, AltGr text, focus/modal/pane guards and 256-carets; no GUI
+OK 914 checks: dirty-document Quit, busy guard, deletion safety, context actions, frameless move/resize/maximize, analysis cache/navigation/manual/disabled/busy guards

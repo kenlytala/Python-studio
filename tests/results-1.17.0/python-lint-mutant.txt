@@ -1,0 +1,16 @@
+test_real_disable_codes_names_and_reenable_preserve_true_errors (test_lint_rules.LintRulesRealToolTests.test_real_disable_codes_names_and_reenable_preserve_true_errors) ... FAIL
+
+======================================================================
+FAIL: test_real_disable_codes_names_and_reenable_preserve_true_errors (test_lint_rules.LintRulesRealToolTests.test_real_disable_codes_names_and_reenable_preserve_true_errors)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/python-studio/tests/test_lint_rules.py", line 336, in test_real_disable_codes_names_and_reenable_preserve_true_errors
+    self.assertEqual({d.code for d in report.diagnostics}, {"E0602"})
+AssertionError: Items in the first set but not the second:
+'W0611'
+'C0114'
+
+----------------------------------------------------------------------
+Ran 1 test in 1.112s
+
+FAILED (failures=1)

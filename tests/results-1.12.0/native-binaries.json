@@ -1,0 +1,23 @@
+[
+  {
+    "file": "bin/python-studio",
+    "bytes": 1683472,
+    "mode": "0o755",
+    "sha256": "7fcf81cc9b76a92733a9cdfc3c4aa6958ec339616e6bd190bb1ecd782aa752e5",
+    "matches_current_stripped_production": true
+  },
+  {
+    "file": "bin/python-studio-ssh-helper",
+    "bytes": 80576,
+    "mode": "0o755",
+    "sha256": "798bee0fd42ac857de6f6606963392da7f9d6e01f5466637908216bfb4dba337",
+    "matches_current_stripped_production": true
+  },
+  {
+    "file": "bin/constellation",
+    "bytes": 1173864,
+    "mode": "0o755",
+    "sha256": "a1b7acd12dc0f9440356a05160722ac9f57e53a0f6094326f3f928b095e89141",
+    "matches_current_stripped_production": true
+  }
+]

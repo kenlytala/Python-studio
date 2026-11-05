@@ -1,0 +1,38 @@
+usage: main.py [-h] [--project PROJECT] [--python PYTHON]
+               [--import-dir IMPORT_DIR] [--assets ASSETS] [--no-session]
+               [--split] [--zen] [--fullscreen] [--no-effects] [--no-lint]
+               [--safe-mode] [--software] [--msaa] [--verbose-gl] [--windowed]
+               [--width WIDTH] [--height HEIGHT] [--demo] [--version]
+               [file]
+
+Python Studio 1.14.0 — éditeur natif raylib pour Python 3.
+
+positional arguments:
+  file                  Fichier à ouvrir
+
+options:
+  -h, --help            show this help message and exit
+  --project PROJECT     Dossier de l’explorateur
+  --python PYTHON       Interpréteur pour F5, PyLint et la complétion (défaut
+                        : celui de Python Studio)
+  --import-dir IMPORT_DIR
+                        Dossier d’analyse supplémentaire, répétable (8
+                        maximum), sans effet sur F5
+  --assets ASSETS       Dossier des polices embarquées
+  --no-session          Ne pas lire ni écrire les sessions/brouillons pour ce
+                        lancement
+  --split               Vue fractionnée (F7)
+  --zen                 Panneaux repliés (F9)
+  --fullscreen          Plein écran (F11)
+  --no-effects          Sans animations
+  --no-lint             Analyse manuelle uniquement (F4)
+  --safe-mode, --compat
+                        Sans effets/MSAA, analyse manuelle, 30 FPS
+  --software            Rendu logiciel Mesa, sous Linux
+  --msaa                MSAA 4x optionnel ; désactivé par défaut
+  --verbose-gl          Diagnostic du backend graphique
+  --windowed            Fenêtre non maximisée
+  --width WIDTH
+  --height HEIGHT
+  --demo                Exécuter explicitement le fichier à l’ouverture
+  --version             Version et empreinte des sources

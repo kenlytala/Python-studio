@@ -1,0 +1,66 @@
+test_absolute_folder_is_lexical (test_folder_search.FolderModelTests.test_absolute_folder_is_lexical) ... ok
+test_case_sensitive (test_folder_search.FolderModelTests.test_case_sensitive) ... ok
+test_invalid_limits (test_folder_search.FolderModelTests.test_invalid_limits) ... ok
+test_invalid_query (test_folder_search.FolderModelTests.test_invalid_query) ... ok
+test_limit_is_applied (test_folder_search.FolderModelTests.test_limit_is_applied) ... ok
+test_literal_not_regular_expression (test_folder_search.FolderModelTests.test_literal_not_regular_expression) ... ok
+test_long_line_offsets (test_folder_search.FolderModelTests.test_long_line_offsets) ... ok
+test_no_report_navigation (test_folder_search.FolderModelTests.test_no_report_navigation) ... ok
+test_non_overlapping (test_folder_search.FolderModelTests.test_non_overlapping) ... ok
+test_scalar_cells_and_utf8_queries (test_folder_search.FolderModelTests.test_scalar_cells_and_utf8_queries) ... ok
+test_tabs_in_query (test_folder_search.FolderModelTests.test_tabs_in_query) ... ok
+test_visual_unicode_tabs_and_lines (test_folder_search.FolderModelTests.test_visual_unicode_tabs_and_lines) ... ok
+test_default_and_remembered_folder_are_project_specific (test_folder_search.FolderSettingsTests.test_default_and_remembered_folder_are_project_specific) ... ok
+test_failed_atomic_write_preserves_previous_folder (test_folder_search.FolderSettingsTests.test_failed_atomic_write_preserves_previous_folder) ... ok
+test_malformed_or_oversized_profile_is_ignored (test_folder_search.FolderSettingsTests.test_malformed_or_oversized_profile_is_ignored) ... ok
+test_only_folder_persisted_and_private_mode (test_folder_search.FolderSettingsTests.test_only_folder_persisted_and_private_mode) ... ok
+test_preferences_do_not_stat_chosen_remote_directory (test_folder_search.FolderSettingsTests.test_preferences_do_not_stat_chosen_remote_directory) ... ok
+test_wrong_project_schema_and_relative_folder_are_rejected (test_folder_search.FolderSettingsTests.test_wrong_project_schema_and_relative_folder_are_rejected) ... ok
+test_browse_pick_and_cancel_return_to_search (test_folder_search.FolderWindowTests.test_browse_pick_and_cancel_return_to_search) ... RAYLIB STATIC 5.5.0.4 LOADED
+ok
+test_close_and_restart_do_not_join_running_worker (test_folder_search.FolderWindowTests.test_close_and_restart_do_not_join_running_worker) ... ok
+test_editing_does_not_trigger_implicit_scan (test_folder_search.FolderWindowTests.test_editing_does_not_trigger_implicit_scan) ... ok
+test_editing_pending_query_invalidates_old_results (test_folder_search.FolderWindowTests.test_editing_pending_query_invalidates_old_results) ... ok
+test_empty_search_error_leaves_editor_untouched (test_folder_search.FolderWindowTests.test_empty_search_error_leaves_editor_untouched) ... ok
+test_f3_crosses_all_files_both_directions_and_wraps (test_folder_search.FolderWindowTests.test_f3_crosses_all_files_both_directions_and_wraps) ... ok
+test_f3_navigation_performs_no_filesystem_access (test_folder_search.FolderWindowTests.test_f3_navigation_performs_no_filesystem_access) ... ok
+test_f3_scrolls_to_faraway_and_horizontal_occurrences (test_folder_search.FolderWindowTests.test_f3_scrolls_to_faraway_and_horizontal_occurrences) ... ok
+test_f3_wrap_keeps_selected_file_visible_in_long_left_list (test_folder_search.FolderWindowTests.test_f3_wrap_keeps_selected_file_visible_in_long_left_list) ... ok
+test_fields_reject_oversized_utf8_without_editing_document (test_folder_search.FolderWindowTests.test_fields_reject_oversized_utf8_without_editing_document) ... ok
+test_file_list_actual_mouse_hit (test_folder_search.FolderWindowTests.test_file_list_actual_mouse_hit) ... ok
+test_folder_remembered_query_not_persisted_and_imports_untouched (test_folder_search.FolderWindowTests.test_folder_remembered_query_not_persisted_and_imports_untouched) ... ok
+test_matching_file_click_selects_without_opening_an_editor_tab (test_folder_search.FolderWindowTests.test_matching_file_click_selects_without_opening_an_editor_tab) ... ok
+test_mouse_wheel_scrolls_each_pane_independently (test_folder_search.FolderWindowTests.test_mouse_wheel_scrolls_each_pane_independently) ... ok
+test_open_button_does_not_overwrite_existing_dirty_tab (test_folder_search.FolderWindowTests.test_open_button_does_not_overwrite_existing_dirty_tab) ... ok
+test_preference_save_failure_is_still_visible_with_matches (test_folder_search.FolderWindowTests.test_preference_save_failure_is_still_visible_with_matches) ... ok
+test_project_switch_discards_previous_snapshot (test_folder_search.FolderWindowTests.test_project_switch_discards_previous_snapshot) ... ok
+test_results_are_read_only_and_do_not_modify_history_or_carets (test_folder_search.FolderWindowTests.test_results_are_read_only_and_do_not_modify_history_or_carets) ... ok
+test_shortcut_preserves_document_find_and_palette_entry (test_folder_search.FolderWindowTests.test_shortcut_preserves_document_find_and_palette_entry) ... ok
+test_ssh_generation_change_discards_finished_unpublished_result (test_folder_search.FolderWindowTests.test_ssh_generation_change_discards_finished_unpublished_result) ... ok
+test_stop_retains_cancelled_partial_report (test_folder_search.FolderWindowTests.test_stop_retains_cancelled_partial_report) ... ok
+test_two_panes_and_all_visible_occurrences_are_highlighted (test_folder_search.FolderWindowTests.test_two_panes_and_all_visible_occurrences_are_highlighted) ... ok
+test_binary_controls_and_invalid_utf8_are_skipped (test_folder_search.FolderWorkerTests.test_binary_controls_and_invalid_utf8_are_skipped) ... ok
+test_binary_read_stops_at_first_block (test_folder_search.FolderWorkerTests.test_binary_read_stops_at_first_block) ... ok
+test_changed_identity_is_not_retained (test_folder_search.FolderWorkerTests.test_changed_identity_is_not_retained) ... ok
+test_control_names_are_skipped_and_backslash_is_literal (test_folder_search.FolderWorkerTests.test_control_names_are_skipped_and_backslash_is_literal) ... ok
+test_depth_and_line_limits (test_folder_search.FolderWorkerTests.test_depth_and_line_limits) ... ok
+test_directory_entry_budget (test_folder_search.FolderWorkerTests.test_directory_entry_budget) ... ok
+test_file_size_limit (test_folder_search.FolderWorkerTests.test_file_size_limit) ... ok
+test_generated_directories_are_not_traversed (test_folder_search.FolderWorkerTests.test_generated_directories_are_not_traversed) ... ok
+test_global_forward_backward_wrap (test_folder_search.FolderWorkerTests.test_global_forward_backward_wrap) ... ok
+test_guard_denial_never_reads_child (test_folder_search.FolderWorkerTests.test_guard_denial_never_reads_child) ... ok
+test_matching_file_and_occurrence_limits (test_folder_search.FolderWorkerTests.test_matching_file_and_occurrence_limits) ... ok
+test_recursive_sorted_results_and_line_normalization (test_folder_search.FolderWorkerTests.test_recursive_sorted_results_and_line_normalization) ... ok
+test_root_errors_are_reported (test_folder_search.FolderWorkerTests.test_root_errors_are_reported) ... ok
+test_snapshot_budget (test_folder_search.FolderWorkerTests.test_snapshot_budget) ... ok
+test_snapshots_survive_file_replacement_and_deletion (test_folder_search.FolderWorkerTests.test_snapshots_survive_file_replacement_and_deletion) ... ok
+test_ssh_offline_placeholder_and_alias_are_not_searched (test_folder_search.FolderWorkerTests.test_ssh_offline_placeholder_and_alias_are_not_searched) ... ok
+test_symlink_children_and_fifo_are_skipped (test_folder_search.FolderWorkerTests.test_symlink_children_and_fifo_are_skipped) ... ok
+test_total_read_budget (test_folder_search.FolderWorkerTests.test_total_read_budget) ... ok
+test_utf8_sorting_and_hidden_text_files (test_folder_search.FolderWorkerTests.test_utf8_sorting_and_hidden_text_files) ... ok
+test_worker_not_main_thread_and_cancel_never_joins (test_folder_search.FolderWorkerTests.test_worker_not_main_thread_and_cancel_never_joins) ... ok
+
+----------------------------------------------------------------------
+Ran 60 tests in 0.634s
+
+OK

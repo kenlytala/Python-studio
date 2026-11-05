@@ -1,0 +1,9 @@
+OK 325 actual Ctrl+Alt+Up/Down keyboard checks: queued/held/repeat, left/right modifiers, reverse, visual columns, simultaneous UTF-8 input/undo, AltGr text, focus/modal/pane guards and 256-carets; no GUI
+OK 848 REAL native frame checks: queued/pressed/repeat F11 and Alt+Enter x four OS states x 12 focus targets; actual mouse/modal dispatch, draggable bars, limits, final release, F3, Escape, readonly dirty source, outside-search fullscreen; no window
+OK 263 REAL keyboard frame checks: actual update/editor/history, 4 layouts x queue/pressed/repeat/both, no false tab-close, real W close action, A/M, live switch/fallback, fields, multicursors/XML, Unicode/AltGr; OS/services simulated
+OK 41 REAL lint-settings frame checks: mouse/modal dispatch, AZERTY field history, immediate persistent apply, manual refresh, stale-cache invalidation, cancel, limits/failed-save rollback, clear/re-enable, global reload; no window
+OK 79 REAL quick-ignore frame checks: mouse dispatch, concrete displayed code not row index, persistent append/manual refresh, readonly source/carets/history, report revisions/tab/pane/modal/path/text guards, syntax blocked, rapid click, failed save/limits/aliases; no window
+OK 45 REAL new-feature frame checks: browser Ctrl+Space queue/pressed/repeat, worker filtering/stale rejection, Tab/undo without source mutation, Odoo19 project apply/cancel/limits and XML force-analysis
+OK actual live search controller: 12 files before done, sorted insertion, F3, stable path/hit/focus/viewport/cache, Stop/errors/stale/close, dialog-only F11
+OK actual folder search controller: Ctrl+Maj+F, Enter, global F3/Maj+F3, read-only/carets/history, private folder, stale generation/project, outstanding-worker close/stop
+OK 3658 checks: dirty-document Quit, busy guard, deletion safety, context actions, frameless move/resize/maximize, analysis cache/navigation/manual/disabled/busy guards

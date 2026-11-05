@@ -1,0 +1,5 @@
+OK 325 actual Ctrl+Alt+Up/Down keyboard checks: queued/held/repeat, left/right modifiers, reverse, visual columns, simultaneous UTF-8 input/undo, AltGr text, focus/modal/pane guards and 256-carets; no GUI
+OK 848 REAL native frame checks: queued/pressed/repeat F11 and Alt+Enter x four OS states x 12 focus targets; actual mouse/modal dispatch, draggable bars, limits, final release, F3, Escape, readonly dirty source, outside-search fullscreen; no window
+OK 263 REAL keyboard frame checks: actual update/editor/history, 4 layouts x queue/pressed/repeat/both, no false tab-close, real W close action, A/M, live switch/fallback, fields, multicursors/XML, Unicode/AltGr; OS/services simulated
+OK 41 REAL lint-settings frame checks: mouse/modal dispatch, AZERTY field history, immediate persistent apply, manual refresh, stale-cache invalidation, cancel, limits/failed-save rollback, clear/re-enable, global reload; no window
+FAIL 94: !strcmp(a->linter.disabled.text, "W0611") && a->console_mode == 1 && a->modal == M_NONE

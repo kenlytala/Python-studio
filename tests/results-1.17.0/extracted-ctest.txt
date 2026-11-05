@@ -1,0 +1,75 @@
+Test project /home/user/.cache/python-studio-1170/extracted-c-build
+      Start  1: folder_search_core_and_profiles
+ 1/35 Test  #1: folder_search_core_and_profiles ..............   Passed    0.06 sec
+      Start  2: directory_path_completion_core
+ 2/35 Test  #2: directory_path_completion_core ...............   Passed    0.01 sec
+      Start  3: xml_editor_tags_history_and_root_profiles
+ 3/35 Test  #3: xml_editor_tags_history_and_root_profiles ....   Passed    0.01 sec
+      Start  4: xml_identifiers_safe_parser_and_worker
+ 4/35 Test  #4: xml_identifiers_safe_parser_and_worker .......   Passed    0.04 sec
+      Start  5: xml_inline_actual_controller
+ 5/35 Test  #5: xml_inline_actual_controller .................   Passed    0.03 sec
+      Start  6: model_syntax_runner
+ 6/35 Test  #6: model_syntax_runner ..........................   Passed    0.12 sec
+      Start  7: project_sessions_drafts_and_recovery
+ 7/35 Test  #7: project_sessions_drafts_and_recovery .........   Passed    0.01 sec
+      Start  8: multicursor_transactions
+ 8/35 Test  #8: multicursor_transactions .....................   Passed    0.01 sec
+      Start  9: panel_layout_combinations
+ 9/35 Test  #9: panel_layout_combinations ....................   Passed    0.00 sec
+      Start 10: explorer_file_operations
+10/35 Test #10: explorer_file_operations .....................   Passed    0.01 sec
+      Start 11: native_ssh_profiles_command_and_guards
+11/35 Test #11: native_ssh_profiles_command_and_guards .......   Passed    0.00 sec
+      Start 12: xml_editing_independent_stdlib_oracle
+12/35 Test #12: xml_editing_independent_stdlib_oracle ........   Passed    0.82 sec
+      Start 13: xml_fragments_independent_stdlib_oracle
+13/35 Test #13: xml_fragments_independent_stdlib_oracle ......   Passed    0.73 sec
+      Start 14: native_encrypted_ssh_sftp_integration
+14/35 Test #14: native_encrypted_ssh_sftp_integration ........   Passed    4.98 sec
+      Start 15: python_import_paths_and_project_profiles
+15/35 Test #15: python_import_paths_and_project_profiles .....   Passed    0.00 sec
+      Start 16: global_snippets_persistence_and_expansion
+16/35 Test #16: global_snippets_persistence_and_expansion ....   Passed    0.12 sec
+      Start 17: static_completion_native_worker
+17/35 Test #17: static_completion_native_worker ..............   Passed    0.25 sec
+      Start 18: snippets_and_completion_actual_controllers
+18/35 Test #18: snippets_and_completion_actual_controllers ...   Passed    0.00 sec
+      Start 19: python_static_odoo_completion
+19/35 Test #19: python_static_odoo_completion ................   Passed    0.22 sec
+      Start 20: python_pylint_live_diagnostics
+20/35 Test #20: python_pylint_live_diagnostics ...............   Passed    7.45 sec
+      Start 21: python_syntax_without_pylint
+21/35 Test #21: python_syntax_without_pylint .................   Passed    0.50 sec
+      Start 22: python_lint_bridge_failures
+22/35 Test #22: python_lint_bridge_failures ..................   Passed    0.16 sec
+      Start 23: python_pylint_compatibility_1
+23/35 Test #23: python_pylint_compatibility_1 ................   Passed    7.77 sec
+      Start 24: python_pylint_compatibility_2
+24/35 Test #24: python_pylint_compatibility_2 ................   Passed    9.78 sec
+      Start 25: diagnostic_views_without_window
+25/35 Test #25: diagnostic_views_without_window ..............   Passed    0.04 sec
+      Start 26: ui_readability_without_window
+26/35 Test #26: ui_readability_without_window ................   Passed    0.05 sec
+      Start 27: native_file_clipboard_without_display
+27/35 Test #27: native_file_clipboard_without_display ........   Passed    0.00 sec
+      Start 28: pylint_disabled_rules_grammar_and_profiles
+28/35 Test #28: pylint_disabled_rules_grammar_and_profiles ...   Passed    0.00 sec
+      Start 29: keyboard_layout_model_without_window
+29/35 Test #29: keyboard_layout_model_without_window .........   Passed    0.00 sec
+      Start 30: keyboard_actual_xkb_reader_without_display
+30/35 Test #30: keyboard_actual_xkb_reader_without_display ...   Passed    0.00 sec
+      Start 31: frameless_controls_and_file_safety
+31/35 Test #31: frameless_controls_and_file_safety ...........   Passed    0.07 sec
+      Start 32: fullscreen_native_surface_without_window
+32/35 Test #32: fullscreen_native_surface_without_window .....   Passed    0.00 sec
+      Start 33: fullscreen_retina_surface_without_window
+33/35 Test #33: fullscreen_retina_surface_without_window .....   Passed    0.00 sec
+      Start 34: prisme_invalid_display
+34/35 Test #34: prisme_invalid_display .......................   Passed    0.01 sec
+      Start 35: constellation_invalid_display
+35/35 Test #35: constellation_invalid_display ................   Passed    0.01 sec
+
+100% tests passed out of 35
+
+Total Test time (real) =  33.27 sec

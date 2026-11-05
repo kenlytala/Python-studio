@@ -1,0 +1,17 @@
+{
+  "status": "passed",
+  "native_expected_failure": true,
+  "native_failure": "FAIL 77: tab_close_actions == closed && a->tab_count == 2 && app_buffer(a) == &b && a->modal == M_NONE",
+  "native_restored_pass": true,
+  "python_expected_failure": true,
+  "production_source_files_unchanged": true,
+  "modified_only_generated_QA_include_and_in_memory_Python_method": true,
+  "actual_production_bodies_sha256": {
+    "mouse": "eb67778c031d6866a0896b5a0b9cd9415a659713a95a43a614ef2ef02fd4b22e",
+    "modal": "8515f6619207c441d0bcf77b99ec0713003656ef81df3d5c83b31d5ebae59e38",
+    "editor": "a69d008eb8123bbf1ee1bbf80dc5da7763b301f174a1b103a14c67c0b2e809f1",
+    "frame": "cc6212b7312a8fe3615ab7ca19b6b1d4c2c9afeba1dd7b113e2f54bdc62133fe"
+  },
+  "services_and_OS_simulated": true,
+  "no_window_server_or_layout_mutation": true
+}

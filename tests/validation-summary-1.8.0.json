@@ -1,0 +1,41 @@
+{
+  "product": "Python Studio",
+  "version": "1.8.0",
+  "edition": "c",
+  "date": "2026-11-01",
+  "source_fingerprint": "14bbc2d48db56d642d1e3da31958a02ebaf9a91daff6ad17a5d7e74f8f4c90ff",
+  "production": {
+    "directory": "build-1.8.0",
+    "configuration": "Release",
+    "total": 23,
+    "passed": 23,
+    "failed": 0,
+    "seconds": 9.99
+  },
+  "sanitizers": {
+    "configuration": "Debug / ASan+UBSan / leak detection",
+    "total": 6,
+    "passed": 6,
+    "failed": 0,
+    "seconds": 9.06
+  },
+  "session_unit_groups": 6,
+  "session_unit_assertions": 197,
+  "encrypted_ssh_cases": 11,
+  "own_code_warnings": 0,
+  "upstream_warnings": 4,
+  "upstream_warning": "raylib 5.5 / external/jar_mod.h:370 / GCC stringop-overflow",
+  "live_preview": false,
+  "screenshot": false,
+  "abi": {
+    "python-studio": "GLIBC_2.38",
+    "constellation": "GLIBC_2.38",
+    "python-studio-ssh-helper": "GLIBC_2.34"
+  },
+  "extracted_archive": {
+    "total": 23,
+    "passed": 23,
+    "failed": 0,
+    "seconds": 11.34
+  }
+}

@@ -1,0 +1,1 @@
+OK 235 folder-search checks: literal/UTF-8/tabs, recursive snapshots, global F3 model, budgets, async cancellation, guarded changes, isolated private preferences

@@ -1,0 +1,51 @@
+Test project /home/user/.cache/python-studio-180/acceptance/c-build
+      Start  1: model_syntax_runner
+ 1/23 Test  #1: model_syntax_runner ..........................   Passed    0.15 sec
+      Start  2: project_sessions_drafts_and_recovery
+ 2/23 Test  #2: project_sessions_drafts_and_recovery .........   Passed    0.01 sec
+      Start  3: multicursor_transactions
+ 3/23 Test  #3: multicursor_transactions .....................   Passed    0.02 sec
+      Start  4: panel_layout_combinations
+ 4/23 Test  #4: panel_layout_combinations ....................   Passed    0.01 sec
+      Start  5: explorer_file_operations
+ 5/23 Test  #5: explorer_file_operations .....................   Passed    0.02 sec
+      Start  6: native_ssh_profiles_command_and_guards
+ 6/23 Test  #6: native_ssh_profiles_command_and_guards .......   Passed    0.01 sec
+      Start  7: native_encrypted_ssh_sftp_integration
+ 7/23 Test  #7: native_encrypted_ssh_sftp_integration ........   Passed    4.72 sec
+      Start  8: python_import_paths_and_project_profiles
+ 8/23 Test  #8: python_import_paths_and_project_profiles .....   Passed    0.00 sec
+      Start  9: global_snippets_persistence_and_expansion
+ 9/23 Test  #9: global_snippets_persistence_and_expansion ....   Passed    0.14 sec
+      Start 10: static_completion_native_worker
+10/23 Test #10: static_completion_native_worker ..............   Passed    0.37 sec
+      Start 11: snippets_and_completion_actual_controllers
+11/23 Test #11: snippets_and_completion_actual_controllers ...   Passed    0.01 sec
+      Start 12: python_static_odoo_completion
+12/23 Test #12: python_static_odoo_completion ................   Passed    0.24 sec
+      Start 13: python_pylint_live_diagnostics
+13/23 Test #13: python_pylint_live_diagnostics ...............   Passed    4.60 sec
+      Start 14: python_syntax_without_pylint
+14/23 Test #14: python_syntax_without_pylint .................   Passed    0.69 sec
+      Start 15: python_lint_bridge_failures
+15/23 Test #15: python_lint_bridge_failures ..................   Passed    0.21 sec
+      Start 16: diagnostic_views_without_window
+16/23 Test #16: diagnostic_views_without_window ..............   Passed    0.03 sec
+      Start 17: ui_readability_without_window
+17/23 Test #17: ui_readability_without_window ................   Passed    0.05 sec
+      Start 18: native_file_clipboard_without_display
+18/23 Test #18: native_file_clipboard_without_display ........   Passed    0.00 sec
+      Start 19: frameless_controls_and_file_safety
+19/23 Test #19: frameless_controls_and_file_safety ...........   Passed    0.01 sec
+      Start 20: fullscreen_native_surface_without_window
+20/23 Test #20: fullscreen_native_surface_without_window .....   Passed    0.00 sec
+      Start 21: fullscreen_retina_surface_without_window
+21/23 Test #21: fullscreen_retina_surface_without_window .....   Passed    0.00 sec
+      Start 22: prisme_invalid_display
+22/23 Test #22: prisme_invalid_display .......................   Passed    0.01 sec
+      Start 23: constellation_invalid_display
+23/23 Test #23: constellation_invalid_display ................   Passed    0.01 sec
+
+100% tests passed out of 23
+
+Total Test time (real) =  11.34 sec

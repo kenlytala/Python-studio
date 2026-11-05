@@ -1,0 +1,36 @@
+import hashlib,importlib.util,io,json,re,shutil,subprocess,sys,unittest
+from pathlib import Path
+from unittest import mock
+Q=Path('/home/user/.cache/python-studio-1170');P=Path('/home/user/python-studio');C=Path('/home/user/python-studio-c')
+sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
+paths=[P/'tools/lint_bridge.py',P/'tools/analysis_worker.py',P/'editor/lint_rules.py',C/'tools/lint_bridge.py',C/'tools/lint_rules.py',C/'src/linter.c']
+before={str(p):sha(p) for p in paths}
+subprocess.run(['cmake','-S',str(C),'-B',str(Q/'native')],check=True,capture_output=True)
+subprocess.run(['cmake','--build',str(Q/'native'),'--target','test_linter','-j4'],check=True,capture_output=True)
+inc=Q/'native/prisme_lint_bridge.inc';original=inc.read_bytes();helper=(C/'tools/lint_rules.py').read_text();source=(C/'tools/lint_bridge.py').read_text()
+needle='arguments.append("--disable=" + disabled)';assert needle in source
+mutated=source.replace(needle,'pass # intentionally broken QA copy: --disable omitted',1)
+wire=(helper+'\n'+mutated).encode();generated='/* Intentional negative QA mutant only. */\nstatic const unsigned char lint_bridge[] = {'+''.join(f'0x{b:02x},' for b in wire)+'0};\n'
+try:
+    inc.write_text(generated)
+    built=subprocess.run(['cmake','--build',str(Q/'native'),'--target','test_linter','-j4'],capture_output=True,text=True);assert built.returncode==0; (Q/'lint-mutant-build.txt').write_text(built.stdout+built.stderr)
+    bad=subprocess.run([str(Q/'native/test_linter'),str(Q/'qa/bin/python'),'--require-pylint'],capture_output=True,text=True)
+    (Q/'lint-mutant.txt').write_text(bad.stdout+bad.stderr)
+    assert bad.returncode!=0 and 'has_code(&doc->report, "W0611")' in bad.stderr,(bad.returncode,bad.stderr)
+finally:
+    inc.write_bytes(original)
+    subprocess.run(['cmake','--build',str(Q/'native'),'--target','test_linter','-j4'],check=True,capture_output=True)
+good=subprocess.run([str(Q/'native/test_linter'),str(Q/'qa/bin/python'),'--require-pylint'],capture_output=True,text=True,check=True);(Q/'lint-restored.txt').write_text(good.stdout+good.stderr)
+assert 'REAL PyLint disabled-rule checks' in good.stdout
+M=Q/'mutant-worker-final';(M/'tools').mkdir(parents=True);(M/'editor').mkdir()
+(M/'tools/analysis_worker.py').write_bytes((P/'tools/analysis_worker.py').read_bytes());(M/'editor/lint_rules.py').write_bytes((P/'editor/lint_rules.py').read_bytes())
+s=(P/'tools/lint_bridge.py').read_text();assert needle in s;(M/'tools/lint_bridge.py').write_text(s.replace(needle,'pass # intentionally broken QA copy',1))
+sys.path[:0]=[str(P),str(P/'tests')]
+from test_lint_rules import LintRulesRealToolTests
+stream=io.StringIO()
+with mock.patch('editor.analysis.WORKER',M/'tools/analysis_worker.py'):
+    negative=unittest.TextTestRunner(stream=stream,verbosity=2).run(unittest.TestSuite([LintRulesRealToolTests('test_real_disable_codes_names_and_reenable_preserve_true_errors')]))
+(Q/'python-lint-mutant.txt').write_text(stream.getvalue());assert not negative.wasSuccessful() and len(negative.failures)==1 and not negative.errors
+assert before=={str(p):sha(p) for p in paths}
+value=dict(status='passed',native_expected_failure=True,native_failure=bad.stderr.strip(),native_restored_pass=True,python_expected_failure=True,mutated_only_generated_QA_include_and_copied_worker=True,production_source_files_unchanged=True,checks_actual_disable_not_post_filter=True,no_window_server_or_project_execution=True)
+(Q/'lint-mutation.json').write_text(json.dumps(value,indent=2)+'\n');print(json.dumps(value,indent=2))

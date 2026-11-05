@@ -1,0 +1,25 @@
+Python Studio — édition C 1.14.0 / C11 + raylib — éditeur pour Python 3
+Usage : python-studio [fichier.py] [options]
+
+  --project DOSSIER   Dossier de l'explorateur
+  --python CHEMIN     Interpréteur externe (défaut : python3 / python)
+  --import-dir DOSSIER  Import PyLint / complétion statique (répétable, max. 8)
+  --assets DOSSIER    Emplacement des polices
+  --no-session        Sans lecture/écriture des sessions et brouillons
+  --split             Deux fichiers côte à côte (F7 / Ctrl+\)
+  --zen               Replier explorateur, menu et console (F9)
+  --fullscreen        Démarrer en plein écran (F11)
+  --no-effects        Désactiver les effets visuels
+  --no-lint           Analyse Python manuelle uniquement (F4)
+  --safe-mode         Sans effets/MSAA, 30 FPS, analyse manuelle
+  --software          Rendu logiciel Mesa/llvmpipe sous Linux
+  --msaa              MSAA 4x optionnel (désactivé par défaut)
+  --verbose-gl        Afficher le diagnostic de démarrage OpenGL
+  --demo              Exécuter explicitement le fichier à l'ouverture
+  --windowed          Démarrer dans une fenêtre non maximisée
+  --width N --height N  Taille explicite en mode fenêtre
+  --frames N --screenshot image.png   Test graphique à durée limitée
+  --version           Afficher la version
+  --help              Afficher cette aide
+
+Backend compilé : OpenGL 2.1

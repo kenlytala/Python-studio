@@ -1,0 +1,687 @@
+{
+  "product": "Python Studio",
+  "version": "1.20.0",
+  "edition": "c",
+  "date": "2026-11-03",
+  "source_fingerprint": "c8dfdbf180046fc66e5d16401dbd614777a72fba055b66223344507337ca8487",
+  "tests": {
+    "python": {
+      "total": 666,
+      "passed": 660,
+      "skipped": 6,
+      "seconds": 27.884,
+      "strict_ResourceWarning": true,
+      "real_SSH": true,
+      "native_profile_interop": true
+    },
+    "gtk": {
+      "total": 706,
+      "passed": 705,
+      "skipped": 1,
+      "seconds": 27.465,
+      "strict_ResourceWarning": true,
+      "real_SSH": true,
+      "native_profile_interop": true
+    },
+    "native_final": {
+      "passed": 37,
+      "seconds": 46.19
+    },
+    "asan_ubsan_leaks": {
+      "passed": 23,
+      "seconds": 11.22
+    }
+  },
+  "new_shared_Python_tests": 33,
+  "native_new_model_checks": 50,
+  "native_new_frame_checks": 45,
+  "native_controls_total": 3658,
+  "native_views_total": 363097,
+  "real_native_odoo19_checks": 39,
+  "features": {
+    "browser_ctrl_space_current_path": true,
+    "explicit_bounded_single_directory_worker": true,
+    "file_folder_import_XML_search_modes": true,
+    "paths_spaces_relative_home_and_prefix": true,
+    "relative_base_preserved": true,
+    "tab_enter_complete_not_involuntary_open": true,
+    "field_completion_undoable": true,
+    "stale_field_modal_project_lease_guard": true,
+    "JavaScript_XML_lexical_highlighting": true,
+    "extension_in_color_cache": true,
+    "UTF8_color_byte_parity_cases": 6020,
+    "real_pylint_odoo": "10.0.12",
+    "odoo_target": "19.0",
+    "compatible_plugin_pylint": "4.0.10",
+    "odoo_enabled_by_default_per_project": true,
+    "odoo_ignored_rules_per_project_generic_rules_global": true,
+    "XML_syntax_even_when_odoo_off": true,
+    "DTD_entities_no_external_resolution": true,
+    "XML_local_checks_not_database_schema": true,
+    "empty_closed_arch_accepted": true,
+    "original_encoding_declaration_internal_UTF8_positions": true
+  },
+  "oracles": {
+    "python": {
+      "options-parity": {
+        "status": "passed",
+        "models": 148,
+        "real_filesystem_scans": 37,
+        "global_navigation_steps": 650,
+        "independent_stdlib_regex_cases": 14,
+        "engine": "system PCRE2-8, UTF/UCP/multiline, no JIT; raw \\C forbidden",
+        "regex_limits": {
+          "match_steps": 200000,
+          "depth": 512,
+          "heap_kib": 8192,
+          "seconds_per_file": 2
+        },
+        "glob_grammar": "; separator; * and ? exclude /; ** crosses /; **/ may match no directory; [] literal; filenames case-sensitive",
+        "odoo_fixtures": [
+          {
+            "version": "18.0",
+            "bytes": 69395,
+            "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc"
+          },
+          {
+            "version": "19.0",
+            "bytes": 69477,
+            "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543"
+          }
+        ],
+        "scope": "actual independent Python and C controllers tested separately; this oracle covers both cores, flags, four filters, zero/multiline spans and global navigation; no display/capture/server"
+      },
+      "folder-parity": {
+        "status": "passed",
+        "literal_models": 110,
+        "real_filesystem_scans": 30,
+        "global_navigation_steps": 592,
+        "offset_comparison": "UTF-8 byte offsets; scalar cells/tabs=4; normalized LF snapshots",
+        "limits": {
+          "file_bytes": 2097152,
+          "read_bytes": 67108864,
+          "snapshot_bytes": 16777216,
+          "files": 256,
+          "hits": 16384,
+          "entries": 20000,
+          "depth": 64,
+          "lines": 65536
+        },
+        "odoo_fixtures": [
+          {
+            "version": "18.0",
+            "bytes": 69395,
+            "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc"
+          },
+          {
+            "version": "19.0",
+            "bytes": 69477,
+            "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543"
+          }
+        ],
+        "scope": "actual Python and C cores; separate actual-controller/CPU-view tests; no display/capture/server"
+      },
+      "path-parity": {
+        "contexts": 54,
+        "edits": 39,
+        "atomic_history_roundtrips": 37,
+        "catalog_snapshots": 5,
+        "unicode_offsets": "native UTF-8 bytes / Python code points",
+        "status": "passed"
+      },
+      "xml-edit-parity": {
+        "atomic_history_roundtrips": 268,
+        "cases": 275,
+        "python_and_c": true,
+        "stdlib_oracle": true,
+        "suggestion_contexts": 14,
+        "valid_xml_documents": 266
+      },
+      "xml-fragment-parity": {
+        "fragments": 291,
+        "identifiers": 291,
+        "invalid_documents": 10,
+        "python_and_c": true,
+        "stdlib_oracle": true,
+        "valid_documents": 48
+      },
+      "keyboard-parity": {
+        "status": "passed",
+        "layouts": 4,
+        "projection_values": 4096,
+        "xkb_abi": {
+          "XkbState": {
+            "size": 18,
+            "group": 0,
+            "ptr_buttons": 16
+          },
+          "XkbKeyName": {
+            "size": 4
+          },
+          "XkbAlias": {
+            "size": 8,
+            "real": 0,
+            "alias": 4
+          },
+          "XkbNames": {
+            "size": 496,
+            "keys": 456,
+            "key_aliases": 464,
+            "num_key_aliases": 489,
+            "phys_symbols": 480
+          },
+          "XkbDesc": {
+            "size": 72,
+            "min_key_code": 12,
+            "max_key_code": 13,
+            "names": 48,
+            "map": 32
+          }
+        },
+        "no_display_window_or_layout_mutation": true
+      },
+      "lint-rules-parity": {
+        "status": "passed",
+        "cases": 3023,
+        "accepted": 79,
+        "independent_native_parser": true,
+        "max_bytes": 4095,
+        "max_rules": 64,
+        "max_name": 95,
+        "no_window_or_project_execution": true
+      },
+      "language-parity": {
+        "status": "passed",
+        "color_byte_cases": 6020,
+        "languages": [
+          "javascript",
+          "xml"
+        ],
+        "utf8": true,
+        "templates_regex_division_cdata_entities_and_incomplete_source": true,
+        "no_window_or_evaluation": true
+      }
+    },
+    "gtk": {
+      "options-parity": {
+        "status": "passed",
+        "models": 148,
+        "real_filesystem_scans": 37,
+        "global_navigation_steps": 650,
+        "independent_stdlib_regex_cases": 14,
+        "engine": "system PCRE2-8, UTF/UCP/multiline, no JIT; raw \\C forbidden",
+        "regex_limits": {
+          "match_steps": 200000,
+          "depth": 512,
+          "heap_kib": 8192,
+          "seconds_per_file": 2
+        },
+        "glob_grammar": "; separator; * and ? exclude /; ** crosses /; **/ may match no directory; [] literal; filenames case-sensitive",
+        "odoo_fixtures": [
+          {
+            "version": "18.0",
+            "bytes": 69395,
+            "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc"
+          },
+          {
+            "version": "19.0",
+            "bytes": 69477,
+            "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543"
+          }
+        ],
+        "scope": "actual independent Python and C controllers tested separately; this oracle covers both cores, flags, four filters, zero/multiline spans and global navigation; no display/capture/server"
+      },
+      "folder-parity": {
+        "status": "passed",
+        "literal_models": 110,
+        "real_filesystem_scans": 30,
+        "global_navigation_steps": 592,
+        "offset_comparison": "UTF-8 byte offsets; scalar cells/tabs=4; normalized LF snapshots",
+        "limits": {
+          "file_bytes": 2097152,
+          "read_bytes": 67108864,
+          "snapshot_bytes": 16777216,
+          "files": 256,
+          "hits": 16384,
+          "entries": 20000,
+          "depth": 64,
+          "lines": 65536
+        },
+        "odoo_fixtures": [
+          {
+            "version": "18.0",
+            "bytes": 69395,
+            "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc"
+          },
+          {
+            "version": "19.0",
+            "bytes": 69477,
+            "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543"
+          }
+        ],
+        "scope": "actual Python and C cores; separate actual-controller/CPU-view tests; no display/capture/server"
+      },
+      "path-parity": {
+        "contexts": 54,
+        "edits": 39,
+        "atomic_history_roundtrips": 37,
+        "catalog_snapshots": 5,
+        "unicode_offsets": "native UTF-8 bytes / Python code points",
+        "status": "passed"
+      },
+      "xml-edit-parity": {
+        "atomic_history_roundtrips": 268,
+        "cases": 275,
+        "python_and_c": true,
+        "stdlib_oracle": true,
+        "suggestion_contexts": 14,
+        "valid_xml_documents": 266
+      },
+      "xml-fragment-parity": {
+        "fragments": 291,
+        "identifiers": 291,
+        "invalid_documents": 10,
+        "python_and_c": true,
+        "stdlib_oracle": true,
+        "valid_documents": 48
+      },
+      "keyboard-parity": {
+        "status": "passed",
+        "layouts": 4,
+        "projection_values": 4096,
+        "xkb_abi": {
+          "XkbState": {
+            "size": 18,
+            "group": 0,
+            "ptr_buttons": 16
+          },
+          "XkbKeyName": {
+            "size": 4
+          },
+          "XkbAlias": {
+            "size": 8,
+            "real": 0,
+            "alias": 4
+          },
+          "XkbNames": {
+            "size": 496,
+            "keys": 456,
+            "key_aliases": 464,
+            "num_key_aliases": 489,
+            "phys_symbols": 480
+          },
+          "XkbDesc": {
+            "size": 72,
+            "min_key_code": 12,
+            "max_key_code": 13,
+            "names": 48,
+            "map": 32
+          }
+        },
+        "no_display_window_or_layout_mutation": true
+      },
+      "lint-rules-parity": {
+        "status": "passed",
+        "cases": 3023,
+        "accepted": 79,
+        "independent_native_parser": true,
+        "max_bytes": 4095,
+        "max_rules": 64,
+        "max_name": 95,
+        "no_window_or_project_execution": true
+      },
+      "language-parity": {
+        "status": "passed",
+        "color_byte_cases": 6020,
+        "languages": [
+          "javascript",
+          "xml"
+        ],
+        "utf8": true,
+        "templates_regex_division_cdata_entities_and_incomplete_source": true,
+        "no_window_or_evaluation": true
+      }
+    }
+  },
+  "retained": [
+    "undo/redo/AZERTY/Ctrl+W/multicursors/split",
+    "progressive two-pane search/all filters/global F3/search-only F11/scrollbars",
+    "private sessions/drafts/global generic lint rules",
+    "SSH files only/local execution/no stored secrets/no auto auth",
+    "inline XML/paths/static framework completion/snippets",
+    "GTK1.19 draggable editor bars/minimap/file-list capture retained"
+  ],
+  "negative_tests": {
+    "status": "passed",
+    "missing_native_browser_dispatch_fails": true,
+    "wrong_odoo18_instead_of19_fails_real_W8165_check": true,
+    "missing_Python_browser_callback_fails": true,
+    "restored_native_pass": true,
+    "mutated_only_generated_QA_includes_and_in_memory_Python": true,
+    "production_sources_unchanged": true,
+    "no_window_or_preview": true
+  },
+  "runtime": {
+    "python": "3.13.5",
+    "pylint": "4.0.10",
+    "pylint_odoo": "10.0.12",
+    "gtk": "4.18.6",
+    "pygobject": "3.50.0",
+    "cairo": "1.18.4",
+    "libraries": {
+      "libpcre2-8": "10.46",
+      "libxml-2.0": "2.9.14"
+    },
+    "no_old_tar_gz": true
+  },
+  "integrity": {
+    "protected_backend_and_completion_files": 18,
+    "unchanged": true,
+    "deleted_tar_gz_not_recreated": true,
+    "deletion": {
+      "archives_deleted": [
+        {
+          "path": "prisme-c-1.5.1.tar.gz",
+          "bytes": 2049786,
+          "sha256": "e5d1c32d2a7df521a82cb7ab09611c222dea5c9e8306e8bdb3bd3abe230f14c1"
+        },
+        {
+          "path": "prisme-c-1.7.0.tar.gz",
+          "bytes": 5450564,
+          "sha256": "0c2c8fb434eaeafa33a4574ad4acaa3dbcf151202914232dbeff5297de03108e"
+        },
+        {
+          "path": "prisme-python-1.5.1.tar.gz",
+          "bytes": 1843795,
+          "sha256": "0c4e20747eb10fb2e5b7efbe17f2db8baebff263f6c4a6917ab82dc1ae428cf6"
+        },
+        {
+          "path": "prisme-python-1.5.2.tar.gz",
+          "bytes": 1691452,
+          "sha256": "f735fe9e8b86b6406173a3c37579cb548075cd6cff0a5c7d14d95ec19d3247df"
+        },
+        {
+          "path": "prisme-python-1.6.0.tar.gz",
+          "bytes": 1722302,
+          "sha256": "b53ce6524e4b210a65ba33eaf947ca1bf34e06e35fa7b9bb3089f6e02da891ad"
+        },
+        {
+          "path": "prisme-python-1.6.1.tar.gz",
+          "bytes": 1724530,
+          "sha256": "b9ce34de3f47c08ba05c4e0910b1b6ef1af52bb3b15e5bc379a1cd28c230d149"
+        },
+        {
+          "path": "prisme-python-1.7.0.tar.gz",
+          "bytes": 1735093,
+          "sha256": "600662b2dd9b6b70f19df2010ed4231174a456dd582223671bcdb941287bbfb5"
+        },
+        {
+          "path": "python-studio-c-1.10.0.tar.gz",
+          "bytes": 2598773,
+          "sha256": "01da8fafa53be10ae7889911b99cf452b1867f14e48c38e314878ab50f1267a7"
+        },
+        {
+          "path": "python-studio-c-1.11.0.tar.gz",
+          "bytes": 2375249,
+          "sha256": "2d2c54138fd195546d1306c7da0baeeafef8214dc140c7ec88bb1c7dbe40628c"
+        },
+        {
+          "path": "python-studio-c-1.12.0.tar.gz",
+          "bytes": 2467542,
+          "sha256": "c09052b5462891698a68ab991d02e07987e5f3c5cc7d48e1a49a7ab1f5c41ef3"
+        },
+        {
+          "path": "python-studio-c-1.13.0.tar.gz",
+          "bytes": 2553096,
+          "sha256": "e8fa152522fdfdbb1f185b426e35f5e08947bece28acd3ed8b60bb17358abf26"
+        },
+        {
+          "path": "python-studio-c-1.14.0.tar.gz",
+          "bytes": 2617999,
+          "sha256": "b5c2dae3e725f52d84cacd07751832101841c386aa6fa8874df7271a7f9dabfb"
+        },
+        {
+          "path": "python-studio-c-1.15.0.tar.gz",
+          "bytes": 2698740,
+          "sha256": "cd8ab0bd198335654341bfb5f5b32f5da924f04ce3ac038a6db1aced06e6c00b"
+        },
+        {
+          "path": "python-studio-c-1.16.0.tar.gz",
+          "bytes": 2786490,
+          "sha256": "0d22facff0857ccc16c38eeb035582423dedb90812fada4a7a191d23a80d59f1"
+        },
+        {
+          "path": "python-studio-c-1.17.0.tar.gz",
+          "bytes": 2878668,
+          "sha256": "25daf3a1f5afeef24ef6a36453a2591191f11d7f46f507b25adf6d0db9340afc"
+        },
+        {
+          "path": "python-studio-c-1.18.0.tar.gz",
+          "bytes": 2959501,
+          "sha256": "f7502586becd35f1d99ae82f718c481ddf0d59514d29da88e9da1bb0e9525f3a"
+        },
+        {
+          "path": "python-studio-c-1.8.0.tar.gz",
+          "bytes": 2212610,
+          "sha256": "cab1345df8a0990244e6a1f735b6f65d1e205e8c253e96fca272c6e002c19a69"
+        },
+        {
+          "path": "python-studio-c-1.9.0.tar.gz",
+          "bytes": 2263293,
+          "sha256": "6153b9aa3283550e82f3e3d96d94ab3e343b40052716242c0a6c693dd83a349d"
+        },
+        {
+          "path": "python-studio-gtk-1.18.0.tar.gz",
+          "bytes": 1060748,
+          "sha256": "f10591c6e5d8a702e33058173963a21adb8ef5449bb64c397f6954b248538a25"
+        },
+        {
+          "path": "python-studio-gtk-1.19.0.tar.gz",
+          "bytes": 1116136,
+          "sha256": "27b93589088393ee5639222eda9421e2f1253b6a241e20878e7dbfefb5904802"
+        },
+        {
+          "path": "python-studio-python-1.10.0.tar.gz",
+          "bytes": 1847660,
+          "sha256": "b8f3770ca485e16d429ff4e94ddc536e01e7927019749a8397a01ac87111bf1b"
+        },
+        {
+          "path": "python-studio-python-1.11.0.tar.gz",
+          "bytes": 1882532,
+          "sha256": "be6b89ddd2b3420a5316c2094e5f5a16f566097b220f1f5fddaa01b42b1af589"
+        },
+        {
+          "path": "python-studio-python-1.12.0.tar.gz",
+          "bytes": 1948862,
+          "sha256": "9b5112283e803b88f69ae445295657a755c585d1cf27916f3bdab9ffecce98c9"
+        },
+        {
+          "path": "python-studio-python-1.13.0.tar.gz",
+          "bytes": 2026527,
+          "sha256": "1449be76d8cf9fb4e41ea4029b16bfc3fbaea4c36f1b281e9b91c39005fbd15b"
+        },
+        {
+          "path": "python-studio-python-1.14.0.tar.gz",
+          "bytes": 2090568,
+          "sha256": "fe2f9a6c3e00df47a376bdac74759010663580d8499949e348c371a0d8170160"
+        },
+        {
+          "path": "python-studio-python-1.15.0.tar.gz",
+          "bytes": 2162625,
+          "sha256": "4e3e7145605e04377b0a71a2fee6c8fad7e9f64ceeffb1210e09fdcdb35c435e"
+        },
+        {
+          "path": "python-studio-python-1.16.0.tar.gz",
+          "bytes": 2247031,
+          "sha256": "496a461991f020db898d6e8aa75564eecb5e339129f6ef55ec6fd23f49940f09"
+        },
+        {
+          "path": "python-studio-python-1.17.0.tar.gz",
+          "bytes": 2329599,
+          "sha256": "0c90b637ad9760fcc7e3293efcb08ec4357c044018634110bbd0aa72779f3013"
+        },
+        {
+          "path": "python-studio-python-1.18.0.tar.gz",
+          "bytes": 2408723,
+          "sha256": "46d13d5005ffd9900dc629bf0ed8fdeac556310472ae600fa8844b038cccc42b"
+        },
+        {
+          "path": "python-studio-python-1.8.0.tar.gz",
+          "bytes": 1772032,
+          "sha256": "88af59d7e5dcfd27b474bead9fcc2f0cc54be22de20de6e2f8e93356b8949bde"
+        },
+        {
+          "path": "python-studio-python-1.9.0.tar.gz",
+          "bytes": 1804475,
+          "sha256": "9b00b140cb6e51cd1e113e5fb01ff9a522440a4af7b5dd3f83075d2829763858"
+        },
+        {
+          "path": "verifications-2026-10-31.tar.gz",
+          "bytes": 2036274,
+          "sha256": "35f05d6cb448bcecaf5e304231be30237fa4497c827d59747006b25f83a0a405"
+        }
+      ],
+      "archive_count": 32,
+      "bytes_freed": 71363275,
+      "orphan_checksum_files_deleted": [
+        "prisme-c-1.5.1.sha256",
+        "prisme-c-1.7.0.tar.gz.sha256",
+        "prisme-python-1.5.1.tar.gz.sha256",
+        "prisme-python-1.5.2.tar.gz.sha256",
+        "prisme-python-1.6.0.tar.gz.sha256",
+        "prisme-python-1.6.1.tar.gz.sha256",
+        "prisme-python-1.7.0.tar.gz.sha256",
+        "python-studio-c-1.10.0.tar.gz.sha256",
+        "python-studio-c-1.11.0.tar.gz.sha256",
+        "python-studio-c-1.12.0.tar.gz.sha256",
+        "python-studio-c-1.13.0.tar.gz.sha256",
+        "python-studio-c-1.14.0.tar.gz.sha256",
+        "python-studio-c-1.15.0.tar.gz.sha256",
+        "python-studio-c-1.16.0.tar.gz.sha256",
+        "python-studio-c-1.17.0.tar.gz.sha256",
+        "python-studio-c-1.18.0.tar.gz.sha256",
+        "python-studio-c-1.8.0.tar.gz.sha256",
+        "python-studio-c-1.9.0.tar.gz.sha256",
+        "python-studio-gtk-1.18.0.tar.gz.sha256",
+        "python-studio-gtk-1.19.0.tar.gz.sha256",
+        "python-studio-python-1.10.0.tar.gz.sha256",
+        "python-studio-python-1.11.0.tar.gz.sha256",
+        "python-studio-python-1.12.0.tar.gz.sha256",
+        "python-studio-python-1.13.0.tar.gz.sha256",
+        "python-studio-python-1.14.0.tar.gz.sha256",
+        "python-studio-python-1.15.0.tar.gz.sha256",
+        "python-studio-python-1.16.0.tar.gz.sha256",
+        "python-studio-python-1.17.0.tar.gz.sha256",
+        "python-studio-python-1.18.0.tar.gz.sha256",
+        "python-studio-python-1.8.0.tar.gz.sha256",
+        "python-studio-python-1.9.0.tar.gz.sha256"
+      ],
+      "source_editions_preserved": true
+    }
+  },
+  "independent_extracted_acceptance": {
+    "status": "passed",
+    "version": "1.20.0",
+    "editions": {
+      "python": {
+        "accepted_payload_files": 600,
+        "candidate_files": 653,
+        "payload_bytes_and_modes_unchanged": true,
+        "manifest_valid": true,
+        "candidate_manifest_sha256": "d6b220a216abd23d92e6a4206756c373d0cfc4d154586206b7880888ca486ad6"
+      },
+      "c": {
+        "accepted_payload_files": 749,
+        "candidate_files": 823,
+        "payload_bytes_and_modes_unchanged": true,
+        "manifest_valid": true,
+        "candidate_manifest_sha256": "414bfbcda34e9ab3dea31a25a68c59cc0f054c2ef3b73c4f8cde15b2772c9406"
+      },
+      "gtk": {
+        "accepted_payload_files": 226,
+        "candidate_files": 280,
+        "payload_bytes_and_modes_unchanged": true,
+        "manifest_valid": true,
+        "candidate_manifest_sha256": "17008ee95d9315252dd59de149e2b5e9f4786f114bcde922d8e803fc0e5cc613"
+      }
+    },
+    "candidate_archives": [
+      {
+        "edition": "python",
+        "archive": "python-studio-python-1.20.0.tar.xz",
+        "files": 653,
+        "bytes": 1514992,
+        "sha256": "490656cc2955c077acc123b129c32edbed9772a17eb3d2d3544744ba96129fe5",
+        "accepted_payload_files": 600
+      },
+      {
+        "edition": "c",
+        "archive": "python-studio-c-1.20.0.tar.xz",
+        "files": 823,
+        "bytes": 1636792,
+        "sha256": "09cc282fdafbc9a62b88d89fd6745cebfb281c5dbadfcde28fea91d8a511f38b",
+        "accepted_payload_files": 749
+      },
+      {
+        "edition": "gtk",
+        "archive": "python-studio-gtk-1.20.0.tar.xz",
+        "files": 280,
+        "bytes": 769860,
+        "sha256": "53dc34f16c6601ed23f0f02fac86f18a0b024ef52fd26d698dda81838631f5b0",
+        "accepted_payload_files": 226
+      }
+    ],
+    "tests": {
+      "python": {
+        "total": 666,
+        "passed": 660,
+        "skipped": 6,
+        "seconds": 37.06,
+        "real_SSH": true,
+        "rebuilt_extracted_native_interop": true,
+        "external_PyLint_versions": [
+          "2.12.2",
+          "2.17.7",
+          "4.0.10"
+        ],
+        "odoo_plugin": "10.0.12"
+      },
+      "gtk": {
+        "total": 706,
+        "passed": 705,
+        "skipped": 1,
+        "seconds": 35.596,
+        "real_SSH": true,
+        "rebuilt_extracted_native_interop": true,
+        "external_PyLint_versions": [
+          "2.12.2",
+          "2.17.7",
+          "4.0.10"
+        ],
+        "odoo_plugin": "10.0.12"
+      },
+      "native": {
+        "passed": 37,
+        "seconds": 57.24
+      }
+    },
+    "oracles_repeated_each_Python_edition": 8,
+    "real_Odoo_workflows_repeated_each_Python_edition": 2,
+    "fresh_install_launchers_and_pip_check": true,
+    "source_fingerprints_match": true,
+    "native_new_objects_only_third_party_source_reused": true,
+    "provided_ELF_bytes_equal_accepted_production": true,
+    "no_tar_gz_zip_preview_capture_or_service": true
+  },
+  "no_window_preview_capture_or_web_service": true,
+  "limitations": [
+    "No physical desktop/GPU/GNOME/compositor/Windows/macOS validation",
+    "GDK/Cairo command recordings are not a pixel comparison; window widgets simulated where required",
+    "JS/XML lexers tolerant lexical tools, not full ECMAScript parser/JS code checker",
+    "XML checks local and heuristic warnings, no external/global IDs/model/field/database resolution",
+    "pylint-odoo10.0.12 requires PyLint4.0.x; generic mode remains compatible with tested2.12/2.17 interpreters",
+    "System GTK/PCRE2/libxml2 and external Python/analyzers not sanitizer-instrumented",
+    "Scalar/tab4 not wcwidth; guards not hostile-filesystem sandbox; regex not hard realtime; kernel I/O may delay shutdown",
+    "Historical validation files describe their now-user-deleted archives only"
+  ]
+}

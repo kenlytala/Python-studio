@@ -1,0 +1,23 @@
+[
+  {
+    "path": "bin/python-studio",
+    "bytes": 1642512,
+    "sha256": "210dd02dee7d12542e13dd37db99baea7a520439ffd033248063225586d2cb8a",
+    "mode": "0755",
+    "glibc": "GLIBC_2.38"
+  },
+  {
+    "path": "bin/python-studio-ssh-helper",
+    "bytes": 80576,
+    "sha256": "798bee0fd42ac857de6f6606963392da7f9d6e01f5466637908216bfb4dba337",
+    "mode": "0755",
+    "glibc": "GLIBC_2.34"
+  },
+  {
+    "path": "bin/constellation",
+    "bytes": 1173864,
+    "sha256": "a1b7acd12dc0f9440356a05160722ac9f57e53a0f6094326f3f928b095e89141",
+    "mode": "0755",
+    "glibc": "GLIBC_2.38"
+  }
+]

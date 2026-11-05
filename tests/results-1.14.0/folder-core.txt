@@ -1,0 +1,3 @@
+OK advanced native options: Unicode insensitive/whole-word, PCRE2 groups/UTF-8/zero/multiline, explicit invalid/budget errors
+OK native progressive publication: blocked later file, sorted arrivals, trylock, shared immutable payload, F3, cancel/error/job-free lifetime
+OK 427 folder-search checks: literal/UTF-8/tabs, recursive snapshots, global F3 model, budgets, async cancellation, guarded changes, isolated private preferences

@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "missing_native_browser_dispatch_fails": true,
+  "wrong_odoo18_instead_of19_fails_real_W8165_check": true,
+  "missing_Python_browser_callback_fails": true,
+  "restored_native_pass": true,
+  "mutated_only_generated_QA_includes_and_in_memory_Python": true,
+  "production_sources_unchanged": true,
+  "no_window_or_preview": true
+}

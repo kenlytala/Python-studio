@@ -1,0 +1,22 @@
+[
+  {
+    "version": "18.0",
+    "url": "https://raw.githubusercontent.com/odoo/odoo/18.0/addons/sale/views/sale_order_views.xml",
+    "bytes": 69395,
+    "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc",
+    "ids": 46,
+    "record": "view_order_form",
+    "ordinal": 12,
+    "python_and_c": "pass"
+  },
+  {
+    "version": "19.0",
+    "url": "https://raw.githubusercontent.com/odoo/odoo/19.0/addons/sale/views/sale_order_views.xml",
+    "bytes": 69477,
+    "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543",
+    "ids": 47,
+    "record": "view_order_form",
+    "ordinal": 12,
+    "python_and_c": "pass"
+  }
+]

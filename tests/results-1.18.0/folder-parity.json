@@ -1,0 +1,30 @@
+{
+  "status": "passed",
+  "literal_models": 110,
+  "real_filesystem_scans": 30,
+  "global_navigation_steps": 592,
+  "offset_comparison": "UTF-8 byte offsets; scalar cells/tabs=4; normalized LF snapshots",
+  "limits": {
+    "file_bytes": 2097152,
+    "read_bytes": 67108864,
+    "snapshot_bytes": 16777216,
+    "files": 256,
+    "hits": 16384,
+    "entries": 20000,
+    "depth": 64,
+    "lines": 65536
+  },
+  "odoo_fixtures": [
+    {
+      "version": "18.0",
+      "bytes": 69395,
+      "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc"
+    },
+    {
+      "version": "19.0",
+      "bytes": 69477,
+      "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543"
+    }
+  ],
+  "scope": "actual Python and C cores; separate actual-controller/CPU-view tests; no display/capture/server"
+}

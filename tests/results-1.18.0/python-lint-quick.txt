@@ -1,0 +1,26 @@
+test_64_rules_failure_preserves_current_list (test_lint_quick.QuickRuleActualFrameTests.test_64_rules_failure_preserves_current_list) ... RAYLIB STATIC 5.5.0.4 LOADED
+ok
+test_actual_button_click_appends_saves_and_restarts_even_manual (test_lint_quick.QuickRuleActualFrameTests.test_actual_button_click_appends_saves_and_restarts_even_manual) ... ok
+test_button_click_does_not_navigate_and_row_click_still_does (test_lint_quick.QuickRuleActualFrameTests.test_button_click_does_not_navigate_and_row_click_still_does) ... ok
+test_buttons_and_navigation_do_not_overlap_or_escape_clip (test_lint_quick.QuickRuleActualFrameTests.test_buttons_and_navigation_do_not_overlap_or_escape_clip) ... ok
+test_existing_symbol_alias_is_not_duplicated (test_lint_quick.QuickRuleActualFrameTests.test_existing_symbol_alias_is_not_duplicated) ... ok
+test_failed_save_preserves_preferences_report_cursor_and_cache (test_lint_quick.QuickRuleActualFrameTests.test_failed_save_preserves_preferences_report_cursor_and_cache) ... ok
+test_new_report_with_same_code_also_invalidates_the_old_button (test_lint_quick.QuickRuleActualFrameTests.test_new_report_with_same_code_also_invalidates_the_old_button) ... ok
+test_no_button_for_syntax_or_internal_error_reports (test_lint_quick.QuickRuleActualFrameTests.test_no_button_for_syntax_or_internal_error_reports) ... ok
+test_old_button_after_filename_change_is_refused (test_lint_quick.QuickRuleActualFrameTests.test_old_button_after_filename_change_is_refused) ... ok
+test_old_button_after_generation_or_project_change_is_refused (test_lint_quick.QuickRuleActualFrameTests.test_old_button_after_generation_or_project_change_is_refused) ... ok
+test_old_button_after_modal_or_hidden_console_is_refused (test_lint_quick.QuickRuleActualFrameTests.test_old_button_after_modal_or_hidden_console_is_refused) ... ok
+test_old_button_after_tab_switch_is_refused (test_lint_quick.QuickRuleActualFrameTests.test_old_button_after_tab_switch_is_refused) ... ok
+test_old_button_after_text_change_is_refused (test_lint_quick.QuickRuleActualFrameTests.test_old_button_after_text_change_is_refused) ... ok
+test_rapid_second_old_click_is_idempotent (test_lint_quick.QuickRuleActualFrameTests.test_rapid_second_old_click_is_idempotent) ... ok
+test_real_click_configuration_reaches_real_pylint_and_can_be_reenabled (test_lint_quick.QuickRuleActualFrameTests.test_real_click_configuration_reaches_real_pylint_and_can_be_reenabled) ... ok
+test_scrolled_button_uses_displayed_diagnostic_not_row_zero (test_lint_quick.QuickRuleActualFrameTests.test_scrolled_button_uses_displayed_diagnostic_not_row_zero) ... ok
+test_stale_callback_after_same_version_new_report_is_refused (test_lint_quick.QuickRuleActualFrameTests.test_stale_callback_after_same_version_new_report_is_refused) ... ok
+test_append_preserves_order_and_deduplicates_code_or_name (test_lint_quick.QuickRuleModelTests.test_append_preserves_order_and_deduplicates_code_or_name) ... ok
+test_append_respects_both_existing_limits (test_lint_quick.QuickRuleModelTests.test_append_respects_both_existing_limits) ... ok
+test_exact_ids_only_and_syntax_protected (test_lint_quick.QuickRuleModelTests.test_exact_ids_only_and_syntax_protected) ... ok
+
+----------------------------------------------------------------------
+Ran 20 tests in 3.388s
+
+OK

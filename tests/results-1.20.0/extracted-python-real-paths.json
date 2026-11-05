@@ -1,0 +1,26 @@
+{
+  "implementation": "actual Python controller, injected keys and mocked rendering; no window",
+  "cases": [
+    {
+      "version": "18.0",
+      "ids": 46,
+      "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc",
+      "workflow": "sale/ -> views/ -> XML filename -> ID -> element/fields/empty arch",
+      "atomic_undo_redo": true,
+      "labelled_AZERTY_Z_actual_frame": true,
+      "source_unchanged": true,
+      "wellformed_stdlib": true
+    },
+    {
+      "version": "19.0",
+      "ids": 47,
+      "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543",
+      "workflow": "sale/ -> views/ -> XML filename -> ID -> element/fields/empty arch",
+      "atomic_undo_redo": true,
+      "labelled_AZERTY_Z_actual_frame": true,
+      "source_unchanged": true,
+      "wellformed_stdlib": true
+    }
+  ],
+  "status": "passed"
+}

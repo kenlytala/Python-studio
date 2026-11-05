@@ -1,0 +1,31 @@
+Test project /home/user/.cache/python-studio-1150/asan
+      Start  1: folder_search_core_and_profiles
+ 1/13 Test  #1: folder_search_core_and_profiles ..............   Passed    0.33 sec
+      Start  2: directory_path_completion_core
+ 2/13 Test  #2: directory_path_completion_core ...............   Passed    0.12 sec
+      Start  3: xml_editor_tags_history_and_root_profiles
+ 3/13 Test  #3: xml_editor_tags_history_and_root_profiles ....   Passed    0.20 sec
+      Start  4: xml_identifiers_safe_parser_and_worker
+ 4/13 Test  #4: xml_identifiers_safe_parser_and_worker .......   Passed    0.37 sec
+      Start  5: xml_inline_actual_controller
+ 5/13 Test  #5: xml_inline_actual_controller .................   Passed    0.19 sec
+      Start  6: model_syntax_runner
+ 6/13 Test  #6: model_syntax_runner ..........................   Passed    0.38 sec
+      Start  7: project_sessions_drafts_and_recovery
+ 7/13 Test  #7: project_sessions_drafts_and_recovery .........   Passed    0.10 sec
+      Start  8: multicursor_transactions
+ 8/13 Test  #8: multicursor_transactions .....................   Passed    0.22 sec
+      Start  9: panel_layout_combinations
+ 9/13 Test  #9: panel_layout_combinations ....................   Passed    0.15 sec
+      Start 17: snippets_and_completion_actual_controllers
+10/13 Test #17: snippets_and_completion_actual_controllers ...   Passed    0.06 sec
+      Start 22: diagnostic_views_without_window
+11/13 Test #22: diagnostic_views_without_window ..............   Passed    0.71 sec
+      Start 23: ui_readability_without_window
+12/13 Test #23: ui_readability_without_window ................   Passed    0.63 sec
+      Start 25: frameless_controls_and_file_safety
+13/13 Test #25: frameless_controls_and_file_safety ...........   Passed    0.37 sec
+
+100% tests passed out of 13
+
+Total Test time (real) =   3.84 sec

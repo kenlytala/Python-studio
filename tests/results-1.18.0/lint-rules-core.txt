@@ -1,0 +1,2 @@
+OK 60015 quick-rule identity/append checks: all 60000 concrete IDs, syntax excluded, code/name duplicate protection, atomic limits, scope boundaries
+OK 53 lint-rule grammar/profile checks: limits, injection rejection, canonical IDs/names, atomic rejection, persistence, empty re-enable; no project files/window

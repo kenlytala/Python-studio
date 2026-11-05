@@ -1,0 +1,13 @@
+{
+  "owned_download_sha256": "aea98ecf5bc5c5e0b789a76de0083a21a70457050ea4cc2aec7566935f5e258e",
+  "bytes": 42278112,
+  "no_source_override": true,
+  "removed": [
+    "_deps/raylib-src/examples",
+    "_deps/raylib-src/logo",
+    "_deps/raylib-src/parser",
+    "_deps/raylib-src/projects",
+    "_deps/raylib-src/.github"
+  ],
+  "old_build_1_18_removed": true
+}

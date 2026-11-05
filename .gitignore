@@ -1,0 +1,8 @@
+build*/
+.vscode/
+*.o
+*.a
+*.log
+*.prisme-*.tmp
+examples/__pycache__/
+capture.png

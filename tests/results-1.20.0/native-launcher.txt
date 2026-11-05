@@ -1,0 +1,170 @@
+-- Prisme: coherent source fingerprint c8dfdbf180046fc66e5d16401dbd614777a72fba055b66223344507337ca8487
+CMake Warning (deprecated) at build-1.20.0/_deps/raylib-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Testing if -Werror=pointer-arith can be used -- compiles
+-- Testing if -Werror=implicit-function-declaration can be used -- compiles
+-- Testing if -fno-strict-aliasing can be used -- compiles
+-- Using raylib's GLFW
+-- Including X11 support
+-- Audio Backend: miniaudio
+-- Building raylib static library
+-- Generated build type: Release
+-- Compiling with the flags:
+--   PLATFORM=PLATFORM_DESKTOP
+--   GRAPHICS=GRAPHICS_API_OPENGL_21
+-- Prisme: raylib 5.5 initialization guards verified
+-- Prisme: raylib fullscreen native sizing and resize synchronization verified
+-- Prisme: raylib 5.5 full glyph extents and atlas rows verified
+-- Python Studio graphics: OpenGL 2.1; MSAA opt-in
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/user/python-studio-c/build-1.20.0
+[0/2] Re-checking globbed directories...
+[1/136] Building C object CMakeFiles/prisme_core.dir/src/keyboard.c.o
+[2/136] Building C object CMakeFiles/prisme_core.dir/src/odoo_config.c.o
+[3/136] Building C object CMakeFiles/prisme_core.dir/src/lint_rules.c.o
+[4/136] Building C object CMakeFiles/prisme_core.dir/src/syntax.c.o
+[5/136] Building C object CMakeFiles/prisme_core.dir/src/syntax_extra.c.o
+[6/136] Building C object CMakeFiles/prisme_core.dir/src/multicursor.c.o
+[7/136] Building C object CMakeFiles/prisme_core.dir/src/layout.c.o
+[8/136] Building C object CMakeFiles/prisme_core.dir/src/runner.c.o
+[9/136] Building C object CMakeFiles/prisme_core.dir/src/buffer.c.o
+[10/136] Building C object CMakeFiles/prisme_core.dir/src/file_job.c.o
+[11/136] Building C object CMakeFiles/prisme_core.dir/src/import_paths.c.o
+[12/136] Building C object CMakeFiles/prisme_core.dir/src/linter.c.o
+[13/136] Building C object CMakeFiles/prisme_core.dir/src/files.c.o
+[14/136] Building C object CMakeFiles/prisme_core.dir/src/completion.c.o
+[15/136] Building C object CMakeFiles/prisme_core.dir/src/snippets.c.o
+[16/136] Building C object CMakeFiles/prisme_core.dir/src/ssh_command.c.o
+[17/136] Building C object CMakeFiles/prisme_core.dir/src/ssh_profiles.c.o
+[18/136] Building C object CMakeFiles/prisme_core.dir/src/ssh_json.c.o
+[19/136] Building C object CMakeFiles/prisme_core.dir/src/ssh_helper.c.o
+[20/136] Building C object CMakeFiles/prisme_core.dir/src/ssh.c.o
+[21/136] Building C object CMakeFiles/prisme_core.dir/src/xml_edit.c.o
+[22/136] Building C object CMakeFiles/prisme_core.dir/src/xml_refs.c.o
+[23/136] Building C object CMakeFiles/prisme_core.dir/src/xml_paths.c.o
+[24/136] Building C object CMakeFiles/prisme_core.dir/src/browser_complete.c.o
+[25/136] Building C object CMakeFiles/prisme_core.dir/src/path_complete.c.o
+[26/136] Building C object CMakeFiles/prisme_core.dir/src/session.c.o
+[27/136] Building C object CMakeFiles/prisme_core.dir/src/search_pattern.c.o
+[28/136] Building C object CMakeFiles/prisme_ssh_helper.dir/src/ssh_helper_main.c.o
+[29/136] Building C object CMakeFiles/prisme_graphics.dir/src/graphics.c.o
+[30/136] Linking C static library libprisme_graphics.a
+[31/136] Building C object CMakeFiles/constellation.dir/demos/constellation.c.o
+[32/136] Building C object CMakeFiles/prisme_core.dir/src/folder_search.c.o
+[33/136] Linking C static library libprisme_core.a
+[34/136] Linking C executable python-studio-ssh-helper
+[35/136] Building C object CMakeFiles/prisme.dir/src/app_odoo.c.o
+[36/136] Building C object CMakeFiles/test_path_complete.dir/tests/test_path_complete.c.o
+[37/136] Building C object CMakeFiles/prisme.dir/src/app_lint_rules.c.o
+[38/136] Building C object CMakeFiles/prisme.dir/src/app_browser_completion.c.o
+[39/136] Building C object CMakeFiles/test_folder_search.dir/tests/test_folder_search.c.o
+[40/136] Building C object CMakeFiles/prisme.dir/src/keyboard_native.c.o
+[41/136] Building C object CMakeFiles/prisme.dir/src/main.c.o
+[42/136] Building C object CMakeFiles/prisme.dir/src/ui.c.o
+[43/136] Building C object CMakeFiles/prisme.dir/src/file_clipboard.c.o
+[44/136] Building C object CMakeFiles/prisme.dir/src/app_snippets.c.o
+[45/136] Building C object CMakeFiles/prisme.dir/src/app_completion.c.o
+[46/136] Building C object CMakeFiles/prisme.dir/src/app_snippet_input.c.o
+[47/136] Building C object CMakeFiles/prisme.dir/src/app_multicursor.c.o
+[48/136] Building C object CMakeFiles/prisme.dir/src/view.c.o
+[49/136] Building C object CMakeFiles/prisme.dir/src/app_ssh.c.o
+[50/136] Building C object CMakeFiles/prisme.dir/src/app_session.c.o
+[51/136] Building C object CMakeFiles/prisme.dir/src/view_ssh.c.o
+[52/136] Building C object CMakeFiles/prisme.dir/src/app_path_completion.c.o
+[53/136] Building C object CMakeFiles/prisme.dir/src/app_xml.c.o
+[54/136] Building C object CMakeFiles/prisme.dir/src/app.c.o
+[55/136] Building C object CMakeFiles/prisme.dir/src/app_folder_search.c.o
+[56/136] Building C object CMakeFiles/prisme.dir/src/view_folder_search.c.o
+[57/136] Building C object CMakeFiles/test_xml_edit.dir/tests/test_xml_edit.c.o
+[58/136] Building C object CMakeFiles/test_xml_refs.dir/tests/test_xml_refs.c.o
+[59/136] Building C object CMakeFiles/test_xml_input.dir/tests/test_xml_input.c.o
+[60/136] Building C object CMakeFiles/test_core.dir/tests/test_core.c.o
+[61/136] Building C object CMakeFiles/test_xml_input.dir/src/app_xml.c.o
+[62/136] Building C object CMakeFiles/test_session.dir/tests/test_session.c.o
+[63/136] Building C object CMakeFiles/test_multi.dir/tests/test_multi.c.o
+[64/136] Building C object CMakeFiles/test_files.dir/tests/test_files.c.o
+[65/136] Building C object CMakeFiles/test_layout.dir/tests/test_layout.c.o
+[66/136] Building C object CMakeFiles/test_ssh.dir/tests/test_ssh.c.o
+[67/136] Building C object CMakeFiles/ssh_driver.dir/tests/ssh_driver.c.o
+[68/136] Building C object CMakeFiles/ssh_driver.dir/src/app_session.c.o
+[69/136] Building C object CMakeFiles/ssh_driver.dir/src/app_ssh.c.o
+[70/136] Building C object CMakeFiles/ssh_driver.dir/src/app_path_completion.c.o
+[71/136] Building C object CMakeFiles/ssh_driver.dir/src/app_xml.c.o
+[72/136] Building C object CMakeFiles/test_import_paths.dir/tests/test_import_paths.c.o
+[73/136] Building C object CMakeFiles/test_snippets.dir/tests/test_snippets.c.o
+[74/136] Building C object CMakeFiles/ssh_driver.dir/src/app_folder_search.c.o
+[75/136] Building C object CMakeFiles/test_snippet_input.dir/src/app_snippets.c.o
+[76/136] Building C object CMakeFiles/test_snippet_input.dir/tests/test_snippet_input.c.o
+[77/136] Building C object CMakeFiles/test_completion.dir/tests/test_completion.c.o
+[78/136] Building C object CMakeFiles/test_snippet_input.dir/src/app_completion.c.o
+[79/136] Building C object CMakeFiles/test_snippet_input.dir/src/app_path_completion.c.o
+[80/136] Building C object CMakeFiles/test_snippet_input.dir/src/app_snippet_input.c.o
+[81/136] Building C object CMakeFiles/test_linter.dir/tests/test_linter.c.o
+[82/136] Building C object CMakeFiles/test_diagnostics_view.dir/src/view_ssh.c.o
+[83/136] Building C object CMakeFiles/test_ui.dir/tests/test_ui.c.o
+[84/136] Building C object CMakeFiles/test_diagnostics_view.dir/src/view_folder_search.c.o
+[85/136] Building C object CMakeFiles/test_controls.dir/src/app_odoo.c.o
+[86/136] Building C object CMakeFiles/test_controls.dir/src/app_browser_completion.c.o
+[87/136] Building C object CMakeFiles/test_controls.dir/src/app_lint_rules.c.o
+[88/136] Building C object CMakeFiles/test_ui.dir/src/ui.c.o
+[89/136] Building C object CMakeFiles/test_controls.dir/src/app_snippets.c.o
+[90/136] Building C object CMakeFiles/test_controls.dir/src/app_completion.c.o
+[91/136] Building C object CMakeFiles/test_controls.dir/src/app_multicursor.c.o
+[92/136] Building C object CMakeFiles/test_controls.dir/src/app_ssh.c.o
+[93/136] Building C object CMakeFiles/test_controls.dir/src/app_session.c.o
+[94/136] Building C object CMakeFiles/test_diagnostics_view.dir/tests/test_diagnostics_view.c.o
+[95/136] Building C object CMakeFiles/test_controls.dir/src/app_xml.c.o
+[96/136] Building C object CMakeFiles/test_controls.dir/src/app_path_completion.c.o
+[97/136] Building C object CMakeFiles/test_file_clipboard.dir/tests/test_file_clipboard.c.o
+[98/136] Building C object CMakeFiles/test_controls.dir/src/app_folder_search.c.o
+[99/136] Building C object CMakeFiles/test_editor_features.dir/tests/test_editor_features.c.o
+[100/136] Building C object CMakeFiles/test_lint_rules.dir/tests/test_lint_rules.c.o
+[101/136] Building C object CMakeFiles/test_keyboard.dir/tests/test_keyboard.c.o
+[102/136] Building C object CMakeFiles/test_keyboard_native.dir/src/keyboard_native.c.o
+[103/136] Building C object CMakeFiles/test_fullscreen.dir/tests/test_fullscreen.c.o
+[104/136] Building C object CMakeFiles/test_keyboard_native.dir/tests/test_keyboard_native.c.o
+[105/136] Building C object CMakeFiles/test_fullscreen_retina.dir/tests/test_fullscreen.c.o
+[106/136] Linking C executable constellation
+[107/136] Linking C executable test_folder_search
+[108/136] Linking C executable test_path_complete
+[109/136] Linking C executable test_xml_edit
+[110/136] Linking C executable python-studio
+[111/136] Linking C executable test_xml_input
+[112/136] Linking C executable test_core
+[113/136] Linking C executable test_xml_refs
+[114/136] Linking C executable test_session
+[115/136] Linking C executable test_layout
+[116/136] Linking C executable test_files
+[117/136] Linking C executable test_multi
+[118/136] Linking C executable test_ssh
+[119/136] Linking C executable ssh_driver
+[120/136] Linking C executable test_import_paths
+[121/136] Linking C executable test_snippets
+[122/136] Linking C executable test_snippet_input
+[123/136] Linking C executable test_linter
+[124/136] Linking C executable test_completion
+[125/136] Linking C executable test_ui
+[126/136] Linking C executable test_diagnostics_view
+[127/136] Linking C executable test_editor_features
+[128/136] Linking C executable test_lint_rules
+[129/136] Linking C executable test_file_clipboard
+[130/136] Building C object CMakeFiles/test_controls.dir/tests/test_controls.c.o
+In file included from /home/user/python-studio-c/tests/test_controls.c:174:
+/home/user/python-studio-c/build-1.20.0/prisme_controls_functions.inc:21:13: warning: ‘is_python’ defined but not used [-Wunused-function]
+   21 | static bool is_python(Buffer *b) {
+      |             ^~~~~~~~~
+[131/136] Linking C executable test_keyboard
+[132/136] Linking C executable test_keyboard_native
+[133/136] Linking C executable test_fullscreen_retina
+[134/136] Linking C executable test_fullscreen
+[135/136] Linking C executable test_controls
+Python Studio — édition C 1.20.0

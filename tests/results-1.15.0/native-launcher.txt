@@ -1,0 +1,62 @@
+-- Prisme: coherent source fingerprint b7a4c7e2f9d15753359e7ed7813ba5c223335cefaafd0439e3da1c5ef62e4de6
+CMake Warning (deprecated) at build-1.15.0/_deps/raylib-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Testing if -Werror=pointer-arith can be used -- compiles
+-- Testing if -Werror=implicit-function-declaration can be used -- compiles
+-- Testing if -fno-strict-aliasing can be used -- compiles
+-- Using raylib's GLFW
+-- Including X11 support
+-- Audio Backend: miniaudio
+-- Building raylib static library
+-- Generated build type: Release
+-- Compiling with the flags:
+--   PLATFORM=PLATFORM_DESKTOP
+--   GRAPHICS=GRAPHICS_API_OPENGL_21
+-- Prisme: raylib 5.5 initialization guards verified
+-- Prisme: raylib fullscreen native sizing and resize synchronization verified
+-- Prisme: raylib 5.5 full glyph extents and atlas rows verified
+-- Python Studio graphics: OpenGL 2.1; MSAA opt-in
+-- Configuring done (0.2s)
+-- Generating done (0.0s)
+-- Build files have been written to: /home/user/python-studio-c/build-1.15.0
+[0/2] Re-checking globbed directories...
+[1/32] Building C object CMakeFiles/prisme_core.dir/src/completion.c.o
+[2/32] Building C object CMakeFiles/prisme_core.dir/src/linter.c.o
+[3/32] Linking C static library libprisme_core.a
+[4/32] Linking C executable python-studio-ssh-helper
+[5/32] Building C object CMakeFiles/test_fullscreen.dir/tests/test_fullscreen.c.o
+[6/32] Building C object CMakeFiles/test_fullscreen_retina.dir/tests/test_fullscreen.c.o
+[7/32] Linking C executable python-studio
+[8/32] Linking C executable test_folder_search
+[9/32] Linking C executable test_path_complete
+[10/32] Linking C executable test_xml_edit
+[11/32] Linking C executable test_xml_refs
+[12/32] Linking C executable test_xml_input
+[13/32] Linking C executable test_core
+[14/32] Linking C executable test_session
+[15/32] Linking C executable test_multi
+[16/32] Linking C executable test_layout
+[17/32] Linking C executable test_files
+[18/32] Linking C executable test_ssh
+[19/32] Linking C executable ssh_driver
+[20/32] Linking C executable test_import_paths
+[21/32] Linking C executable test_snippets
+[22/32] Linking C executable test_completion
+[23/32] Linking C executable test_snippet_input
+[24/32] Linking C executable test_linter
+[25/32] Linking C executable test_file_clipboard
+[26/32] Linking C executable test_fullscreen
+[27/32] Linking C executable test_fullscreen_retina
+[28/32] Building C object CMakeFiles/test_diagnostics_view.dir/tests/test_diagnostics_view.c.o
+[29/32] Building C object CMakeFiles/test_controls.dir/tests/test_controls.c.o
+[30/32] Linking C executable test_diagnostics_view
+[31/32] Linking C executable test_controls
+Python Studio — édition C 1.15.0

@@ -1,0 +1,23 @@
+-- Install configuration: "Release"
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/lib/libraylib.a
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/include/raylib.h
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/include/rlgl.h
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/include/raymath.h
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/lib/pkgconfig/raylib.pc
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/lib/cmake/raylib/raylib-config-version.cmake
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/lib/cmake/raylib/raylib-config.cmake
+-- Installing: /home/user/.cache/python-studio-1200/install/bin/python-studio
+-- Installing: /home/user/.cache/python-studio-1200/install/bin/constellation
+-- Installing: /home/user/.cache/python-studio-1200/install/bin/python-studio-ssh-helper
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/bin/assets
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/bin/assets/fonts
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/bin/assets/fonts/JetBrainsMono-OFL.txt
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/bin/assets/fonts/JetBrainsMono-Regular.ttf
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/bin/assets/fonts/Inter.ttf
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/bin/assets/fonts/JetBrainsMono-Medium.ttf
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/bin/assets/fonts/Inter-OFL.txt
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/bin/examples
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/bin/examples/couleurs.py
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/bin/examples/notes.md
+-- Up-to-date: /home/user/.cache/python-studio-1200/install/bin/examples/main.py
+Python Studio — édition C 1.20.0

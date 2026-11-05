@@ -1,0 +1,1 @@
+OK 104 XML core/worker assertions: UTF-8 paths, every ID, duplicates, fields/empty arch, namespaces, mixed content, DTD/network rejection, limits, cancellation, immutable read snapshot; no GUI

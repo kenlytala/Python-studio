@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "version": "1.15.0",
+  "editions": {
+    "python": {
+      "accepted_payload_files": 312,
+      "extracted_candidate_files": 350,
+      "all_payload_bytes_and_modes_unchanged_after_tests": true,
+      "manifest_valid": true,
+      "candidate_manifest_sha256": "ea9514be607d1610937b037b8bc4d8316d4e168d31e6b47b5fb0991d85ebed8b"
+    },
+    "c": {
+      "accepted_payload_files": 418,
+      "extracted_candidate_files": 467,
+      "all_payload_bytes_and_modes_unchanged_after_tests": true,
+      "manifest_valid": true,
+      "candidate_manifest_sha256": "17732e6d6afbc12c8dc5b2692bcb3f81a591ae8842158603b0d4db6993d43a08"
+    }
+  },
+  "candidate_archives": [
+    {
+      "edition": "python",
+      "archive": "python-studio-python-1.15.0.tar.gz",
+      "files": 350,
+      "bytes": 2138852,
+      "sha256": "531f8944189bab15c21fc39e6e0e96d6e863f0a9e35256b4f8448344ff7f8607",
+      "accepted_payload_files": 312
+    },
+    {
+      "edition": "c",
+      "archive": "python-studio-c-1.15.0.tar.gz",
+      "files": 467,
+      "bytes": 2675478,
+      "sha256": "48d3309dcc8fd02de99d28ce0e91a703f51ed89a017d4bb6641ae6182bd80680",
+      "accepted_payload_files": 418
+    }
+  ],
+  "native_fresh_rebuild": {
+    "passed": 30,
+    "seconds": 11.56
+  },
+  "python_strict": {
+    "total": 539,
+    "passed": 532,
+    "skipped": 7,
+    "seconds": 16.593,
+    "real_SSH": true,
+    "native_profile_interop": "independently rebuilt extracted C driver"
+  },
+  "oracles_repeated": 5,
+  "real_Odoo_workflows_repeated": 2,
+  "fresh_install_launchers_help_pip_check": true,
+  "provided_binaries_match_accepted_production": true,
+  "source_fingerprints_match": true,
+  "payload_freeze_excludes_only_current_evidence_and_manifest": true,
+  "no_preview_capture_or_web_service": true
+}

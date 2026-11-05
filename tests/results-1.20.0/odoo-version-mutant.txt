@@ -1,0 +1,1 @@
+FAIL 469: doc->report.backend == LINT_BACKEND_PYLINT && has_code(&doc->report, "W8165") && has_code(&doc->report, "E0602") && strstr(doc->report.status, "Odoo19")

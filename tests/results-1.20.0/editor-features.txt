@@ -1,0 +1,1 @@
+OK 50 new-feature assertions: JS/XML lexers, bounded directory suggestions, mode filtering and project Odoo19 profile persistence; no window

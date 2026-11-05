@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "native_expected_failure": true,
+  "native_failure": "FAIL 94: !strcmp(a->linter.disabled.text, \"W0611\") && a->console_mode == 1 && a->modal == M_NONE",
+  "native_restored_pass": true,
+  "python_expected_failure": true,
+  "mutated_only_generated_QA_mouse_include_and_in_memory_Python_method": true,
+  "production_sources_unchanged": true,
+  "checks_actual_button_not_row_navigation_and_actual_displayed_rule_identity": true,
+  "no_window_or_preview": true
+}

@@ -1,0 +1,17 @@
+Test project /home/user/.cache/python-studio-180/asan
+    Start  2: project_sessions_drafts_and_recovery
+1/6 Test  #2: project_sessions_drafts_and_recovery .....   Passed    0.03 sec
+    Start  5: explorer_file_operations
+2/6 Test  #5: explorer_file_operations .................   Passed    0.07 sec
+    Start  6: native_ssh_profiles_command_and_guards
+3/6 Test  #6: native_ssh_profiles_command_and_guards ...   Passed    0.11 sec
+    Start  7: native_encrypted_ssh_sftp_integration
+4/6 Test  #7: native_encrypted_ssh_sftp_integration ....   Passed    8.61 sec
+    Start 16: diagnostic_views_without_window
+5/6 Test #16: diagnostic_views_without_window ..........   Passed    0.19 sec
+    Start 19: frameless_controls_and_file_safety
+6/6 Test #19: frameless_controls_and_file_safety .......   Passed    0.04 sec
+
+100% tests passed out of 6
+
+Total Test time (real) =   9.06 sec

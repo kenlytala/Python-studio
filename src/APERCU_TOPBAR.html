@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<title>Aperçu - Nouveau Topbar</title>
+<style>
+  *{box-sizing:border-box}
+  body{margin:0;background:#0f1218;color:#dfe6f0;font-family:Inter,system-ui,sans-serif;padding:24px}
+  h1{font-size:18px;margin:0 0 6px}
+  p.sub{color:#8c9bb3;font-size:13px;margin:0 0 18px}
+  .label{font-size:11px;letter-spacing:.08em;color:#8c9bb3;margin:18px 0 8px;text-transform:uppercase}
+  .topbar{width:1280px;max-width:100%;height:69px;background:#13161d;border:1px solid #334050;border-radius:10px;display:flex;align-items:center;padding:0 12px;gap:0;position:relative;overflow:hidden}
+  .left{display:flex;align-items:center;gap:12px;flex:1}
+  .logo{width:27px;height:27px;border:1px solid #a4f5c0;color:#a4f5c0;display:grid;place-items:center;border-radius:6px;font-size:10px}
+  .title{font-size:16px;font-weight:600}
+  .badge{border-left:1px solid #334050;padding-left:12px;margin-left:4px;font-size:9px;line-height:1.2}
+  .badge b{color:#a6b2c6;font-weight:600}
+  .badge span{color:#a4f5c0}
+  .search{position:absolute;left:50%;transform:translateX(-50%);width:340px;height:32px;background:#101319;border:1px solid #334050;border-radius:6px;display:flex;align-items:center;padding:0 10px;gap:8px;color:#8c9bb3;font-size:11px}
+  .search .pill{margin-left:auto;background:#1c2028;border-radius:3px;padding:4px 8px;font-size:9px;color:#a6b2c6}
+  .controls{display:flex;align-items:center;gap:6px}
+  .btn{height:31px;border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:11px;gap:6px;cursor:pointer;border:1px solid transparent}
+  .btn-icon{width:32px;background:#141821;border:1px solid transparent;color:#a6b2c6}
+  .btn-icon:hover{background:#1c2028;border-color:#3a475a;color:#f5f8fc}
+  .btn-effects{width:93px;background:#141821;border:1px solid #1c2028;color:#dfe6f0}
+  .btn-up{width:28px;background:#141821;color:#a6b2c6}
+  .btn-split{width:32px;background:#141821;color:#a6b2c6}
+  .btn-split.active{background:#a4f5c01a;border-color:#a4f5c022;color:#a4f5c0}
+  .divider{width:1px;height:16px;background:#1c2028;margin:0 4px}
+  .window-group{display:flex;align-items:center;gap:6px;margin-left:8px;padding-left:10px;border-left:1px solid #1e2530}
+  .btn-win{width:32px;height:31px;border-radius:6px;display:grid;place-items:center;font-size:14px}
+  .btn-full{background:#141821;border:1px solid #232a36;color:#a6b2c6}
+  .btn-full:hover,.btn-full.active{background:#1c2028;border-color:#3a475a;color:#f5f8fc}
+  .btn-min{background:#141821;border:1px solid #334050;color:#dfe6f0}
+  .btn-min:hover{background:#1e2530;border-color:#4a5a70}
+  .btn-quit{background:rgba(237,155,159,0.18);border:1px solid rgba(237,155,159,0.22);color:#ed9b9f}
+  .btn-quit:hover{background:rgba(237,155,159,0.30);border-color:rgba(237,155,159,0.45);color:#ffd0d2}
+  .before{opacity:.9}
+  .before .btn-quit-large{width:104px;background:rgba(237,155,159,0.18);border:1px solid rgba(237,155,159,0.22);color:#ed9b9f;border-radius:6px;height:31px;display:flex;align-items:center;justify-content:center;gap:8px;font-size:12px}
+  .arrow{font-size:13px;color:#a4f5c0}
+  code{background:#1c2028;padding:2px 6px;border-radius:4px;font-size:12px;color:#a4f5c0}
+  .grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+  @media(max-width:900px){.grid{grid-template-columns:1fr}}
+  .card{background:#13161d;border:1px solid #232a36;border-radius:12px;padding:16px}
+  .card h3{margin:0 0 8px;font-size:14px}
+  .card ul{margin:8px 0 0 18px;color:#a6b2c6;font-size:13px;line-height:1.6}
+  .card li strong{color:#dfe6f0}
+  .badge-new{display:inline-block;background:#a4f5c0;color:#15201b;font-size:10px;font-weight:700;padding:3px 7px;border-radius:99px;margin-left:8px;vertical-align:middle}
+</style>
+</head>
+<body>
+<h1>Éditeur Python Studio (C / Raylib) — Modification du Topbar <span class="badge-new">FAIT</span></h1>
+<p class="sub">Suppression du texte <code>Quitter</code> &nbsp;→&nbsp; Réorganisation à droite dans l'ordre : <strong>Plein écran</strong> → <strong>Réduire</strong> → <strong>Quitter</strong></p>
+
+<div class="label">Avant</div>
+<div class="topbar before" style="width:1280px">
+  <div class="left">
+    <div class="logo">◈</div>
+    <div class="title">Python Studio</div>
+    <div class="badge"><b>ÉDITION C</b><br><span>C11 / RAYLIB</span></div>
+  </div>
+  <div class="search">⌕ Rechercher une commande… <span class="pill">Ctrl K</span></div>
+  <div class="controls">
+    <div class="btn btn-up" title="Replier">⌃</div>
+    <div class="btn btn-icon" title="Split">⧉</div>
+    <div class="btn btn-icon" title="Plein écran">⛶</div>
+    <div class="btn btn-effects">✦ Effets</div>
+    <div class="btn-quit-large">✕ Quitter</div>
+    <div class="btn btn-icon" style="width:25px;margin-left:6px;border:1px solid #334050" title="Réduire">—</div>
+  </div>
+</div>
+
+<div class="label">Après — Nouveau (à droite, sans texte) <span class="arrow">→ ordre respecté</span></div>
+<div class="topbar" style="width:1280px">
+  <div class="left">
+    <div class="logo">◈</div>
+    <div class="title">Python Studio</div>
+    <div class="badge"><b>ÉDITION C</b><br><span>C11 / RAYLIB</span></div>
+  </div>
+  <div class="search">⌕ Rechercher une commande… <span class="pill">Ctrl K</span></div>
+  <div class="controls">
+    <div class="btn btn-up" title="Replier le menu du haut · F8">⌃</div>
+    <div class="btn btn-icon" title="Deux fichiers côte à côte · F7">⧉</div>
+    <div class="btn btn-effects">✦ Effets</div>
+    <div class="window-group" title="Groupe fenêtre à l'extrême droite">
+      <div class="btn-win btn-full" title="Plein écran · F11">⛶</div>
+      <div class="btn-win btn-min" title="Réduire l’éditeur sans quitter">—</div>
+      <div class="btn-win btn-quit" title="Quitter l’éditeur · Alt+F4">✕</div>
+    </div>
+  </div>
+</div>
+
+<div class="grid" style="margin-top:18px">
+  <div class="card">
+    <h3>✅ Ce qui a changé</h3>
+    <ul>
+      <li><strong>Texte “Quitter” supprimé</strong> → bouton icône seul <code>✕</code> avec <code>NULL</code> à la place de <code>"Quitter"</code></li>
+      <li><strong>3 boutons regroupés à l'extrême droite</strong> dans l'ordre demandé :
+        <ol style="margin:6px 0 0 14px">
+          <li>⛶ <strong>Plein écran</strong> — <code>A_FULLSCREEN</code> / <code>I_EXPAND</code></li>
+          <li>— <strong>Réduire</strong> — <code>A_MINIMIZE</code> / <code>I_MINUS</code></li>
+          <li>✕ <strong>Quitter</strong> — <code>A_QUIT</code> / <code>I_CLOSE</code> (style 3 rouge)</li>
+        </ol>
+      </li>
+      <li>Espacement uniforme : <code>32px + 6px gap</code> — position X = <code>w-114</code>, <code>w-76</code>, <code>w-38</code></li>
+      <li>Tooltips conservés (Alt+F4, F11, Réduire)</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h3>📁 Fichiers modifiés</h3>
+    <ul>
+      <li><strong>view.c</strong> — fonction <code>topbar()</code> (lignes 85-97) : réordonnée, “Quitter” sans texte</li>
+      <li><strong>layout.h</strong> — ajout <code>LAYOUT_WINDOW_W</code> / <code>GAP</code> + helper <code>layout_window_x()</code></li>
+      <li><strong>layout.c</strong> — implémentation <code>layout_window_group_w()</code> / <code>layout_window_x()</code></li>
+    </ul>
+    <p style="font-size:12px;color:#8c9bb3;margin-top:10px">Compatibilité : <code>layout_quit_x()</code> conservé (marqué compat) pour ne rien casser.</p>
+    <p style="font-size:13px;margin-top:12px">📦 Archive prête : <code>project_modifie.zip</code> (228 Ko)<br>📄 Patch : <code>patch_view.diff</code></p>
+  </div>
+</div>
+
+<div class="card" style="margin-top:16px">
+  <h3>Code après — view.c (topbar)</h3>
+  <pre style="background:#0e1015;border:1px solid #232a36;border-radius:8px;padding:14px;overflow:auto;font-size:12.5px;line-height:1.5;color:#dfe6f0;margin:8px 0 0">button(a, RECT(a-&gt;w - 370, 20, 28, 31), A_TOPBAR, 0, NULL, I_UP, 0, false,
+       "Replier le menu du haut · F8");
+button(a, RECT(a-&gt;w - 332, 20, 32, 31), A_SPLIT, 0, NULL, I_SPLIT, 0, a-&gt;split,
+       "Deux fichiers côte à côte · F7 / Ctrl+\\");
+button(a, RECT(a-&gt;w - 252, 20, 93, 31), A_EFFECTS, 0, "Effets", I_SPARK, 0, a-&gt;effects,
+       "Effets visuels · F6");
+if (a-&gt;effects)
+    DrawCircle(a-&gt;w - 168, 35, 2, ui_alpha(C_ACCENT, 130 + (int)(sinf((float)GetTime() * 2) * 50)));
+// Groupe fenêtre à l'extrême droite : Plein écran → Réduire → Quitter (icônes seules, sans texte)
+button(a, RECT(a-&gt;w - 114, 20, 32, 31), A_FULLSCREEN, 0, NULL, I_EXPAND, 0, IsWindowFullscreen(),
+       "Plein écran · F11");
+button(a, RECT(a-&gt;w - 76, 20, 32, 31), A_MINIMIZE, 0, NULL, I_MINUS, 1, false,
+       "Réduire l’éditeur sans quitter");
+button(a, RECT(a-&gt;w - 38, 20, 32, 31), A_QUIT, 0, NULL, I_CLOSE, 3, false,
+       "Quitter l’éditeur · Alt+F4 (propose d’enregistrer les modifications)");</pre>
+</div>
+
+<p style="font-size:12px;color:#6b7a90;margin-top:16px">Astuce : remplace simplement <code>view.c</code>, <code>layout.h</code> et <code>layout.c</code> dans ton projet et recompile (<code>make</code>). L'ancien bouton large 104px est supprimé.</p>
+</body>
+</html>

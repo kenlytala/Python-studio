@@ -1,0 +1,28 @@
+{
+  "status": "passed",
+  "models": 148,
+  "real_filesystem_scans": 37,
+  "global_navigation_steps": 650,
+  "independent_stdlib_regex_cases": 14,
+  "engine": "system PCRE2-8, UTF/UCP/multiline, no JIT; raw \\C forbidden",
+  "regex_limits": {
+    "match_steps": 200000,
+    "depth": 512,
+    "heap_kib": 8192,
+    "seconds_per_file": 2
+  },
+  "glob_grammar": "; separator; * and ? exclude /; ** crosses /; **/ may match no directory; [] literal; filenames case-sensitive",
+  "odoo_fixtures": [
+    {
+      "version": "18.0",
+      "bytes": 69395,
+      "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc"
+    },
+    {
+      "version": "19.0",
+      "bytes": 69477,
+      "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543"
+    }
+  ],
+  "scope": "actual independent Python and C controllers tested separately; this oracle covers both cores, flags, four filters, zero/multiline spans and global navigation; no display/capture/server"
+}

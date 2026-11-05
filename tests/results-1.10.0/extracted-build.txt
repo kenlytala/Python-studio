@@ -1,0 +1,167 @@
+[0/2] Re-checking globbed directories...
+[1/130] Building C object CMakeFiles/prisme_core.dir/src/runner.c.o
+[2/130] Building C object CMakeFiles/prisme_core.dir/src/syntax.c.o
+[3/130] Building C object CMakeFiles/prisme_core.dir/src/layout.c.o
+[4/130] Building C object CMakeFiles/prisme_core.dir/src/file_job.c.o
+[5/130] Building C object CMakeFiles/prisme_core.dir/src/files.c.o
+[6/130] Building C object CMakeFiles/prisme_core.dir/src/multicursor.c.o
+[7/130] Building C object CMakeFiles/prisme_core.dir/src/linter.c.o
+[8/130] Building C object CMakeFiles/prisme_core.dir/src/buffer.c.o
+[9/130] Building C object CMakeFiles/prisme_core.dir/src/import_paths.c.o
+[10/130] Building C object CMakeFiles/prisme_core.dir/src/snippets.c.o
+[11/130] Building C object CMakeFiles/prisme_core.dir/src/completion.c.o
+[12/130] Building C object CMakeFiles/prisme_core.dir/src/ssh_command.c.o
+[13/130] Building C object CMakeFiles/prisme_core.dir/src/ssh_helper.c.o
+[14/130] Building C object CMakeFiles/prisme_core.dir/src/ssh_profiles.c.o
+[15/130] Building C object CMakeFiles/prisme_core.dir/src/ssh_json.c.o
+[16/130] Building C object CMakeFiles/prisme_core.dir/src/ssh.c.o
+[17/130] Building C object CMakeFiles/prisme_core.dir/src/xml_paths.c.o
+[18/130] Building C object CMakeFiles/prisme_ssh_helper.dir/src/ssh_helper_main.c.o
+[19/130] Building C object CMakeFiles/prisme_core.dir/src/xml_edit.c.o
+[20/130] Building C object CMakeFiles/prisme_core.dir/src/xml_refs.c.o
+[21/130] Building C object CMakeFiles/prisme_core.dir/src/session.c.o
+[22/130] Linking C static library libprisme_core.a
+[23/130] Building C object _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o
+[24/130] Building C object _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o
+[25/130] Building C object _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o
+[26/130] Building C object _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o
+[27/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.o
+[28/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.o
+[29/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.o
+[30/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o
+[31/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.o
+[32/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o
+[33/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.o
+[34/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o
+[35/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o
+[36/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.o
+[37/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o
+[38/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.o
+[39/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o
+[40/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o
+[41/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o
+[42/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o
+[43/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o
+[44/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o
+[45/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o
+[46/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o
+[47/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o
+[48/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o
+[49/130] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o
+[50/130] Building C object CMakeFiles/prisme_graphics.dir/src/graphics.c.o
+[51/130] Linking C executable python-studio-ssh-helper
+[52/130] Building C object CMakeFiles/prisme.dir/src/main.c.o
+[53/130] Building C object CMakeFiles/prisme.dir/src/app.c.o
+[54/130] Building C object _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o
+[55/130] Building C object CMakeFiles/prisme.dir/src/view.c.o
+[56/130] Building C object CMakeFiles/prisme.dir/src/file_clipboard.c.o
+[57/130] Building C object CMakeFiles/prisme.dir/src/app_snippets.c.o
+[58/130] Building C object CMakeFiles/prisme.dir/src/app_completion.c.o
+[59/130] Building C object CMakeFiles/prisme.dir/src/ui.c.o
+[60/130] Building C object CMakeFiles/prisme.dir/src/app_multicursor.c.o
+[61/130] Building C object CMakeFiles/prisme.dir/src/app_snippet_input.c.o
+[62/130] Building C object CMakeFiles/prisme.dir/src/view_ssh.c.o
+[63/130] Building C object CMakeFiles/prisme.dir/src/app_ssh.c.o
+[64/130] Building C object CMakeFiles/prisme.dir/src/app_session.c.o
+[65/130] Building C object CMakeFiles/constellation.dir/demos/constellation.c.o
+[66/130] Building C object CMakeFiles/prisme.dir/src/app_xml.c.o
+[67/130] Building C object CMakeFiles/test_xml_refs.dir/tests/test_xml_refs.c.o
+[68/130] Building C object CMakeFiles/test_xml_edit.dir/tests/test_xml_edit.c.o
+[69/130] Building C object CMakeFiles/test_xml_input.dir/tests/test_xml_input.c.o
+[70/130] Building C object CMakeFiles/test_xml_input.dir/src/app_xml.c.o
+[71/130] Building C object CMakeFiles/test_core.dir/tests/test_core.c.o
+[72/130] Building C object CMakeFiles/test_session.dir/tests/test_session.c.o
+[73/130] Building C object CMakeFiles/test_layout.dir/tests/test_layout.c.o
+[74/130] Building C object CMakeFiles/test_multi.dir/tests/test_multi.c.o
+[75/130] Building C object CMakeFiles/test_files.dir/tests/test_files.c.o
+[76/130] Building C object CMakeFiles/test_ssh.dir/tests/test_ssh.c.o
+[77/130] Building C object CMakeFiles/ssh_driver.dir/tests/ssh_driver.c.o
+[78/130] Building C object CMakeFiles/ssh_driver.dir/src/app_session.c.o
+[79/130] Building C object CMakeFiles/ssh_driver.dir/src/app_ssh.c.o
+[80/130] Building C object CMakeFiles/test_import_paths.dir/tests/test_import_paths.c.o
+[81/130] Building C object CMakeFiles/ssh_driver.dir/src/app_xml.c.o
+[82/130] Building C object CMakeFiles/test_snippets.dir/tests/test_snippets.c.o
+[83/130] Building C object CMakeFiles/test_completion.dir/tests/test_completion.c.o
+[84/130] Building C object CMakeFiles/test_snippet_input.dir/src/app_snippets.c.o
+[85/130] Building C object CMakeFiles/test_snippet_input.dir/tests/test_snippet_input.c.o
+[86/130] Building C object CMakeFiles/test_snippet_input.dir/src/app_completion.c.o
+[87/130] Building C object CMakeFiles/test_snippet_input.dir/src/app_snippet_input.c.o
+[88/130] Building C object CMakeFiles/test_linter.dir/tests/test_linter.c.o
+[89/130] Building C object CMakeFiles/test_diagnostics_view.dir/src/view_ssh.c.o
+[90/130] Building C object CMakeFiles/test_ui.dir/tests/test_ui.c.o
+[91/130] Building C object CMakeFiles/test_ui.dir/src/ui.c.o
+[92/130] Building C object CMakeFiles/test_diagnostics_view.dir/tests/test_diagnostics_view.c.o
+[93/130] Building C object CMakeFiles/test_controls.dir/src/app_snippets.c.o
+[94/130] Building C object CMakeFiles/test_controls.dir/src/app_completion.c.o
+[95/130] Building C object CMakeFiles/test_controls.dir/tests/test_controls.c.o
+[96/130] Building C object CMakeFiles/test_controls.dir/src/app_multicursor.c.o
+[97/130] Building C object CMakeFiles/test_controls.dir/src/app_session.c.o
+[98/130] Building C object CMakeFiles/test_controls.dir/src/app_ssh.c.o
+[99/130] Building C object CMakeFiles/test_controls.dir/src/app_xml.c.o
+[100/130] Building C object _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o
+[101/130] Building C object CMakeFiles/test_file_clipboard.dir/tests/test_file_clipboard.c.o
+[102/130] Linking C executable test_xml_edit
+[103/130] Linking C executable test_xml_refs
+[104/130] Building C object CMakeFiles/test_fullscreen.dir/tests/test_fullscreen.c.o
+[105/130] Linking C executable test_xml_input
+[106/130] Linking C executable test_core
+[107/130] Building C object CMakeFiles/test_fullscreen_retina.dir/tests/test_fullscreen.c.o
+[108/130] Linking C executable test_layout
+[109/130] Linking C executable test_session
+[110/130] Linking C executable test_multi
+[111/130] Linking C executable test_files
+[112/130] Linking C executable test_ssh
+[113/130] Linking C executable test_import_paths
+[114/130] Linking C executable ssh_driver
+[115/130] Linking C executable test_snippets
+[116/130] Linking C executable test_snippet_input
+[117/130] Linking C executable test_diagnostics_view
+[118/130] Linking C executable test_linter
+[119/130] Linking C executable test_completion
+[120/130] Linking C executable test_fullscreen
+[121/130] Linking C executable test_file_clipboard
+[122/130] Linking C executable test_controls
+[123/130] Linking C executable test_fullscreen_retina
+[124/130] Building C object _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o
+In file included from /home/user/.cache/python-studio-1100/raylib-src/src/raudio.c:282:
+In function ‘memcopy’,
+    inlined from ‘jar_mod_load’ at /home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h:1133:13:
+/home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h:370:13: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  370 |         d[i]=s[i];
+      |         ~~~~^~~~~
+/home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h: In function ‘jar_mod_load’:
+/home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h:125:13: note: at offset 1080 into destination object ‘title’ of size 20
+  125 |     muchar  title[20];
+      |             ^~~~~
+In function ‘memcopy’,
+    inlined from ‘jar_mod_load’ at /home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h:1133:13:
+/home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h:370:13: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  370 |         d[i]=s[i];
+      |         ~~~~^~~~~
+/home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h: In function ‘jar_mod_load’:
+/home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h:125:13: note: at offset 1081 into destination object ‘title’ of size 20
+  125 |     muchar  title[20];
+      |             ^~~~~
+In function ‘memcopy’,
+    inlined from ‘jar_mod_load’ at /home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h:1133:13:
+/home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h:370:13: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  370 |         d[i]=s[i];
+      |         ~~~~^~~~~
+/home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h: In function ‘jar_mod_load’:
+/home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h:125:13: note: at offset 1082 into destination object ‘title’ of size 20
+  125 |     muchar  title[20];
+      |             ^~~~~
+In function ‘memcopy’,
+    inlined from ‘jar_mod_load’ at /home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h:1133:13:
+/home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h:370:13: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  370 |         d[i]=s[i];
+      |         ~~~~^~~~~
+/home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h: In function ‘jar_mod_load’:
+/home/user/.cache/python-studio-1100/raylib-src/src/external/jar_mod.h:125:13: note: at offset 1083 into destination object ‘title’ of size 20
+  125 |     muchar  title[20];
+      |             ^~~~~
+[125/130] Linking C static library _deps/raylib-build/raylib/libraylib.a
+[126/130] Linking C static library libprisme_graphics.a
+[127/130] Linking C executable constellation
+[128/130] Linking C executable test_ui
+[129/130] Linking C executable python-studio

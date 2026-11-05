@@ -1,0 +1,473 @@
+{
+  "product": "Python Studio",
+  "edition": "c",
+  "version": "1.21.0",
+  "date": "2026-11-04",
+  "source_fingerprint": "bdca0767cb8d60d798551f8b754cd1f23180450f2417020dc4dcfdb0ccb37196",
+  "tests": {
+    "python": {
+      "total": 671,
+      "passed": 665,
+      "skipped": 6,
+      "seconds": 40.354,
+      "strict_ResourceWarning": true,
+      "real_SSH": true,
+      "native_profile_interop": true
+    },
+    "gtk": {
+      "total": 712,
+      "passed": 711,
+      "skipped": 1,
+      "seconds": 39.309,
+      "strict_ResourceWarning": true,
+      "real_SSH": true,
+      "native_profile_interop": true
+    },
+    "native": {
+      "passed": 37,
+      "seconds": 59.4
+    },
+    "asan_ubsan_leaks": {
+      "passed": 23,
+      "seconds": 41.99
+    }
+  },
+  "new_common_minimize_tests": 5,
+  "new_GTK_backend_delegation_test": 1,
+  "native_minimize_frame_checks": 10,
+  "native_controls_total": 3668,
+  "native_view_assertions": 366745,
+  "minimize": {
+    "rightmost_top_menu_button": true,
+    "one_button_no_duplicate": true,
+    "native_minimize_not_quit_or_panel_collapse": true,
+    "dirty_text_cursors_multicursors_and_histories_preserved": true,
+    "workers_and_SSH_not_stopped": true,
+    "quit_remains_immediately_after_effects": true,
+    "maximize_fullscreen_and_menu_collapse_separate": true,
+    "header_hit_zones_no_overlap": true,
+    "modal_blocks_background_button": true,
+    "GTK_Window_minimize_delegation": true
+  },
+  "oracles": {
+    "python": {
+      "options-parity": {
+        "status": "passed",
+        "models": 148,
+        "real_filesystem_scans": 37,
+        "global_navigation_steps": 650,
+        "independent_stdlib_regex_cases": 14,
+        "engine": "system PCRE2-8, UTF/UCP/multiline, no JIT; raw \\C forbidden",
+        "regex_limits": {
+          "match_steps": 200000,
+          "depth": 512,
+          "heap_kib": 8192,
+          "seconds_per_file": 2
+        },
+        "glob_grammar": "; separator; * and ? exclude /; ** crosses /; **/ may match no directory; [] literal; filenames case-sensitive",
+        "odoo_fixtures": [
+          {
+            "version": "18.0",
+            "bytes": 69395,
+            "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc"
+          },
+          {
+            "version": "19.0",
+            "bytes": 69477,
+            "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543"
+          }
+        ],
+        "scope": "actual independent Python and C controllers tested separately; this oracle covers both cores, flags, four filters, zero/multiline spans and global navigation; no display/capture/server"
+      },
+      "folder-parity": {
+        "status": "passed",
+        "literal_models": 110,
+        "real_filesystem_scans": 30,
+        "global_navigation_steps": 592,
+        "offset_comparison": "UTF-8 byte offsets; scalar cells/tabs=4; normalized LF snapshots",
+        "limits": {
+          "file_bytes": 2097152,
+          "read_bytes": 67108864,
+          "snapshot_bytes": 16777216,
+          "files": 256,
+          "hits": 16384,
+          "entries": 20000,
+          "depth": 64,
+          "lines": 65536
+        },
+        "odoo_fixtures": [
+          {
+            "version": "18.0",
+            "bytes": 69395,
+            "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc"
+          },
+          {
+            "version": "19.0",
+            "bytes": 69477,
+            "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543"
+          }
+        ],
+        "scope": "actual Python and C cores; separate actual-controller/CPU-view tests; no display/capture/server"
+      },
+      "path-parity": {
+        "contexts": 54,
+        "edits": 39,
+        "atomic_history_roundtrips": 37,
+        "catalog_snapshots": 5,
+        "unicode_offsets": "native UTF-8 bytes / Python code points",
+        "status": "passed"
+      },
+      "xml-edit-parity": {
+        "atomic_history_roundtrips": 268,
+        "cases": 275,
+        "python_and_c": true,
+        "stdlib_oracle": true,
+        "suggestion_contexts": 14,
+        "valid_xml_documents": 266
+      },
+      "xml-fragment-parity": {
+        "fragments": 291,
+        "identifiers": 291,
+        "invalid_documents": 10,
+        "python_and_c": true,
+        "stdlib_oracle": true,
+        "valid_documents": 48
+      },
+      "keyboard-parity": {
+        "status": "passed",
+        "layouts": 4,
+        "projection_values": 4096,
+        "xkb_abi": {
+          "XkbState": {
+            "size": 18,
+            "group": 0,
+            "ptr_buttons": 16
+          },
+          "XkbKeyName": {
+            "size": 4
+          },
+          "XkbAlias": {
+            "size": 8,
+            "real": 0,
+            "alias": 4
+          },
+          "XkbNames": {
+            "size": 496,
+            "keys": 456,
+            "key_aliases": 464,
+            "num_key_aliases": 489,
+            "phys_symbols": 480
+          },
+          "XkbDesc": {
+            "size": 72,
+            "min_key_code": 12,
+            "max_key_code": 13,
+            "names": 48,
+            "map": 32
+          }
+        },
+        "no_display_window_or_layout_mutation": true
+      },
+      "lint-rules-parity": {
+        "status": "passed",
+        "cases": 3023,
+        "accepted": 79,
+        "independent_native_parser": true,
+        "max_bytes": 4095,
+        "max_rules": 64,
+        "max_name": 95,
+        "no_window_or_project_execution": true
+      },
+      "language-parity": {
+        "status": "passed",
+        "color_byte_cases": 6020,
+        "languages": [
+          "javascript",
+          "xml"
+        ],
+        "utf8": true,
+        "templates_regex_division_cdata_entities_and_incomplete_source": true,
+        "no_window_or_evaluation": true
+      }
+    },
+    "gtk": {
+      "options-parity": {
+        "status": "passed",
+        "models": 148,
+        "real_filesystem_scans": 37,
+        "global_navigation_steps": 650,
+        "independent_stdlib_regex_cases": 14,
+        "engine": "system PCRE2-8, UTF/UCP/multiline, no JIT; raw \\C forbidden",
+        "regex_limits": {
+          "match_steps": 200000,
+          "depth": 512,
+          "heap_kib": 8192,
+          "seconds_per_file": 2
+        },
+        "glob_grammar": "; separator; * and ? exclude /; ** crosses /; **/ may match no directory; [] literal; filenames case-sensitive",
+        "odoo_fixtures": [
+          {
+            "version": "18.0",
+            "bytes": 69395,
+            "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc"
+          },
+          {
+            "version": "19.0",
+            "bytes": 69477,
+            "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543"
+          }
+        ],
+        "scope": "actual independent Python and C controllers tested separately; this oracle covers both cores, flags, four filters, zero/multiline spans and global navigation; no display/capture/server"
+      },
+      "folder-parity": {
+        "status": "passed",
+        "literal_models": 110,
+        "real_filesystem_scans": 30,
+        "global_navigation_steps": 592,
+        "offset_comparison": "UTF-8 byte offsets; scalar cells/tabs=4; normalized LF snapshots",
+        "limits": {
+          "file_bytes": 2097152,
+          "read_bytes": 67108864,
+          "snapshot_bytes": 16777216,
+          "files": 256,
+          "hits": 16384,
+          "entries": 20000,
+          "depth": 64,
+          "lines": 65536
+        },
+        "odoo_fixtures": [
+          {
+            "version": "18.0",
+            "bytes": 69395,
+            "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc"
+          },
+          {
+            "version": "19.0",
+            "bytes": 69477,
+            "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543"
+          }
+        ],
+        "scope": "actual Python and C cores; separate actual-controller/CPU-view tests; no display/capture/server"
+      },
+      "path-parity": {
+        "contexts": 54,
+        "edits": 39,
+        "atomic_history_roundtrips": 37,
+        "catalog_snapshots": 5,
+        "unicode_offsets": "native UTF-8 bytes / Python code points",
+        "status": "passed"
+      },
+      "xml-edit-parity": {
+        "atomic_history_roundtrips": 268,
+        "cases": 275,
+        "python_and_c": true,
+        "stdlib_oracle": true,
+        "suggestion_contexts": 14,
+        "valid_xml_documents": 266
+      },
+      "xml-fragment-parity": {
+        "fragments": 291,
+        "identifiers": 291,
+        "invalid_documents": 10,
+        "python_and_c": true,
+        "stdlib_oracle": true,
+        "valid_documents": 48
+      },
+      "keyboard-parity": {
+        "status": "passed",
+        "layouts": 4,
+        "projection_values": 4096,
+        "xkb_abi": {
+          "XkbState": {
+            "size": 18,
+            "group": 0,
+            "ptr_buttons": 16
+          },
+          "XkbKeyName": {
+            "size": 4
+          },
+          "XkbAlias": {
+            "size": 8,
+            "real": 0,
+            "alias": 4
+          },
+          "XkbNames": {
+            "size": 496,
+            "keys": 456,
+            "key_aliases": 464,
+            "num_key_aliases": 489,
+            "phys_symbols": 480
+          },
+          "XkbDesc": {
+            "size": 72,
+            "min_key_code": 12,
+            "max_key_code": 13,
+            "names": 48,
+            "map": 32
+          }
+        },
+        "no_display_window_or_layout_mutation": true
+      },
+      "lint-rules-parity": {
+        "status": "passed",
+        "cases": 3023,
+        "accepted": 79,
+        "independent_native_parser": true,
+        "max_bytes": 4095,
+        "max_rules": 64,
+        "max_name": 95,
+        "no_window_or_project_execution": true
+      },
+      "language-parity": {
+        "status": "passed",
+        "color_byte_cases": 6020,
+        "languages": [
+          "javascript",
+          "xml"
+        ],
+        "utf8": true,
+        "templates_regex_division_cdata_entities_and_incomplete_source": true,
+        "no_window_or_evaluation": true
+      }
+    }
+  },
+  "negative_tests": {
+    "status": "passed",
+    "omitted_native_minimization_expected_failure": true,
+    "wrong_quit_callback_expected_failure": true,
+    "restored_native_pass": true,
+    "only_generated_QA_include_and_in_memory_Python_mutated": true,
+    "production_sources_unchanged": true,
+    "no_window_preview_or_capture": true
+  },
+  "runtime": {
+    "python": "3.13.5",
+    "pylint": "4.0.10",
+    "pylint_odoo": "10.0.12",
+    "gtk": "4.18.6",
+    "pygobject": "3.50.0",
+    "cairo": "1.18.4",
+    "libraries": {
+      "libpcre2-8": "10.46",
+      "libxml-2.0": "2.9.14"
+    }
+  },
+  "integrity": {
+    "protected_files": 24,
+    "unchanged": true,
+    "existing_archives_and_sidecars": 6,
+    "existing_archives_unchanged": true,
+    "no_tar_gz_recreated": true
+  },
+  "independent_extracted_acceptance": {
+    "status": "passed",
+    "version": "1.21.0",
+    "editions": {
+      "python": {
+        "accepted_payload_files": 685,
+        "candidate_files": 732,
+        "payload_bytes_and_modes_unchanged": true,
+        "manifest_valid": true,
+        "candidate_manifest_sha256": "4608fe122bf8f90828a6a464ad5c0b711a54d9c8988f56f4aab730ff5d179a90"
+      },
+      "c": {
+        "accepted_payload_files": 855,
+        "candidate_files": 922,
+        "payload_bytes_and_modes_unchanged": true,
+        "manifest_valid": true,
+        "candidate_manifest_sha256": "5d7fd10943668b9a87a164d1de6cde6661825ef240e9c1471553f517e390a238"
+      },
+      "gtk": {
+        "accepted_payload_files": 312,
+        "candidate_files": 360,
+        "payload_bytes_and_modes_unchanged": true,
+        "manifest_valid": true,
+        "candidate_manifest_sha256": "2800f0d3a52096dab1d215eeea31e4d265a47d3e0c5fce607d1b20b0d39a2983"
+      }
+    },
+    "candidate_archives": [
+      {
+        "edition": "python",
+        "archive": "python-studio-python-1.21.0.tar.xz",
+        "files": 732,
+        "bytes": 1524188,
+        "sha256": "4d552d45e9939a6abf1c47c3e6245d26659b6fdc7fe1be51efa0a9ff655adc11",
+        "accepted_payload_files": 685
+      },
+      {
+        "edition": "c",
+        "archive": "python-studio-c-1.21.0.tar.xz",
+        "files": 922,
+        "bytes": 1647568,
+        "sha256": "cf8436d14cf874e05ed24b20bbb578200f2314fee0da6f1dfa7467accc70dbc5",
+        "accepted_payload_files": 855
+      },
+      {
+        "edition": "gtk",
+        "archive": "python-studio-gtk-1.21.0.tar.xz",
+        "files": 360,
+        "bytes": 782580,
+        "sha256": "73624c960a2ef1ee5cc71a0a4af3c18211b452896a88524b2a4f5c0fb4a78a07",
+        "accepted_payload_files": 312
+      }
+    ],
+    "tests": {
+      "python": {
+        "total": 671,
+        "passed": 665,
+        "skipped": 6,
+        "seconds": 52.197,
+        "real_SSH": true,
+        "rebuilt_extracted_native_interop": true,
+        "external_PyLint_versions": [
+          "2.12.2",
+          "2.17.7",
+          "4.0.10"
+        ],
+        "odoo_plugin": "10.0.12"
+      },
+      "gtk": {
+        "total": 712,
+        "passed": 711,
+        "skipped": 1,
+        "seconds": 50.284,
+        "real_SSH": true,
+        "rebuilt_extracted_native_interop": true,
+        "external_PyLint_versions": [
+          "2.12.2",
+          "2.17.7",
+          "4.0.10"
+        ],
+        "odoo_plugin": "10.0.12"
+      },
+      "native": {
+        "passed": 37,
+        "seconds": 81.3
+      }
+    },
+    "oracles_repeated_each_Python_edition": 8,
+    "real_Odoo_workflows_repeated_each_Python_edition": 2,
+    "fresh_install_launchers_and_pip_check": true,
+    "source_fingerprints_match": true,
+    "native_new_objects_only_third_party_source_reused": true,
+    "provided_ELF_bytes_equal_accepted_production": true,
+    "no_tar_gz_zip_preview_capture_or_service": true
+  },
+  "retained": [
+    "browser Ctrl+Space single-directory bounded suggestions",
+    "Python/JS/XML colors; Odoo19 real pylint-odoo/Python and static XML checks",
+    "PyLint generic global and Odoo project exclusions/direct minus buttons",
+    "AZERTY undo/redo/legitimate Ctrl+W; Unicode/AltGr/multicursors/split",
+    "progressive search/all filters/F3 across all files/search-only F11",
+    "GTK editor h/v/minimap/list scroll capture",
+    "private sessions/drafts; SSH remote files only/local execution/no saved secrets"
+  ],
+  "no_window_preview_capture_or_service": true,
+  "limitations": [
+    "No physical desktop/GPU/compositor/HiDPI/Windows/macOS validation",
+    "Actual controller/frame/view bodies, OS/window calls simulated; GTK minimize method delegation tested with controlled window object",
+    "Real window-manager minimization remains subject to desktop policy",
+    "External analyzers and system GTK/Pango/Cairo/PCRE2/libxml2 not sanitizer-instrumented",
+    "Historical fixture skips retained, scalar/tab4 not wcwidth; guards not hostile-filesystem sandbox; regex not hard realtime"
+  ]
+}

@@ -1,0 +1,34 @@
+[0/2] Re-checking globbed directories...
+[1/34] Building C object CMakeFiles/prisme_core.dir/src/completion.c.o
+[2/34] Building C object CMakeFiles/prisme_core.dir/src/linter.c.o
+[3/34] Linking C static library libprisme_core.a
+[4/34] Linking C executable python-studio-ssh-helper
+[5/34] Building C object CMakeFiles/test_fullscreen.dir/tests/test_fullscreen.c.o
+[6/34] Building C object CMakeFiles/test_fullscreen_retina.dir/tests/test_fullscreen.c.o
+[7/34] Linking C executable python-studio
+[8/34] Linking C executable test_folder_search
+[9/34] Linking C executable test_path_complete
+[10/34] Linking C executable test_xml_edit
+[11/34] Linking C executable test_xml_refs
+[12/34] Linking C executable test_xml_input
+[13/34] Linking C executable test_core
+[14/34] Linking C executable test_session
+[15/34] Linking C executable test_multi
+[16/34] Linking C executable test_layout
+[17/34] Linking C executable test_files
+[18/34] Linking C executable test_ssh
+[19/34] Linking C executable ssh_driver
+[20/34] Linking C executable test_import_paths
+[21/34] Linking C executable test_snippets
+[22/34] Linking C executable test_completion
+[23/34] Linking C executable test_snippet_input
+[24/34] Linking C executable test_linter
+[25/34] Linking C executable test_file_clipboard
+[26/34] Linking C executable test_keyboard
+[27/34] Linking C executable test_keyboard_native
+[28/34] Linking C executable test_fullscreen
+[29/34] Linking C executable test_fullscreen_retina
+[30/34] Building C object CMakeFiles/test_diagnostics_view.dir/tests/test_diagnostics_view.c.o
+[31/34] Linking C executable test_diagnostics_view
+[32/34] Building C object CMakeFiles/test_controls.dir/tests/test_controls.c.o
+[33/34] Linking C executable test_controls

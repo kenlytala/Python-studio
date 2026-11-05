@@ -1,0 +1,9 @@
+{
+  "status": "passed",
+  "omitted_native_minimization_expected_failure": true,
+  "wrong_quit_callback_expected_failure": true,
+  "restored_native_pass": true,
+  "only_generated_QA_include_and_in_memory_Python_mutated": true,
+  "production_sources_unchanged": true,
+  "no_window_preview_or_capture": true
+}

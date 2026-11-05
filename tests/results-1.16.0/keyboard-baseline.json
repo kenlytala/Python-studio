@@ -1,0 +1,10 @@
+{
+  "status": "baseline_bug_reproduced",
+  "backend_event": "GLFW KEY_W (AD02, key labelled Z on AZERTY) + Control",
+  "tab_closed": true,
+  "before_tabs": 2,
+  "after_tabs": 1,
+  "undo_was_not_executed": true,
+  "physical_code_W": 87,
+  "logical_Z": 90
+}

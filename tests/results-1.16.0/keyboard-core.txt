@@ -1,0 +1,1 @@
+OK 14151 keyboard model checks: 4 layouts, 49 slots, inverse state, 200 permutations, atomic rejection, live refresh; no OS mutation/window

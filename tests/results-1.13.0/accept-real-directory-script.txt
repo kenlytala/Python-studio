@@ -1,0 +1,32 @@
+import argparse, hashlib, json, shutil, sys, tempfile
+from pathlib import Path
+p=argparse.ArgumentParser();p.add_argument('--python-root',type=Path,required=True);p.add_argument('--fixtures',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
+sys.path[:0]=[str(a.python_root),str(a.python_root/'tests')]
+from editor.buffer import TextBuffer
+from editor.storage import XMLPaths
+from headless_support import FakeDesktop
+from xml.etree import ElementTree
+fixtures=json.loads((a.python_root/'tests/xml-fixtures.json').read_text())['fixtures'];results=[]
+for fixture in fixtures:
+ source=a.fixtures/fixture['filename'];raw=source.read_bytes();assert len(raw)==fixture['bytes'] and hashlib.sha256(raw).hexdigest()==fixture['sha256']
+ desktop=FakeDesktop()
+ try:
+  app=desktop.app;K=desktop.rl.KeyboardKey
+  base=desktop.root/'external-addons';directory=base/'sale/views';directory.mkdir(parents=True)
+  file=directory/'sale_order_views.xml';file.write_bytes(raw)
+  app.xml_paths=XMLPaths(app.config_file.parent,app.project);app.xml_paths.add(base)
+  app.buffers=[TextBuffer('    sale/',name='draft.xml')];app.active=app.active_pane=0;app.panes=[0,0];app.focus='editor';app.buf.cursor=(0,len(app.buf.text));app.invalidate();app.layout()
+  desktop.step(keys=(K.KEY_SPACE,),held=(K.KEY_LEFT_CONTROL,));assert app.path_task.done.wait(5);desktop.step();assert [x['name'] for x in app.completions]==['views/']
+  desktop.step(keys=(K.KEY_ENTER,));assert app.buf.text=='    sale/views/' and app.path_task.done.wait(5);desktop.step();assert [x['name'] for x in app.completions]==['sale_order_views.xml']
+  desktop.step(keys=(K.KEY_TAB,));assert app.buf.text=='    sale/views/sale_order_views.xml';path_snapshot=app.buf.snapshot()
+  desktop.step(keys=(K.KEY_SPACE,),held=(K.KEY_LEFT_CONTROL,));assert app.modal['kind']=='xml_ids' and app.modal['task'].done.wait(5);desktop.step();assert len(app.modal['references'].items)==fixture['ids']
+  desktop.step(text=fixture['record']);desktop.step(keys=(K.KEY_ENTER,));assert app.modal is None
+  text=app.buf.text;assert '<field name="arch" type="xml"></field>' in text and 'sale.order.form' in text and 'partner_id' not in text
+  ElementTree.fromstring('<odoo>'+text+'</odoo>');assert len(app.buf.undo_stack)==3
+  current=app.buf.snapshot();desktop.step(keys=(K.KEY_Z,),held=(K.KEY_LEFT_CONTROL,));assert app.buf.snapshot()==path_snapshot
+  desktop.step(keys=(K.KEY_Y,),held=(K.KEY_LEFT_CONTROL,));assert app.buf.snapshot()==current
+  assert file.read_bytes()==raw and source.read_bytes()==raw
+  results.append({'version':fixture['version'],'ids':fixture['ids'],'sha256':fixture['sha256'],'workflow':'sale/ -> views/ -> XML filename -> ID -> element/fields/empty arch','atomic_undo_redo':True,'source_unchanged':True,'wellformed_stdlib':True})
+ finally:desktop.close()
+a.output.write_text(json.dumps({'implementation':'actual Python controller, injected keys and mocked rendering; no window','cases':results,'status':'passed'},indent=2)+'\n')
+print(a.output.read_text())

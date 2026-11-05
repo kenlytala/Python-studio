@@ -1,0 +1,2 @@
+OK 18.0: sale_order_views-18.0.xml, 69395 octets, SHA256 7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc
+OK 19.0: sale_order_views-19.0.xml, 69477 octets, SHA256 d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543

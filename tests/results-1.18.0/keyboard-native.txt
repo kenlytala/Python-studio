@@ -1,0 +1,1 @@
+OK 648 actual readonly XKB provider checks: current/fallback groups, names, aliases, non-evdev keycodes, Unicode, failure cleanup; simulated Xlib only

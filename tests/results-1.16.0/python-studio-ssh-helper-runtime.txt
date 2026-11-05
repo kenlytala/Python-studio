@@ -1,0 +1,33 @@
+	linux-vdso.so.1 (0x00007fff8a5fa000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007fa182c62000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007fa182e76000)
+
+Version symbols section '.gnu.version' contains 69 entries:
+ Addr: 0x0000000000000cb2  Offset: 0x00000cb2  Link: 5 (.dynsym)
+  000:   0 (*local*)       2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   3 (GLIBC_2.34) 
+  004:   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   1 (*global*)   
+  008:   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)
+  00c:   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)
+  010:   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)
+  014:   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)
+  018:   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)
+  01c:   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)
+  020:   4 (GLIBC_2.33)    2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)
+  024:   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   1 (*global*)      4 (GLIBC_2.33) 
+  028:   5 (GLIBC_2.14)    2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)
+  02c:   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)
+  030:   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)
+  034:   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)
+  038:   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)   2 (GLIBC_2.2.5)
+  03c:   2 (GLIBC_2.2.5)   1 (*global*)      2 (GLIBC_2.2.5)   4 (GLIBC_2.33) 
+  040:   2 (GLIBC_2.2.5)   6 (GLIBC_2.3)     6 (GLIBC_2.3)     2 (GLIBC_2.2.5)
+  044:   2 (GLIBC_2.2.5)
+
+Version needs section '.gnu.version_r' contains 1 entry:
+ Addr: 0x0000000000000d40  Offset: 0x00000d40  Link: 6 (.dynstr)
+  000000: Version: 1  File: libc.so.6  Cnt: 5
+  0x0010:   Name: GLIBC_2.3  Flags: none  Version: 6
+  0x0020:   Name: GLIBC_2.14  Flags: none  Version: 5
+  0x0030:   Name: GLIBC_2.33  Flags: none  Version: 4
+  0x0040:   Name: GLIBC_2.34  Flags: none  Version: 3
+  0x0050:   Name: GLIBC_2.2.5  Flags: none  Version: 2

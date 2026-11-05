@@ -1,0 +1,17 @@
+{
+  "removed_unused_raylib_files": [
+    "_deps/raylib-src/examples",
+    "_deps/raylib-src/logo",
+    "_deps/raylib-src/parser",
+    "_deps/raylib-src/projects",
+    "_deps/raylib-src/.github",
+    "_deps/raylib-subbuild/raylib-populate-prefix/src/archive.tar"
+  ],
+  "old_production_removed": "build-1.14.0",
+  "sole_maintained_production": [
+    "build-1.15.0"
+  ],
+  "owned_raylib_source": "/home/user/python-studio-c/build-1.15.0/_deps/raylib-src",
+  "no_fetchcontent_source_override": true,
+  "disk_usage": "34M\t/home/user/python-studio-c/build-1.15.0\n14M\t/home/user/python-studio-c/build-1.15.0/_deps/raylib-src\n"
+}

@@ -1,0 +1,2 @@
+Python Studio 1.17.0
+Sources SHA256 : d4384a8d02265a5a4ebb6ddb396c9da2646b2d105cd830ef18938a7e4380ae1c

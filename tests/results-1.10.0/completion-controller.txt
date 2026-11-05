@@ -1,0 +1,1 @@
+OK 110 actual controller/input checks: multiline draft/clipboard/keys/mouse, global persistence, failed-save rollback, Tab/Enter/indentation/undo, stale results, selection and document safety; no GUI

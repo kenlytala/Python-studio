@@ -1,0 +1,85 @@
+-- Prisme: coherent source fingerprint 0771bf388cb5a64473c443f34773610e8284519021e2ca1934424a59b33b083c
+CMake Warning (deprecated) at build-1.9.0/_deps/raylib-src/CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Testing if -Werror=pointer-arith can be used -- compiles
+-- Testing if -Werror=implicit-function-declaration can be used -- compiles
+-- Testing if -fno-strict-aliasing can be used -- compiles
+-- Using raylib's GLFW
+-- Including X11 support
+-- Audio Backend: miniaudio
+-- Building raylib static library
+-- Generated build type: Release
+-- Compiling with the flags:
+--   PLATFORM=PLATFORM_DESKTOP
+--   GRAPHICS=GRAPHICS_API_OPENGL_21
+-- Prisme: raylib 5.5 initialization guards verified
+-- Prisme: raylib fullscreen native sizing and resize synchronization verified
+-- Prisme: raylib 5.5 full glyph extents and atlas rows verified
+-- Python Studio graphics: OpenGL 2.1; MSAA opt-in
+-- Configuring done (0.2s)
+-- Generating done (0.1s)
+-- Build files have been written to: /home/user/python-studio-c/build-1.9.0
+[  1%] Building C object CMakeFiles/prisme_core.dir/src/linter.c.o
+[  2%] Building C object CMakeFiles/prisme_core.dir/src/completion.c.o
+[ 20%] Built target glfw
+[ 26%] Built target raylib
+[ 27%] Built target prisme_graphics
+[ 28%] Built target constellation
+[ 31%] Built target test_ui
+[ 32%] Linking C static library libprisme_core.a
+[ 45%] Built target prisme_core
+[ 46%] Linking C executable test_xml_refs
+[ 47%] Linking C executable python-studio-ssh-helper
+[ 48%] Linking C executable test_core
+[ 49%] Linking C executable test_xml_input
+[ 50%] Linking C executable test_session
+[ 51%] Linking C executable test_multi
+[ 51%] Linking C executable test_layout
+[ 52%] Linking C executable test_files
+[ 52%] Linking C executable test_ssh
+[ 53%] Linking C executable test_import_paths
+[ 54%] Built target test_core
+[ 55%] Linking C executable test_snippets
+[ 56%] Linking C executable test_completion
+[ 57%] Linking C executable test_snippet_input
+[ 58%] Built target prisme_ssh_helper
+[ 58%] Building C object CMakeFiles/test_controls.dir/tests/test_controls.c.o
+[ 58%] Building C object CMakeFiles/test_diagnostics_view.dir/tests/test_diagnostics_view.c.o
+[ 59%] Linking C executable test_linter
+[ 60%] Building C object CMakeFiles/test_fullscreen.dir/tests/test_fullscreen.c.o
+[ 61%] Built target test_xml_refs
+[ 61%] Built target test_session
+[ 62%] Built target test_ssh
+[ 63%] Built target test_layout
+[ 64%] Built target test_multi
+[ 65%] Linking C executable test_file_clipboard
+[ 66%] Built target test_import_paths
+[ 66%] Built target test_files
+[ 67%] Built target test_xml_input
+[ 68%] Built target test_completion
+[ 69%] Built target test_snippets
+[ 69%] Building C object CMakeFiles/test_fullscreen_retina.dir/tests/test_fullscreen.c.o
+[ 72%] Built target test_snippet_input
+[ 73%] Built target test_linter
+[ 73%] Linking C executable python-studio
+[ 74%] Built target test_file_clipboard
+[ 75%] Linking C executable ssh_driver
+[ 78%] Built target ssh_driver
+[ 89%] Built target prisme
+[ 90%] Linking C executable test_fullscreen_retina
+[ 91%] Linking C executable test_fullscreen
+[ 91%] Built target test_fullscreen
+[ 91%] Built target test_fullscreen_retina
+[ 92%] Linking C executable test_controls
+[ 97%] Built target test_controls
+[ 98%] Linking C executable test_diagnostics_view
+[100%] Built target test_diagnostics_view
+Python Studio — édition C 1.9.0

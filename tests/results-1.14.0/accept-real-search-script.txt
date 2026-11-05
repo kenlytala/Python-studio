@@ -1,0 +1,48 @@
+import argparse, hashlib, json, sys
+from pathlib import Path
+p=argparse.ArgumentParser();p.add_argument('--python-root',type=Path,required=True);p.add_argument('--fixtures',type=Path,required=True);p.add_argument('--output',type=Path,required=True);a=p.parse_args()
+sys.path[:0]=[str(a.python_root),str(a.python_root/'tests')]
+from headless_support import FakeDesktop
+from editor.buffer import TextBuffer
+spec=json.loads((a.python_root/'tests/xml-fixtures.json').read_text())['fixtures'];d=FakeDesktop()
+try:
+ app=d.app;K=d.rl.KeyboardKey;root=d.root/'external-odoo-search';root.mkdir();original=[]
+ for item in spec:
+  raw=(a.fixtures/item['filename']).read_bytes();assert len(raw)==item['bytes'] and hashlib.sha256(raw).hexdigest()==item['sha256']
+  target=root/(item['version']+'.xml');target.write_bytes(raw);original.append((target,raw))
+ app.buf.insert('# UNSAVED\n');snapshot=app.buf.snapshot();undo=app.buf.undo_stack[:];buffers=tuple(app.buffers);imports=app.imports.paths[:];xml=app.xml_paths.paths[:]
+ d.step([K.KEY_F],held=[K.KEY_LEFT_CONTROL,K.KEY_LEFT_SHIFT]);s=app.folder_search_state;assert app.modal['kind']=='folder_search'
+ s['folder']=TextBuffer(str(root));d.step(text='partner_id');assert not app.folder_search_task
+ d.step([K.KEY_ENTER]);task=app.folder_search_task;assert task.done.wait(8);d.step();assert not task.error and len(s['report'].files)==2
+ flat=[(fi,hi) for fi,f in enumerate(s['report'].files) for hi in range(len(f.hits))];assert len(flat)>30 and (s['file'],s['hit'])==flat[0]
+ switched=set();horizontal=False
+ for expected in flat[1:]+flat[:1]:
+  d.draws.clear();d.step([K.KEY_F3]);assert (s['file'],s['hit'])==expected
+  switched.add(s['file']);f=s['report'].files[s['file']];hit=f.hits[s['hit']]
+  assert s['lines']==f.text.split('\n') and s['y']<=hit.line<s['y']+s['rows'] and s['x']<=hit.column<s['x']+s['columns']
+  horizontal|=s['x']>0
+ d.draws.clear();d.step([K.KEY_F3],held=[K.KEY_LEFT_SHIFT]);assert (s['file'],s['hit'])==flat[-1] and switched=={0,1} and horizontal
+ assert s['list_rect'][0]+s['list_rect'][2]<s['content_rect'][0]
+ assert app.buf.snapshot()==snapshot and app.buf.undo_stack==undo and tuple(app.buffers)==buffers and app.imports.paths==imports and app.xml_paths.paths==xml
+ for path,raw in original:assert path.read_bytes()==raw
+ assert 'partner_id' not in s['settings'].file.read_text()
+ # Repeat with the complete options pack on the actual Odoo XML snapshots.
+ app.folder_search_option('case_sensitive');app.folder_search_option('whole_word');app.folder_search_option('regex')
+ s['query']=TextBuffer('PARTNER_ID|ORDER_LINE');s['filters']['include_files']=TextBuffer('*.xml');s['filters']['exclude_files']=TextBuffer('19.0.xml')
+ app.start_folder_search();advanced=app.folder_search_task;assert advanced.done.wait(8);d.step();assert not advanced.error
+ import re
+ expected_advanced=len(list(re.finditer(r'(?<![\w])(?:PARTNER_ID|ORDER_LINE)(?![\w])',original[0][1].decode('utf-8'),re.I)))
+ assert len(s['report'].files)==1 and s['report'].hit_count==expected_advanced>0 and s['report'].options.regex,(len(s['report'].files),s['report'].hit_count,expected_advanced)
+ advanced_count=s['report'].hit_count
+ app.folder_search_maximize();d.step();assert s['shell_rect']==(0,0,app.w,app.h) and not app.fullscreen.active
+ native=(d.width,d.height,d.fullscreen,d.maximized,d.position);d.step([K.KEY_F11]);assert not s['maximized'] and not app.fullscreen.active;assert (d.width,d.height,d.fullscreen,d.maximized,d.position)==native
+ d.step([K.KEY_F11]);assert s['shell_rect']==(0,0,app.w,app.h) and not app.fullscreen.active;assert (d.width,d.height,d.fullscreen,d.maximized,d.position)==native
+ for hi in range(1,advanced_count):d.step([K.KEY_F3]);assert s['hit']==hi
+ d.step([K.KEY_F3]);assert s['hit']==0
+ d.step([K.KEY_ESCAPE]);assert app.modal is None and app.buf.snapshot()==snapshot and not app.fullscreen.active
+ assert app.buf.undo_stack==undo and app.imports.paths==imports and app.xml_paths.paths==xml
+ for path,raw in original:assert path.read_bytes()==raw
+
+ result={'status':'passed','implementation':'actual Python controller, injected Ctrl+Maj+F/Enter/F3/Maj+F3/Escape and mocked CPU rendering; no window/capture','advanced_filtered_files':1,'advanced_regex_occurrences':advanced_count,'dialog_only_F11_preserves_native_window':True,'files':2,'occurrences':len(flat),'global_F3_steps':len(flat)+1,'automatic_file_switch':True,'global_wrap_forward_backward':True,'vertical_and_horizontal_follow':True,'two_separate_panes':True,'editor_buffers_carets_and_history_unchanged':True,'XML_and_import_roots_unchanged':True,'source_bytes_unchanged':True,'folder_only_persisted':True,'fixtures':spec}
+ a.output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if k!='fixtures'},ensure_ascii=False))
+finally:d.close()

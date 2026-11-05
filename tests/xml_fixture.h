@@ -1,0 +1,21 @@
+/* Representative Odoo XML; mirrors tests/test_xml_refs.py in the Python edition. */
+static const char xml_fixture[] =
+    "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+    "<odoo xmlns:q=\"urn:q\">\n"
+    "    <data>\n"
+    "        <record id=\"view_order_form\" model=\"ir.ui.view\" priority=\"16\">\n"
+    "            <field name=\"name\">sale.order.form</field>\n"
+    "            <field name=\"model\">sale.order</field>\n"
+    "            <field name=\"inherit_id\" ref=\"sale.base\"/>\n"
+    "            <field name=\"arch\" type=\"xml\" eval=\"forbidden\" file=\"bad.xml\" ref=\"bad\">\n"
+    "                <form><field name=\"partner_id\"/><button id=\"inside_arch\"/></form>\n"
+    "            </field>\n"
+    "        </record>\n"
+    "        <menuitem id=\"sale.menu\" name=\"Ventes &amp; été\"/>\n"
+    "        <q:template id=\"template\"><q:t q:value=\"été\">Hello &lt;world&gt; <b>bold</b> "
+    "tail</q:t></q:template>\n"
+    "        <record id=\"duplicate\" model=\"one\"><field name=\"name\">first</field></record>\n"
+    "        <record id=\"duplicate\" model=\"two\"><field name=\"name\">second</field></record>\n"
+    "        <x id=\"\"/><x xml:id=\"ignored\"/>\n"
+    "    </data>\n"
+    "</odoo>";

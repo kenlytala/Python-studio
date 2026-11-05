@@ -1,0 +1,2 @@
+FAIL 256: s->maximized && a->modal == M_FOLDER_SEARCH
+OK 325 actual Ctrl+Alt+Up/Down keyboard checks: queued/held/repeat, left/right modifiers, reverse, visual columns, simultaneous UTF-8 input/undo, AltGr text, focus/modal/pane guards and 256-carets; no GUI

@@ -1,0 +1,1 @@
+OK 53 lint-rule grammar/profile checks: limits, injection rejection, canonical IDs/names, atomic rejection, persistence, empty re-enable; no project files/window

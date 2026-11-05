@@ -1,0 +1,194 @@
+[  0%] Building C object CMakeFiles/prisme_core.dir/src/buffer.c.o
+[  1%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/context.c.o
+[  2%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/init.c.o
+[  3%] Building C object CMakeFiles/prisme_core.dir/src/multicursor.c.o
+[  3%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/input.c.o
+[  4%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/monitor.c.o
+[  5%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/platform.c.o
+[  6%] Building C object CMakeFiles/prisme_core.dir/src/syntax.c.o
+[  7%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/vulkan.c.o
+[  8%] Building C object CMakeFiles/prisme_core.dir/src/runner.c.o
+[  8%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/window.c.o
+[  9%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/egl_context.c.o
+[  9%] Building C object CMakeFiles/prisme_core.dir/src/layout.c.o
+[ 10%] Building C object CMakeFiles/prisme_core.dir/src/files.c.o
+[ 11%] Building C object CMakeFiles/prisme_core.dir/src/file_job.c.o
+[ 12%] Building C object CMakeFiles/prisme_core.dir/src/linter.c.o
+[ 13%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/osmesa_context.c.o
+[ 14%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_init.c.o
+[ 15%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_monitor.c.o
+[ 15%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_window.c.o
+[ 16%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/null_joystick.c.o
+[ 16%] Building C object CMakeFiles/prisme_core.dir/src/import_paths.c.o
+[ 17%] Building C object CMakeFiles/prisme_core.dir/src/snippets.c.o
+[ 18%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_module.c.o
+[ 19%] Building C object CMakeFiles/prisme_core.dir/src/completion.c.o
+[ 20%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_time.c.o
+[ 21%] Building C object CMakeFiles/prisme_core.dir/src/ssh.c.o
+[ 21%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_thread.c.o
+[ 22%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_init.c.o
+[ 23%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_monitor.c.o
+[ 24%] Building C object CMakeFiles/prisme_core.dir/src/ssh_profiles.c.o
+[ 25%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/x11_window.c.o
+[ 25%] Building C object CMakeFiles/prisme_core.dir/src/ssh_command.c.o
+[ 26%] Building C object CMakeFiles/prisme_core.dir/src/ssh_json.c.o
+[ 26%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/xkb_unicode.c.o
+[ 27%] Building C object CMakeFiles/prisme_core.dir/src/ssh_helper.c.o
+[ 28%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/glx_context.c.o
+[ 29%] Building C object CMakeFiles/prisme_core.dir/src/session.c.o
+[ 29%] Building C object CMakeFiles/prisme_core.dir/src/xml_refs.c.o
+[ 30%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/linux_joystick.c.o
+[ 31%] Building C object _deps/raylib-build/raylib/external/glfw/src/CMakeFiles/glfw.dir/posix_poll.c.o
+[ 32%] Building C object CMakeFiles/prisme_core.dir/src/xml_edit.c.o
+[ 33%] Building C object CMakeFiles/prisme_core.dir/src/xml_paths.c.o
+[ 33%] Built target glfw
+[ 34%] Building C object _deps/raylib-build/raylib/CMakeFiles/raylib.dir/raudio.c.o
+[ 34%] Building C object _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rcore.c.o
+[ 35%] Building C object _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rmodels.c.o
+[ 36%] Linking C static library libprisme_core.a
+[ 36%] Built target prisme_core
+[ 37%] Building C object _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rshapes.c.o
+[ 38%] Building C object _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtext.c.o
+In file included from /home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/raudio.c:282:
+In function ‘memcopy’,
+    inlined from ‘jar_mod_load’ at /home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h:1133:13:
+/home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h:370:13: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  370 |         d[i]=s[i];
+      |         ~~~~^~~~~
+/home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h: In function ‘jar_mod_load’:
+/home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h:125:13: note: at offset 1080 into destination object ‘title’ of size 20
+  125 |     muchar  title[20];
+      |             ^~~~~
+In function ‘memcopy’,
+    inlined from ‘jar_mod_load’ at /home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h:1133:13:
+/home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h:370:13: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  370 |         d[i]=s[i];
+      |         ~~~~^~~~~
+/home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h: In function ‘jar_mod_load’:
+/home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h:125:13: note: at offset 1081 into destination object ‘title’ of size 20
+  125 |     muchar  title[20];
+      |             ^~~~~
+In function ‘memcopy’,
+    inlined from ‘jar_mod_load’ at /home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h:1133:13:
+/home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h:370:13: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  370 |         d[i]=s[i];
+      |         ~~~~^~~~~
+/home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h: In function ‘jar_mod_load’:
+/home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h:125:13: note: at offset 1082 into destination object ‘title’ of size 20
+  125 |     muchar  title[20];
+      |             ^~~~~
+In function ‘memcopy’,
+    inlined from ‘jar_mod_load’ at /home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h:1133:13:
+/home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h:370:13: warning: writing 1 byte into a region of size 0 [-Wstringop-overflow=]
+  370 |         d[i]=s[i];
+      |         ~~~~^~~~~
+/home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h: In function ‘jar_mod_load’:
+/home/user/python-studio-c/build-1.10.0/_deps/raylib-src/src/external/jar_mod.h:125:13: note: at offset 1083 into destination object ‘title’ of size 20
+  125 |     muchar  title[20];
+      |             ^~~~~
+[ 38%] Building C object _deps/raylib-build/raylib/CMakeFiles/raylib.dir/rtextures.c.o
+[ 39%] Building C object _deps/raylib-build/raylib/CMakeFiles/raylib.dir/utils.c.o
+[ 40%] Building C object CMakeFiles/prisme_ssh_helper.dir/src/ssh_helper_main.c.o
+[ 41%] Linking C executable python-studio-ssh-helper
+[ 41%] Built target prisme_ssh_helper
+[ 42%] Building C object CMakeFiles/test_xml_edit.dir/tests/test_xml_edit.c.o
+[ 43%] Linking C executable test_xml_edit
+[ 43%] Built target test_xml_edit
+[ 44%] Building C object CMakeFiles/test_xml_refs.dir/tests/test_xml_refs.c.o
+[ 45%] Linking C executable test_xml_refs
+[ 45%] Built target test_xml_refs
+[ 46%] Building C object CMakeFiles/test_xml_input.dir/tests/test_xml_input.c.o
+[ 46%] Building C object CMakeFiles/test_xml_input.dir/src/app_xml.c.o
+[ 47%] Linking C executable test_xml_input
+[ 47%] Built target test_xml_input
+[ 48%] Building C object CMakeFiles/test_core.dir/tests/test_core.c.o
+[ 49%] Linking C executable test_core
+[ 49%] Built target test_core
+[ 49%] Building C object CMakeFiles/test_session.dir/tests/test_session.c.o
+[ 50%] Linking C executable test_session
+[ 50%] Built target test_session
+[ 51%] Building C object CMakeFiles/test_multi.dir/tests/test_multi.c.o
+[ 52%] Linking C executable test_multi
+[ 52%] Built target test_multi
+[ 53%] Building C object CMakeFiles/test_layout.dir/tests/test_layout.c.o
+[ 54%] Linking C executable test_layout
+[ 54%] Built target test_layout
+[ 55%] Building C object CMakeFiles/test_files.dir/tests/test_files.c.o
+[ 55%] Linking C executable test_files
+[ 55%] Built target test_files
+[ 55%] Building C object CMakeFiles/test_ssh.dir/tests/test_ssh.c.o
+[ 56%] Linking C executable test_ssh
+[ 56%] Built target test_ssh
+[ 57%] Building C object CMakeFiles/ssh_driver.dir/tests/ssh_driver.c.o
+[ 57%] Building C object CMakeFiles/ssh_driver.dir/src/app_ssh.c.o
+[ 58%] Building C object CMakeFiles/ssh_driver.dir/src/app_session.c.o
+[ 59%] Building C object CMakeFiles/ssh_driver.dir/src/app_xml.c.o
+[ 60%] Linking C executable ssh_driver
+[ 60%] Built target ssh_driver
+[ 61%] Building C object CMakeFiles/test_import_paths.dir/tests/test_import_paths.c.o
+[ 62%] Linking C executable test_import_paths
+[ 62%] Built target test_import_paths
+[ 63%] Building C object CMakeFiles/test_snippets.dir/tests/test_snippets.c.o
+[ 64%] Linking C executable test_snippets
+[ 64%] Built target test_snippets
+[ 65%] Building C object CMakeFiles/test_completion.dir/tests/test_completion.c.o
+[ 65%] Linking C executable test_completion
+[ 65%] Built target test_completion
+[ 66%] Building C object CMakeFiles/test_snippet_input.dir/tests/test_snippet_input.c.o
+[ 67%] Building C object CMakeFiles/test_snippet_input.dir/src/app_snippets.c.o
+[ 67%] Building C object CMakeFiles/test_snippet_input.dir/src/app_completion.c.o
+[ 68%] Building C object CMakeFiles/test_snippet_input.dir/src/app_snippet_input.c.o
+[ 69%] Linking C executable test_snippet_input
+[ 69%] Built target test_snippet_input
+[ 69%] Building C object CMakeFiles/test_linter.dir/tests/test_linter.c.o
+[ 70%] Linking C executable test_linter
+[ 71%] Building C object CMakeFiles/test_diagnostics_view.dir/tests/test_diagnostics_view.c.o
+[ 71%] Built target test_linter
+[ 72%] Building C object CMakeFiles/test_controls.dir/tests/test_controls.c.o
+[ 73%] Building C object CMakeFiles/test_controls.dir/src/app_snippets.c.o
+[ 74%] Building C object CMakeFiles/test_controls.dir/src/app_completion.c.o
+[ 74%] Building C object CMakeFiles/test_controls.dir/src/app_multicursor.c.o
+[ 75%] Building C object CMakeFiles/test_controls.dir/src/app_ssh.c.o
+[ 76%] Building C object CMakeFiles/test_controls.dir/src/app_session.c.o
+[ 77%] Building C object CMakeFiles/test_diagnostics_view.dir/src/view_ssh.c.o
+[ 78%] Building C object CMakeFiles/test_controls.dir/src/app_xml.c.o
+[ 78%] Linking C executable test_diagnostics_view
+[ 78%] Linking C executable test_controls
+[ 78%] Built target test_controls
+[ 79%] Building C object CMakeFiles/test_file_clipboard.dir/tests/test_file_clipboard.c.o
+[ 79%] Built target test_diagnostics_view
+[ 80%] Building C object CMakeFiles/test_fullscreen.dir/tests/test_fullscreen.c.o
+[ 81%] Linking C executable test_file_clipboard
+[ 81%] Built target test_file_clipboard
+[ 82%] Building C object CMakeFiles/test_fullscreen_retina.dir/tests/test_fullscreen.c.o
+[ 83%] Linking C executable test_fullscreen
+[ 83%] Built target test_fullscreen
+[ 83%] Linking C executable test_fullscreen_retina
+[ 83%] Built target test_fullscreen_retina
+[ 84%] Linking C static library libraylib.a
+[ 84%] Built target raylib
+[ 84%] Building C object CMakeFiles/prisme_graphics.dir/src/graphics.c.o
+[ 85%] Linking C static library libprisme_graphics.a
+[ 85%] Built target prisme_graphics
+[ 86%] Building C object CMakeFiles/test_ui.dir/tests/test_ui.c.o
+[ 87%] Building C object CMakeFiles/prisme.dir/src/main.c.o
+[ 88%] Building C object CMakeFiles/test_ui.dir/src/ui.c.o
+[ 88%] Building C object CMakeFiles/constellation.dir/demos/constellation.c.o
+[ 88%] Building C object CMakeFiles/prisme.dir/src/app.c.o
+[ 89%] Linking C executable constellation
+[ 89%] Built target constellation
+[ 90%] Building C object CMakeFiles/prisme.dir/src/view.c.o
+[ 91%] Building C object CMakeFiles/prisme.dir/src/ui.c.o
+[ 91%] Linking C executable test_ui
+[ 91%] Built target test_ui
+[ 92%] Building C object CMakeFiles/prisme.dir/src/file_clipboard.c.o
+[ 92%] Building C object CMakeFiles/prisme.dir/src/app_snippets.c.o
+[ 93%] Building C object CMakeFiles/prisme.dir/src/app_completion.c.o
+[ 94%] Building C object CMakeFiles/prisme.dir/src/app_snippet_input.c.o
+[ 95%] Building C object CMakeFiles/prisme.dir/src/app_multicursor.c.o
+[ 95%] Building C object CMakeFiles/prisme.dir/src/app_ssh.c.o
+[ 96%] Building C object CMakeFiles/prisme.dir/src/view_ssh.c.o
+[ 97%] Building C object CMakeFiles/prisme.dir/src/app_session.c.o
+[ 98%] Building C object CMakeFiles/prisme.dir/src/app_xml.c.o
+[100%] Linking C executable python-studio
+[100%] Built target prisme

@@ -1,0 +1,40 @@
+UpdateCTestConfiguration  from :/home/user/python-studio-c/build-1.14.0/DartConfiguration.tcl
+Test project /home/user/python-studio-c/build-1.14.0
+Constructing a list of tests
+Done constructing a list of tests
+Updating test list for fixtures
+Added 0 tests to meet fixture requirements
+Checking test dependency graph...
+Checking test dependency graph end
+test 14
+    Start 14: native_encrypted_ssh_sftp_integration
+
+14: Test command: /home/user/.cache/python-studio-1130/qa/lib/python3.13/site-packages/cmake/data/bin/cmake "-E" "env" "PRISME_SSH_INTEGRATION=1" "PRISME_NATIVE_DRIVER=/home/user/python-studio-c/build-1.14.0/ssh_driver" "/home/user/.cache/python-studio-1140/qa/bin/python" "-B" "-W" "error::ResourceWarning" "/home/user/python-studio-c/tests/test_ssh_integration.py"
+14: Working Directory: /home/user/python-studio-c/build-1.14.0
+14: Test timeout computed to be: 180
+14: test_busy_mount_refuses_unmount_without_force (__main__.NativeSSHIntegration.test_busy_mount_refuses_unmount_without_force) ... ok
+14: test_cancel_password_preserves_configuration (__main__.NativeSSHIntegration.test_cancel_password_preserves_configuration) ... ok
+14: test_changed_host_key_is_not_overwritten (__main__.NativeSSHIntegration.test_changed_host_key_is_not_overwritten) ... ok
+14: test_encrypted_private_key_path_spaces_and_passphrase (__main__.NativeSSHIntegration.test_encrypted_private_key_path_spaces_and_passphrase) ... ok
+14: test_folder_search_remote_snapshots_f3_and_no_edits (__main__.NativeSSHIntegration.test_folder_search_remote_snapshots_f3_and_no_edits) ... ok
+14: test_key_from_real_agent_without_secret_prompt (__main__.NativeSSHIntegration.test_key_from_real_agent_without_secret_prompt) ... ok
+14: test_missing_identity_still_remembers_configuration (__main__.NativeSSHIntegration.test_missing_identity_still_remembers_configuration) ... ok
+14: test_password_explicit_odoo_and_port_crud_and_native_form (__main__.NativeSSHIntegration.test_password_explicit_odoo_and_port_crud_and_native_form) ... ok
+14: test_remote_session_offline_restore_then_explicit_validation_and_external_conflict (__main__.NativeSSHIntegration.test_remote_session_offline_restore_then_explicit_validation_and_external_conflict) ... ok
+14: test_transport_loss_and_reconnection_preserve_dirty_buffer (__main__.NativeSSHIntegration.test_transport_loss_and_reconnection_preserve_dirty_buffer) ... ok
+14: test_unknown_host_refusal_preserves_nonsecret_profile (__main__.NativeSSHIntegration.test_unknown_host_refusal_preserves_nonsecret_profile) ... ok
+14: test_wrong_password_preserves_configuration (__main__.NativeSSHIntegration.test_wrong_password_preserves_configuration) ... ok
+14: test_xml_inline_from_remote_file_is_read_only_and_atomic (__main__.NativeSSHIntegration.test_xml_inline_from_remote_file_is_read_only_and_atomic) ... ok
+14: 
+14: ----------------------------------------------------------------------
+14: Ran 13 tests in 4.829s
+14: 
+14: OK
+1/1 Test #14: native_encrypted_ssh_sftp_integration ...   Passed    4.95 sec
+
+The following tests passed:
+	native_encrypted_ssh_sftp_integration
+
+100% tests passed out of 1
+
+Total Test time (real) =   4.95 sec

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "old_global_f11_regression_rejected": true,
+  "mutant_exit_code": 1,
+  "mutant_failure": "FAIL 256: s->maximized && a->modal == M_FOLDER_SEARCH",
+  "production_frame_bodies_sha256": "242d69f1d2f56d3804625ee8cd8c43762b0ad39533f49bd3c334eda0548d3eae",
+  "exact_production_mouse_modal_and_frame_source": true,
+  "test_header_fingerprinted": true,
+  "mutant_scope": "Generated CPU-only input/frame include in isolated QA build only; maintained production source and build not modified.",
+  "restored_actual_frame_passed": true,
+  "actual_frame_checks": 848,
+  "production_include_matches_isolated_bench": true,
+  "source_fingerprint": "b7a4c7e2f9d15753359e7ed7813ba5c223335cefaafd0439e3da1c5ef62e4de6",
+  "production_app_source_sha256": "0c03cb303d0dcde5ebcda7ba829c3100a6dcae06786295aed4b4fc105e653bfa",
+  "test_header_sha256": "249eb198b17973844131bc7b2812e7a6a0903938bb3d1bc782d46787c53379eb"
+}

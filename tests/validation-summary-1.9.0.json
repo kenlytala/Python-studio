@@ -1,0 +1,102 @@
+{
+  "product": "Python Studio",
+  "version": "1.9.0",
+  "edition": "c",
+  "date": "2026-11-01",
+  "source_fingerprint": "0771bf388cb5a64473c443f34773610e8284519021e2ca1934424a59b33b083c",
+  "production": {
+    "directory": "build-1.9.0",
+    "configuration": "Release",
+    "total": 26,
+    "passed": 26,
+    "failed": 0,
+    "seconds": 9.77
+  },
+  "sanitizers": {
+    "configuration": "Debug / ASan+UBSan / leak detection; targeted subset only",
+    "total": 9,
+    "passed": 9,
+    "failed": 0,
+    "seconds": 7.75
+  },
+  "xml_core_assertions": 104,
+  "xml_controller_assertions": 149,
+  "xml_picker_view_states": 240,
+  "session_unit_assertions": 197,
+  "session_unit_groups": 6,
+  "encrypted_ssh_cases": 12,
+  "xml_parity": {
+    "fragments": 291,
+    "identifiers": 291,
+    "invalid_documents": 10,
+    "python_and_c": true,
+    "stdlib_oracle": true,
+    "valid_documents": 48
+  },
+  "real_odoo_xml": [
+    {
+      "version": "18.0",
+      "url": "https://raw.githubusercontent.com/odoo/odoo/18.0/addons/sale/views/sale_order_views.xml",
+      "bytes": 69395,
+      "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc",
+      "ids": 46,
+      "record": "view_order_form",
+      "ordinal": 12,
+      "python_and_c": "pass"
+    },
+    {
+      "version": "19.0",
+      "url": "https://raw.githubusercontent.com/odoo/odoo/19.0/addons/sale/views/sale_order_views.xml",
+      "bytes": 69477,
+      "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543",
+      "ids": 47,
+      "record": "view_order_form",
+      "ordinal": 12,
+      "python_and_c": "pass"
+    }
+  ],
+  "own_code_warnings": 0,
+  "cold_build_upstream_warnings": 4,
+  "upstream_warning": "raylib 5.5 / external/jar_mod.h:370 / GCC stringop-overflow",
+  "ruff": "Two pre-existing F401 findings preserved in lint_bridge.py and test_completion_bridge.py; new XML scripts clean",
+  "dependency": "System libxml2 2.9.14 (required minimum 2.9); shared library not packaged",
+  "binaries": [
+    {
+      "path": "bin/python-studio",
+      "bytes": 1617936,
+      "sha256": "04d9e89e8ce1d51809f5fe64338ddb93e5597ed8a0def7edb9a876deacc8b13f",
+      "mode": "0755",
+      "glibc": "GLIBC_2.38"
+    },
+    {
+      "path": "bin/python-studio-ssh-helper",
+      "bytes": 72384,
+      "sha256": "f51cc8c5ea2b34e466bf268cd874dd9dec199011d3f8c65bd988e42240e4bd0f",
+      "mode": "0755",
+      "glibc": "GLIBC_2.34"
+    },
+    {
+      "path": "bin/constellation",
+      "bytes": 1173864,
+      "sha256": "a1b7acd12dc0f9440356a05160722ac9f57e53a0f6094326f3f928b095e89141",
+      "mode": "0755",
+      "glibc": "GLIBC_2.38"
+    }
+  ],
+  "live_preview": false,
+  "screenshot": false,
+  "extracted_archive": {
+    "total": 26,
+    "passed": 26,
+    "failed": 0,
+    "seconds": 10.41
+  },
+  "extracted_xml_parity": {
+    "fragments": 291,
+    "identifiers": 291,
+    "invalid_documents": 10,
+    "python_and_c": true,
+    "stdlib_oracle": true,
+    "valid_documents": 48
+  }
+}

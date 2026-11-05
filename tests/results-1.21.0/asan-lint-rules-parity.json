@@ -1,0 +1,10 @@
+{
+  "status": "passed",
+  "cases": 3023,
+  "accepted": 79,
+  "independent_native_parser": true,
+  "max_bytes": 4095,
+  "max_rules": 64,
+  "max_name": 95,
+  "no_window_or_project_execution": true
+}

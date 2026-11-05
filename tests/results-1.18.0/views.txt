@@ -1,0 +1,7 @@
+OK 8 actual lint-rule dialog layouts: apply/clear/cancel, errors, bounds, nonoverlapping settings toggle/button; no window
+OK 72 import-folder UI states: settings entry, 0..8 removable roots, errors, chooser, smallest 960x640 window; actual view functions, no GUI
+OK 1560 snippet dialog states (0..64 entries, errors, editor/dirty/delete) and 264 completion popups (0..32 items, loading, partial, window edges), actual views; no GUI
+OK 240 actual XML picker states (loading/error/empty/filter/4096 IDs), menu fixed icon/text columns; no GUI
+OK 24 extra native search layouts: all option/filter/maximize combinations, UTF-8 multiline continuation/zero-width marker; 200k-cell Unicode/tab line tail painted, both bar bands clipped/hit-tested, resize/filters cancel drag; no window
+OK six real folder-search two-pane layouts, all visible highlights/active hit, buttons and clipped UTF-8/tab content; no window or capture
+OK 362521 assertions: 192 UI states, 288 diagnostic panes, 144 Open-file explorer headers, clickable Problems, error-priority waves, Quit/footer, context creation and settings; no GUI/preview

@@ -1,0 +1,94 @@
+{
+  "status": "passed",
+  "version": "1.21.0",
+  "editions": {
+    "python": {
+      "accepted_payload_files": 685,
+      "candidate_files": 732,
+      "payload_bytes_and_modes_unchanged": true,
+      "manifest_valid": true,
+      "candidate_manifest_sha256": "4608fe122bf8f90828a6a464ad5c0b711a54d9c8988f56f4aab730ff5d179a90"
+    },
+    "c": {
+      "accepted_payload_files": 855,
+      "candidate_files": 922,
+      "payload_bytes_and_modes_unchanged": true,
+      "manifest_valid": true,
+      "candidate_manifest_sha256": "5d7fd10943668b9a87a164d1de6cde6661825ef240e9c1471553f517e390a238"
+    },
+    "gtk": {
+      "accepted_payload_files": 312,
+      "candidate_files": 360,
+      "payload_bytes_and_modes_unchanged": true,
+      "manifest_valid": true,
+      "candidate_manifest_sha256": "2800f0d3a52096dab1d215eeea31e4d265a47d3e0c5fce607d1b20b0d39a2983"
+    }
+  },
+  "candidate_archives": [
+    {
+      "edition": "python",
+      "archive": "python-studio-python-1.21.0.tar.xz",
+      "files": 732,
+      "bytes": 1524188,
+      "sha256": "4d552d45e9939a6abf1c47c3e6245d26659b6fdc7fe1be51efa0a9ff655adc11",
+      "accepted_payload_files": 685
+    },
+    {
+      "edition": "c",
+      "archive": "python-studio-c-1.21.0.tar.xz",
+      "files": 922,
+      "bytes": 1647568,
+      "sha256": "cf8436d14cf874e05ed24b20bbb578200f2314fee0da6f1dfa7467accc70dbc5",
+      "accepted_payload_files": 855
+    },
+    {
+      "edition": "gtk",
+      "archive": "python-studio-gtk-1.21.0.tar.xz",
+      "files": 360,
+      "bytes": 782580,
+      "sha256": "73624c960a2ef1ee5cc71a0a4af3c18211b452896a88524b2a4f5c0fb4a78a07",
+      "accepted_payload_files": 312
+    }
+  ],
+  "tests": {
+    "python": {
+      "total": 671,
+      "passed": 665,
+      "skipped": 6,
+      "seconds": 52.197,
+      "real_SSH": true,
+      "rebuilt_extracted_native_interop": true,
+      "external_PyLint_versions": [
+        "2.12.2",
+        "2.17.7",
+        "4.0.10"
+      ],
+      "odoo_plugin": "10.0.12"
+    },
+    "gtk": {
+      "total": 712,
+      "passed": 711,
+      "skipped": 1,
+      "seconds": 50.284,
+      "real_SSH": true,
+      "rebuilt_extracted_native_interop": true,
+      "external_PyLint_versions": [
+        "2.12.2",
+        "2.17.7",
+        "4.0.10"
+      ],
+      "odoo_plugin": "10.0.12"
+    },
+    "native": {
+      "passed": 37,
+      "seconds": 81.3
+    }
+  },
+  "oracles_repeated_each_Python_edition": 8,
+  "real_Odoo_workflows_repeated_each_Python_edition": 2,
+  "fresh_install_launchers_and_pip_check": true,
+  "source_fingerprints_match": true,
+  "native_new_objects_only_third_party_source_reused": true,
+  "provided_ELF_bytes_equal_accepted_production": true,
+  "no_tar_gz_zip_preview_capture_or_service": true
+}

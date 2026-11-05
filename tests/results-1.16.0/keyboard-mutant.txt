@@ -1,0 +1,3 @@
+OK 325 actual Ctrl+Alt+Up/Down keyboard checks: queued/held/repeat, left/right modifiers, reverse, visual columns, simultaneous UTF-8 input/undo, AltGr text, focus/modal/pane guards and 256-carets; no GUI
+OK 848 REAL native frame checks: queued/pressed/repeat F11 and Alt+Enter x four OS states x 12 focus targets; actual mouse/modal dispatch, draggable bars, limits, final release, F3, Escape, readonly dirty source, outside-search fullscreen; no window
+FAIL 77: tab_close_actions == closed && a->tab_count == 2 && app_buffer(a) == &b && a->modal == M_NONE

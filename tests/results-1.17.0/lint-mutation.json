@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "native_expected_failure": true,
+  "native_failure": "FAIL 393: has_code(&doc->report, \"W0611\") == (!i || i == 3)",
+  "native_restored_pass": true,
+  "python_expected_failure": true,
+  "mutated_only_generated_QA_include_and_copied_worker": true,
+  "production_source_files_unchanged": true,
+  "checks_actual_disable_not_post_filter": true,
+  "no_window_server_or_project_execution": true
+}

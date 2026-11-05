@@ -1,0 +1,57 @@
+{
+  "status": "passed",
+  "version": "1.16.0",
+  "editions": {
+    "python": {
+      "accepted_payload_files": 372,
+      "candidate_files": 420,
+      "payload_bytes_and_modes_unchanged": true,
+      "manifest_valid": true,
+      "candidate_manifest_sha256": "a38109cfe8f37a5dba5fd41269d485d72bda8c5632114737d8c89269e678b4a5"
+    },
+    "c": {
+      "accepted_payload_files": 494,
+      "candidate_files": 549,
+      "payload_bytes_and_modes_unchanged": true,
+      "manifest_valid": true,
+      "candidate_manifest_sha256": "a8fb9545919956af7149752fbe62660155099189d8421a8b576c545669b69b87"
+    }
+  },
+  "candidate_archives": [
+    {
+      "edition": "python",
+      "archive": "python-studio-python-1.16.0.tar.gz",
+      "files": 420,
+      "bytes": 2223308,
+      "sha256": "833532db4f985d0cd1fdef93ba114c3233148f78d08b25095469fde91e012baf",
+      "accepted_payload_files": 372
+    },
+    {
+      "edition": "c",
+      "archive": "python-studio-c-1.16.0.tar.gz",
+      "files": 549,
+      "bytes": 2762893,
+      "sha256": "219b504f67fd3bac8be46a9d0f2ae6634cf1ff3d4970ea49ad31458375551512",
+      "accepted_payload_files": 494
+    }
+  ],
+  "native_fresh_object_build": {
+    "passed": 32,
+    "seconds": 11.6
+  },
+  "python_strict": {
+    "total": 580,
+    "passed": 573,
+    "skipped": 7,
+    "seconds": 14.915,
+    "real_SSH": true,
+    "native_profile_interop": "independently rebuilt extracted C driver"
+  },
+  "oracles_repeated": 6,
+  "real_Odoo_workflows_repeated": 2,
+  "source_fingerprints_match": true,
+  "fresh_install_launchers_help_and_pip_check": true,
+  "provided_binaries_equal_accepted_production": true,
+  "payload_freeze_excludes_only_current_evidence_and_manifest": true,
+  "no_preview_capture_or_web_service": true
+}

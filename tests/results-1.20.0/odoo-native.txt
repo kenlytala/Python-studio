@@ -1,0 +1,2 @@
+OK 39 REAL native Odoo19 assertions: trusted plugin W8165, retained E0602, scoped exclusions/off mode, Odoo XML/local IDs/empty arch/DTD rejection and generic XML syntax; no Odoo server/database
+OK 88 unconditional diagnostic assertions; no display or preview

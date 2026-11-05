@@ -1,0 +1,18 @@
+{
+  "historical-before.json": {
+    "files": 51,
+    "unchanged": true
+  },
+  "protected-before.json": {
+    "files": 12,
+    "unchanged": true
+  },
+  "lint-adapters": {
+    "files": 2,
+    "intentionally_extended": true,
+    "changed": [
+      "python-studio/tools/lint_bridge.py",
+      "python-studio-c/tools/lint_bridge.py"
+    ]
+  }
+}

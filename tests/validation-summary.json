@@ -1,0 +1,166 @@
+{
+  "product": "Python Studio",
+  "version": "1.10.0",
+  "edition": "c",
+  "date": "2026-11-01",
+  "source_fingerprint": "22008fe1b5093bda6517cdf8f4f49a2b48f9088d8fe54800425aaea0265aec82",
+  "xml_editing_parity": {
+    "atomic_history_roundtrips": 268,
+    "cases": 275,
+    "python_and_c": true,
+    "stdlib_oracle": true,
+    "suggestion_contexts": 14,
+    "valid_xml_documents": 266
+  },
+  "xml_fragment_parity": {
+    "fragments": 291,
+    "identifiers": 291,
+    "invalid_documents": 10,
+    "python_and_c": true,
+    "stdlib_oracle": true,
+    "valid_documents": 48
+  },
+  "real_odoo_xml": [
+    {
+      "version": "18.0",
+      "url": "https://raw.githubusercontent.com/odoo/odoo/18.0/addons/sale/views/sale_order_views.xml",
+      "bytes": 69395,
+      "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc",
+      "ids": 46,
+      "record": "view_order_form",
+      "ordinal": 12,
+      "python_and_c": "pass",
+      "filename": "sale_order_views-18.0.xml"
+    },
+    {
+      "version": "19.0",
+      "url": "https://raw.githubusercontent.com/odoo/odoo/19.0/addons/sale/views/sale_order_views.xml",
+      "bytes": 69477,
+      "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543",
+      "ids": 47,
+      "record": "view_order_form",
+      "ordinal": 12,
+      "python_and_c": "pass",
+      "filename": "sale_order_views-19.0.xml"
+    }
+  ],
+  "real_full_document_editing": {
+    "fixtures": [
+      {
+        "version": "18.0",
+        "bytes": 69395,
+        "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc",
+        "ids": 46,
+        "native_and_python_edits": 3,
+        "atomic_history": true,
+        "stdlib_wellformed": true,
+        "python_actual_controller_configured_base": true,
+        "source_unchanged": true
+      },
+      {
+        "version": "19.0",
+        "bytes": 69477,
+        "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543",
+        "ids": 47,
+        "native_and_python_edits": 3,
+        "atomic_history": true,
+        "stdlib_wellformed": true,
+        "python_actual_controller_configured_base": true,
+        "source_unchanged": true
+      }
+    ],
+    "full_document_edits": 6,
+    "python_controller_cases": 2,
+    "physical_gui": false,
+    "odoo_semantic_validation": false
+  },
+  "source_fingerprints": {
+    "python": "0f22b0561a6967fe1f057f7ba7d325e602553319bf7ce0867d82801faad6644b",
+    "c": "22008fe1b5093bda6517cdf8f4f49a2b48f9088d8fe54800425aaea0265aec82"
+  },
+  "preview_generated": false,
+  "physical_desktop_tested": false,
+  "odoo_orm_or_database_tested": false,
+  "production": {
+    "directory": "build-1.10.0",
+    "configuration": "Release / OpenGL 2.1 / required real PyLint / SSH integration",
+    "total": 28,
+    "passed": 28,
+    "failed": 0,
+    "seconds": 11.3
+  },
+  "sanitizers": {
+    "configuration": "Debug / ASan+UBSan / leak detection / targeted subset only",
+    "total": 11,
+    "passed": 11,
+    "failed": 0,
+    "seconds": 12.32
+  },
+  "xml_edit_history_root_assertions": 818,
+  "xml_core_assertions": 104,
+  "xml_controller_assertions": 195,
+  "view_assertions": 345405,
+  "encrypted_ssh_cases": 12,
+  "own_code_warnings": 0,
+  "cold_build_upstream_warnings": 4,
+  "upstream_warning": "raylib 5.5 / external/jar_mod.h:370 / GCC stringop-overflow; configure also emits upstream CMake deprecation",
+  "ruff": "Isolated Ruff F,E9: two unchanged pre-existing F401 findings (lint_bridge.py, test_completion_bridge.py); new XML code clean",
+  "binaries": [
+    {
+      "path": "bin/python-studio",
+      "bytes": 1642512,
+      "sha256": "210dd02dee7d12542e13dd37db99baea7a520439ffd033248063225586d2cb8a",
+      "mode": "0755",
+      "glibc": "GLIBC_2.38"
+    },
+    {
+      "path": "bin/python-studio-ssh-helper",
+      "bytes": 80576,
+      "sha256": "798bee0fd42ac857de6f6606963392da7f9d6e01f5466637908216bfb4dba337",
+      "mode": "0755",
+      "glibc": "GLIBC_2.34"
+    },
+    {
+      "path": "bin/constellation",
+      "bytes": 1173864,
+      "sha256": "a1b7acd12dc0f9440356a05160722ac9f57e53a0f6094326f3f928b095e89141",
+      "mode": "0755",
+      "glibc": "GLIBC_2.38"
+    }
+  ],
+  "dependency": "System libxml2 2.9.14, minimum 2.9; not bundled",
+  "extracted_acceptance": {
+    "status": "passed",
+    "suite": {
+      "status": "passed",
+      "independent_rebuild": true,
+      "total": 28,
+      "passed": 28,
+      "failed": 0,
+      "seconds": 11.4
+    },
+    "source_fingerprint_verified": true,
+    "functional_payload": {
+      "functional_files": 162,
+      "byte_identical": true,
+      "modes_identical": true
+    },
+    "source_launcher_checked": true,
+    "editor_oracle": {
+      "atomic_history_roundtrips": 268,
+      "cases": 275,
+      "python_and_c": true,
+      "stdlib_oracle": true,
+      "suggestion_contexts": 14,
+      "valid_xml_documents": 266
+    },
+    "fragment_oracle": {
+      "fragments": 291,
+      "identifiers": 291,
+      "invalid_documents": 10,
+      "python_and_c": true,
+      "stdlib_oracle": true,
+      "valid_documents": 48
+    }
+  }
+}

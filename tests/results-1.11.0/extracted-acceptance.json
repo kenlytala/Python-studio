@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "date": "2026-11-01",
+  "independent_fresh_directories": true,
+  "native_recompiled_from_extracted_sources": true,
+  "source_fingerprints": {
+    "python": "3338e105e231d3486d3f3163dff71c9d259e7bb982104c27477904928b9be910",
+    "c": "99410fc0790606eb698bc223ba73937a3c074f647652ce63df58d32dd0000975"
+  },
+  "functional_payload": {
+    "python": {
+      "files": 139,
+      "bytes_and_archive_modes_identical": true
+    },
+    "c": {
+      "files": 200,
+      "bytes_and_archive_modes_identical": true
+    }
+  },
+  "python": {
+    "total": 376,
+    "passed": 369,
+    "skipped": 7,
+    "seconds": 12.342,
+    "strict_ResourceWarning": true,
+    "real_SSH": true,
+    "fresh_native_profile_interop": true
+  },
+  "c": {
+    "groups": 29,
+    "passed": 29,
+    "seconds": 9.81
+  },
+  "all_three_oracles_identical": true,
+  "actual_python_odoo_directory_cases_repeated": 2,
+  "launcher_versions_passed": true,
+  "final_repack_scope": "Current-version evidence, manifests and validation only; functional bytes/modes must stay identical"
+}

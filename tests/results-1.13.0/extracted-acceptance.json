@@ -1,0 +1,43 @@
+{
+  "status": "passed",
+  "date": "2026-11-02",
+  "new_independent_extraction": true,
+  "source_fingerprints": {
+    "python": "e7e4b6b552a7eb9d18636237078bbae59d4fec55c1fb68c95eacd0bc2ad622d8",
+    "c": "891b804f34e5814738e0cb1674f9d175a726c1d027e91c51b0cfc3e3a98269a2"
+  },
+  "candidate_members_bytes_modes_verified": {
+    "python": 244,
+    "c": 343
+  },
+  "accepted_payload_files": {
+    "python": 216,
+    "c": 306
+  },
+  "native_fresh_compilation": {
+    "passed": 30,
+    "seconds": 11.17,
+    "own_build_directory": true,
+    "no_production_objects_reused": true,
+    "only_upstream_raylib_source_copy_reused": true,
+    "fingerprint_matches_production": true
+  },
+  "python": {
+    "passed": 486,
+    "total": 493,
+    "skipped": 7,
+    "seconds": 14.752,
+    "strict_ResourceWarning": true,
+    "real_SSH": true,
+    "native_profile_driver_from_extracted_build": true
+  },
+  "five_oracles_repeated_identically": true,
+  "two_actual_Odoo_controller_workflows_repeated_identically": true,
+  "fresh_extracted_python_venv_install_version_help_pip_check": true,
+  "temporary_venv_removed": true,
+  "native_launcher_and_supplied_binary_version": true,
+  "three_supplied_ELF_binaries_hashes_modes_and_dependencies_verified": true,
+  "accepted_payload_bytes_modes_unchanged_in_both_trees_after_tests": true,
+  "final_repack_only_current_evidence_reports_manifest": true,
+  "no_preview_capture_or_web_service": true
+}

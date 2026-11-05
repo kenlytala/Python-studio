@@ -1,0 +1,200 @@
+{
+  "archives_deleted": [
+    {
+      "path": "prisme-c-1.5.1.tar.gz",
+      "bytes": 2049786,
+      "sha256": "e5d1c32d2a7df521a82cb7ab09611c222dea5c9e8306e8bdb3bd3abe230f14c1"
+    },
+    {
+      "path": "prisme-c-1.7.0.tar.gz",
+      "bytes": 5450564,
+      "sha256": "0c2c8fb434eaeafa33a4574ad4acaa3dbcf151202914232dbeff5297de03108e"
+    },
+    {
+      "path": "prisme-python-1.5.1.tar.gz",
+      "bytes": 1843795,
+      "sha256": "0c4e20747eb10fb2e5b7efbe17f2db8baebff263f6c4a6917ab82dc1ae428cf6"
+    },
+    {
+      "path": "prisme-python-1.5.2.tar.gz",
+      "bytes": 1691452,
+      "sha256": "f735fe9e8b86b6406173a3c37579cb548075cd6cff0a5c7d14d95ec19d3247df"
+    },
+    {
+      "path": "prisme-python-1.6.0.tar.gz",
+      "bytes": 1722302,
+      "sha256": "b53ce6524e4b210a65ba33eaf947ca1bf34e06e35fa7b9bb3089f6e02da891ad"
+    },
+    {
+      "path": "prisme-python-1.6.1.tar.gz",
+      "bytes": 1724530,
+      "sha256": "b9ce34de3f47c08ba05c4e0910b1b6ef1af52bb3b15e5bc379a1cd28c230d149"
+    },
+    {
+      "path": "prisme-python-1.7.0.tar.gz",
+      "bytes": 1735093,
+      "sha256": "600662b2dd9b6b70f19df2010ed4231174a456dd582223671bcdb941287bbfb5"
+    },
+    {
+      "path": "python-studio-c-1.10.0.tar.gz",
+      "bytes": 2598773,
+      "sha256": "01da8fafa53be10ae7889911b99cf452b1867f14e48c38e314878ab50f1267a7"
+    },
+    {
+      "path": "python-studio-c-1.11.0.tar.gz",
+      "bytes": 2375249,
+      "sha256": "2d2c54138fd195546d1306c7da0baeeafef8214dc140c7ec88bb1c7dbe40628c"
+    },
+    {
+      "path": "python-studio-c-1.12.0.tar.gz",
+      "bytes": 2467542,
+      "sha256": "c09052b5462891698a68ab991d02e07987e5f3c5cc7d48e1a49a7ab1f5c41ef3"
+    },
+    {
+      "path": "python-studio-c-1.13.0.tar.gz",
+      "bytes": 2553096,
+      "sha256": "e8fa152522fdfdbb1f185b426e35f5e08947bece28acd3ed8b60bb17358abf26"
+    },
+    {
+      "path": "python-studio-c-1.14.0.tar.gz",
+      "bytes": 2617999,
+      "sha256": "b5c2dae3e725f52d84cacd07751832101841c386aa6fa8874df7271a7f9dabfb"
+    },
+    {
+      "path": "python-studio-c-1.15.0.tar.gz",
+      "bytes": 2698740,
+      "sha256": "cd8ab0bd198335654341bfb5f5b32f5da924f04ce3ac038a6db1aced06e6c00b"
+    },
+    {
+      "path": "python-studio-c-1.16.0.tar.gz",
+      "bytes": 2786490,
+      "sha256": "0d22facff0857ccc16c38eeb035582423dedb90812fada4a7a191d23a80d59f1"
+    },
+    {
+      "path": "python-studio-c-1.17.0.tar.gz",
+      "bytes": 2878668,
+      "sha256": "25daf3a1f5afeef24ef6a36453a2591191f11d7f46f507b25adf6d0db9340afc"
+    },
+    {
+      "path": "python-studio-c-1.18.0.tar.gz",
+      "bytes": 2959501,
+      "sha256": "f7502586becd35f1d99ae82f718c481ddf0d59514d29da88e9da1bb0e9525f3a"
+    },
+    {
+      "path": "python-studio-c-1.8.0.tar.gz",
+      "bytes": 2212610,
+      "sha256": "cab1345df8a0990244e6a1f735b6f65d1e205e8c253e96fca272c6e002c19a69"
+    },
+    {
+      "path": "python-studio-c-1.9.0.tar.gz",
+      "bytes": 2263293,
+      "sha256": "6153b9aa3283550e82f3e3d96d94ab3e343b40052716242c0a6c693dd83a349d"
+    },
+    {
+      "path": "python-studio-gtk-1.18.0.tar.gz",
+      "bytes": 1060748,
+      "sha256": "f10591c6e5d8a702e33058173963a21adb8ef5449bb64c397f6954b248538a25"
+    },
+    {
+      "path": "python-studio-gtk-1.19.0.tar.gz",
+      "bytes": 1116136,
+      "sha256": "27b93589088393ee5639222eda9421e2f1253b6a241e20878e7dbfefb5904802"
+    },
+    {
+      "path": "python-studio-python-1.10.0.tar.gz",
+      "bytes": 1847660,
+      "sha256": "b8f3770ca485e16d429ff4e94ddc536e01e7927019749a8397a01ac87111bf1b"
+    },
+    {
+      "path": "python-studio-python-1.11.0.tar.gz",
+      "bytes": 1882532,
+      "sha256": "be6b89ddd2b3420a5316c2094e5f5a16f566097b220f1f5fddaa01b42b1af589"
+    },
+    {
+      "path": "python-studio-python-1.12.0.tar.gz",
+      "bytes": 1948862,
+      "sha256": "9b5112283e803b88f69ae445295657a755c585d1cf27916f3bdab9ffecce98c9"
+    },
+    {
+      "path": "python-studio-python-1.13.0.tar.gz",
+      "bytes": 2026527,
+      "sha256": "1449be76d8cf9fb4e41ea4029b16bfc3fbaea4c36f1b281e9b91c39005fbd15b"
+    },
+    {
+      "path": "python-studio-python-1.14.0.tar.gz",
+      "bytes": 2090568,
+      "sha256": "fe2f9a6c3e00df47a376bdac74759010663580d8499949e348c371a0d8170160"
+    },
+    {
+      "path": "python-studio-python-1.15.0.tar.gz",
+      "bytes": 2162625,
+      "sha256": "4e3e7145605e04377b0a71a2fee6c8fad7e9f64ceeffb1210e09fdcdb35c435e"
+    },
+    {
+      "path": "python-studio-python-1.16.0.tar.gz",
+      "bytes": 2247031,
+      "sha256": "496a461991f020db898d6e8aa75564eecb5e339129f6ef55ec6fd23f49940f09"
+    },
+    {
+      "path": "python-studio-python-1.17.0.tar.gz",
+      "bytes": 2329599,
+      "sha256": "0c90b637ad9760fcc7e3293efcb08ec4357c044018634110bbd0aa72779f3013"
+    },
+    {
+      "path": "python-studio-python-1.18.0.tar.gz",
+      "bytes": 2408723,
+      "sha256": "46d13d5005ffd9900dc629bf0ed8fdeac556310472ae600fa8844b038cccc42b"
+    },
+    {
+      "path": "python-studio-python-1.8.0.tar.gz",
+      "bytes": 1772032,
+      "sha256": "88af59d7e5dcfd27b474bead9fcc2f0cc54be22de20de6e2f8e93356b8949bde"
+    },
+    {
+      "path": "python-studio-python-1.9.0.tar.gz",
+      "bytes": 1804475,
+      "sha256": "9b00b140cb6e51cd1e113e5fb01ff9a522440a4af7b5dd3f83075d2829763858"
+    },
+    {
+      "path": "verifications-2026-10-31.tar.gz",
+      "bytes": 2036274,
+      "sha256": "35f05d6cb448bcecaf5e304231be30237fa4497c827d59747006b25f83a0a405"
+    }
+  ],
+  "archive_count": 32,
+  "bytes_freed": 71363275,
+  "orphan_checksum_files_deleted": [
+    "prisme-c-1.5.1.sha256",
+    "prisme-c-1.7.0.tar.gz.sha256",
+    "prisme-python-1.5.1.tar.gz.sha256",
+    "prisme-python-1.5.2.tar.gz.sha256",
+    "prisme-python-1.6.0.tar.gz.sha256",
+    "prisme-python-1.6.1.tar.gz.sha256",
+    "prisme-python-1.7.0.tar.gz.sha256",
+    "python-studio-c-1.10.0.tar.gz.sha256",
+    "python-studio-c-1.11.0.tar.gz.sha256",
+    "python-studio-c-1.12.0.tar.gz.sha256",
+    "python-studio-c-1.13.0.tar.gz.sha256",
+    "python-studio-c-1.14.0.tar.gz.sha256",
+    "python-studio-c-1.15.0.tar.gz.sha256",
+    "python-studio-c-1.16.0.tar.gz.sha256",
+    "python-studio-c-1.17.0.tar.gz.sha256",
+    "python-studio-c-1.18.0.tar.gz.sha256",
+    "python-studio-c-1.8.0.tar.gz.sha256",
+    "python-studio-c-1.9.0.tar.gz.sha256",
+    "python-studio-gtk-1.18.0.tar.gz.sha256",
+    "python-studio-gtk-1.19.0.tar.gz.sha256",
+    "python-studio-python-1.10.0.tar.gz.sha256",
+    "python-studio-python-1.11.0.tar.gz.sha256",
+    "python-studio-python-1.12.0.tar.gz.sha256",
+    "python-studio-python-1.13.0.tar.gz.sha256",
+    "python-studio-python-1.14.0.tar.gz.sha256",
+    "python-studio-python-1.15.0.tar.gz.sha256",
+    "python-studio-python-1.16.0.tar.gz.sha256",
+    "python-studio-python-1.17.0.tar.gz.sha256",
+    "python-studio-python-1.18.0.tar.gz.sha256",
+    "python-studio-python-1.8.0.tar.gz.sha256",
+    "python-studio-python-1.9.0.tar.gz.sha256"
+  ],
+  "source_editions_preserved": true
+}

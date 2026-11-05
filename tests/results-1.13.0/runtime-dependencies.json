@@ -1,0 +1,16 @@
+{
+  "libpcre2-8": "10.46",
+  "libxml-2.0": "2.9.14",
+  "python-studio": {
+    "max_glibc": "2.38",
+    "has_unresolved_library": false
+  },
+  "python-studio-ssh-helper": {
+    "max_glibc": "2.34",
+    "has_unresolved_library": false
+  },
+  "constellation": {
+    "max_glibc": "2.38",
+    "has_unresolved_library": false
+  }
+}

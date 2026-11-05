@@ -1,0 +1,118 @@
+[  1%] Building C object CMakeFiles/prisme_core.dir/src/buffer.c.o
+[  2%] Building C object CMakeFiles/prisme_core.dir/src/multicursor.c.o
+[  3%] Building C object CMakeFiles/prisme_core.dir/src/syntax.c.o
+[ 21%] Built target glfw
+[ 27%] Built target raylib
+[ 28%] Building C object CMakeFiles/prisme_core.dir/src/runner.c.o
+[ 28%] Building C object CMakeFiles/prisme_core.dir/src/layout.c.o
+[ 29%] Building C object CMakeFiles/prisme_core.dir/src/files.c.o
+[ 30%] Building C object CMakeFiles/prisme_core.dir/src/file_job.c.o
+[ 31%] Building C object CMakeFiles/prisme_core.dir/src/linter.c.o
+[ 32%] Building C object CMakeFiles/prisme_core.dir/src/import_paths.c.o
+[ 32%] Building C object CMakeFiles/prisme_core.dir/src/snippets.c.o
+[ 33%] Building C object CMakeFiles/prisme_core.dir/src/completion.c.o
+[ 34%] Building C object CMakeFiles/prisme_core.dir/src/ssh.c.o
+[ 35%] Building C object CMakeFiles/prisme_core.dir/src/ssh_profiles.c.o
+[ 36%] Building C object CMakeFiles/prisme_core.dir/src/ssh_command.c.o
+[ 36%] Building C object CMakeFiles/prisme_core.dir/src/ssh_json.c.o
+[ 37%] Building C object CMakeFiles/prisme_core.dir/src/ssh_helper.c.o
+[ 38%] Building C object CMakeFiles/prisme_core.dir/src/session.c.o
+[ 39%] Building C object CMakeFiles/prisme_core.dir/src/xml_refs.c.o
+[ 39%] Building C object CMakeFiles/prisme_graphics.dir/src/graphics.c.o
+[ 40%] Linking C static library libprisme_graphics.a
+[ 40%] Built target prisme_graphics
+[ 40%] Building C object CMakeFiles/constellation.dir/demos/constellation.c.o
+[ 41%] Building C object CMakeFiles/test_ui.dir/src/ui.c.o
+[ 42%] Building C object CMakeFiles/test_ui.dir/tests/test_ui.c.o
+[ 43%] Linking C executable constellation
+[ 43%] Built target constellation
+[ 44%] Linking C static library libprisme_core.a
+[ 44%] Built target prisme_core
+[ 45%] Linking C executable test_ui
+[ 46%] Building C object CMakeFiles/prisme_ssh_helper.dir/src/ssh_helper_main.c.o
+[ 47%] Linking C executable test_xml_refs
+[ 48%] Linking C executable test_xml_input
+[ 49%] Linking C executable python-studio-ssh-helper
+[ 49%] Built target test_ui
+[ 50%] Building C object CMakeFiles/test_core.dir/tests/test_core.c.o
+[ 51%] Built target test_xml_refs
+[ 51%] Built target prisme_ssh_helper
+[ 52%] Built target test_xml_input
+[ 52%] Building C object CMakeFiles/test_session.dir/tests/test_session.c.o
+[ 53%] Building C object CMakeFiles/test_multi.dir/tests/test_multi.c.o
+[ 54%] Building C object CMakeFiles/test_layout.dir/tests/test_layout.c.o
+[ 54%] Linking C executable test_layout
+[ 55%] Linking C executable test_session
+[ 56%] Linking C executable test_core
+[ 56%] Built target test_layout
+[ 56%] Built target test_session
+[ 56%] Built target test_core
+[ 57%] Building C object CMakeFiles/test_ssh.dir/tests/test_ssh.c.o
+[ 57%] Building C object CMakeFiles/test_files.dir/tests/test_files.c.o
+[ 57%] Building C object CMakeFiles/ssh_driver.dir/src/app_session.c.o
+[ 58%] Linking C executable test_multi
+[ 58%] Built target test_multi
+[ 58%] Linking C executable test_ssh
+[ 58%] Built target test_ssh
+[ 59%] Building C object CMakeFiles/test_import_paths.dir/tests/test_import_paths.c.o
+[ 60%] Building C object CMakeFiles/test_snippets.dir/tests/test_snippets.c.o
+[ 61%] Building C object CMakeFiles/ssh_driver.dir/src/app_ssh.c.o
+[ 62%] Linking C executable test_import_paths
+[ 63%] Linking C executable test_files
+[ 64%] Linking C executable test_snippets
+[ 64%] Built target test_import_paths
+[ 64%] Built target test_files
+[ 65%] Building C object CMakeFiles/test_completion.dir/tests/test_completion.c.o
+[ 66%] Building C object CMakeFiles/test_snippet_input.dir/src/app_completion.c.o
+[ 66%] Built target test_snippets
+[ 67%] Building C object CMakeFiles/test_linter.dir/tests/test_linter.c.o
+[ 68%] Building C object CMakeFiles/ssh_driver.dir/src/app_xml.c.o
+[ 69%] Linking C executable test_completion
+[ 69%] Building C object CMakeFiles/test_snippet_input.dir/src/app_snippet_input.c.o
+[ 69%] Built target test_completion
+[ 70%] Building C object CMakeFiles/test_diagnostics_view.dir/src/view_ssh.c.o
+[ 71%] Linking C executable test_linter
+[ 72%] Building C object CMakeFiles/ssh_driver.dir/tests/ssh_driver.c.o
+[ 72%] Built target test_linter
+[ 73%] Building C object CMakeFiles/test_snippet_input.dir/src/app_snippets.c.o
+[ 74%] Building C object CMakeFiles/test_controls.dir/src/app_completion.c.o
+[ 75%] Building C object CMakeFiles/test_snippet_input.dir/tests/test_snippet_input.c.o
+[ 75%] Building C object CMakeFiles/test_diagnostics_view.dir/tests/test_diagnostics_view.c.o
+[ 76%] Building C object CMakeFiles/test_controls.dir/src/app_multicursor.c.o
+[ 77%] Linking C executable ssh_driver
+[ 77%] Building C object CMakeFiles/test_controls.dir/src/app_session.c.o
+[ 77%] Built target ssh_driver
+[ 78%] Linking C executable test_snippet_input
+[ 79%] Building C object CMakeFiles/test_file_clipboard.dir/tests/test_file_clipboard.c.o
+[ 79%] Built target test_snippet_input
+[ 80%] Building C object CMakeFiles/test_controls.dir/src/app_snippets.c.o
+[ 81%] Building C object CMakeFiles/test_fullscreen.dir/tests/test_fullscreen.c.o
+[ 82%] Linking C executable test_file_clipboard
+[ 82%] Built target test_file_clipboard
+[ 82%] Building C object CMakeFiles/test_fullscreen_retina.dir/tests/test_fullscreen.c.o
+[ 83%] Building C object CMakeFiles/test_controls.dir/src/app_ssh.c.o
+[ 84%] Linking C executable test_fullscreen
+[ 84%] Built target test_fullscreen
+[ 85%] Building C object CMakeFiles/prisme.dir/src/app.c.o
+[ 86%] Linking C executable test_fullscreen_retina
+[ 87%] Building C object CMakeFiles/test_controls.dir/src/app_xml.c.o
+[ 87%] Built target test_fullscreen_retina
+[ 87%] Building C object CMakeFiles/test_controls.dir/tests/test_controls.c.o
+[ 88%] Building C object CMakeFiles/prisme.dir/src/app_completion.c.o
+[ 88%] Building C object CMakeFiles/prisme.dir/src/app_multicursor.c.o
+[ 89%] Building C object CMakeFiles/prisme.dir/src/app_session.c.o
+[ 90%] Building C object CMakeFiles/prisme.dir/src/app_snippet_input.c.o
+[ 91%] Linking C executable test_controls
+[ 92%] Building C object CMakeFiles/prisme.dir/src/app_snippets.c.o
+[ 92%] Built target test_controls
+[ 93%] Building C object CMakeFiles/prisme.dir/src/app_ssh.c.o
+[ 94%] Building C object CMakeFiles/prisme.dir/src/app_xml.c.o
+[ 95%] Linking C executable test_diagnostics_view
+[ 95%] Built target test_diagnostics_view
+[ 95%] Building C object CMakeFiles/prisme.dir/src/file_clipboard.c.o
+[ 96%] Building C object CMakeFiles/prisme.dir/src/main.c.o
+[ 97%] Building C object CMakeFiles/prisme.dir/src/ui.c.o
+[ 98%] Building C object CMakeFiles/prisme.dir/src/view.c.o
+[100%] Building C object CMakeFiles/prisme.dir/src/view_ssh.c.o
+[100%] Linking C executable python-studio
+[100%] Built target prisme

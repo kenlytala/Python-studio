@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "implementation": "actual Python controller, injected Ctrl+Maj+F/Enter/F3/Maj+F3/Escape and mocked CPU rendering; no window/capture",
+  "advanced_filtered_files": 1,
+  "advanced_regex_occurrences": 24,
+  "dialog_only_F11_preserves_native_window": true,
+  "files": 2,
+  "occurrences": 38,
+  "global_F3_steps": 39,
+  "automatic_file_switch": true,
+  "global_wrap_forward_backward": true,
+  "vertical_and_horizontal_follow": true,
+  "two_separate_panes": true,
+  "editor_buffers_carets_and_history_unchanged": true,
+  "XML_and_import_roots_unchanged": true,
+  "source_bytes_unchanged": true,
+  "folder_only_persisted": true,
+  "fixtures": [
+    {
+      "version": "18.0",
+      "url": "https://raw.githubusercontent.com/odoo/odoo/18.0/addons/sale/views/sale_order_views.xml",
+      "bytes": 69395,
+      "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc",
+      "ids": 46,
+      "record": "view_order_form",
+      "ordinal": 12,
+      "python_and_c": "pass",
+      "filename": "sale_order_views-18.0.xml"
+    },
+    {
+      "version": "19.0",
+      "url": "https://raw.githubusercontent.com/odoo/odoo/19.0/addons/sale/views/sale_order_views.xml",
+      "bytes": 69477,
+      "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543",
+      "ids": 47,
+      "record": "view_order_form",
+      "ordinal": 12,
+      "python_and_c": "pass",
+      "filename": "sale_order_views-19.0.xml"
+    }
+  ]
+}

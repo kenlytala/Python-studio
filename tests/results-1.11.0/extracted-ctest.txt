@@ -1,0 +1,63 @@
+Test project /home/user/.cache/python-studio-1110/extracted-native
+      Start  1: directory_path_completion_core
+ 1/29 Test  #1: directory_path_completion_core ...............   Passed    0.01 sec
+      Start  2: xml_editor_tags_history_and_root_profiles
+ 2/29 Test  #2: xml_editor_tags_history_and_root_profiles ....   Passed    0.01 sec
+      Start  3: xml_identifiers_safe_parser_and_worker
+ 3/29 Test  #3: xml_identifiers_safe_parser_and_worker .......   Passed    0.04 sec
+      Start  4: xml_inline_actual_controller
+ 4/29 Test  #4: xml_inline_actual_controller .................   Passed    0.03 sec
+      Start  5: model_syntax_runner
+ 5/29 Test  #5: model_syntax_runner ..........................   Passed    0.11 sec
+      Start  6: project_sessions_drafts_and_recovery
+ 6/29 Test  #6: project_sessions_drafts_and_recovery .........   Passed    0.01 sec
+      Start  7: multicursor_transactions
+ 7/29 Test  #7: multicursor_transactions .....................   Passed    0.01 sec
+      Start  8: panel_layout_combinations
+ 8/29 Test  #8: panel_layout_combinations ....................   Passed    0.00 sec
+      Start  9: explorer_file_operations
+ 9/29 Test  #9: explorer_file_operations .....................   Passed    0.01 sec
+      Start 10: native_ssh_profiles_command_and_guards
+10/29 Test #10: native_ssh_profiles_command_and_guards .......   Passed    0.01 sec
+      Start 11: xml_editing_independent_stdlib_oracle
+11/29 Test #11: xml_editing_independent_stdlib_oracle ........   Passed    0.45 sec
+      Start 12: xml_fragments_independent_stdlib_oracle
+12/29 Test #12: xml_fragments_independent_stdlib_oracle ......   Passed    0.41 sec
+      Start 13: native_encrypted_ssh_sftp_integration
+13/29 Test #13: native_encrypted_ssh_sftp_integration ........   Passed    4.32 sec
+      Start 14: python_import_paths_and_project_profiles
+14/29 Test #14: python_import_paths_and_project_profiles .....   Passed    0.00 sec
+      Start 15: global_snippets_persistence_and_expansion
+15/29 Test #15: global_snippets_persistence_and_expansion ....   Passed    0.08 sec
+      Start 16: static_completion_native_worker
+16/29 Test #16: static_completion_native_worker ..............   Passed    0.23 sec
+      Start 17: snippets_and_completion_actual_controllers
+17/29 Test #17: snippets_and_completion_actual_controllers ...   Passed    0.00 sec
+      Start 18: python_static_odoo_completion
+18/29 Test #18: python_static_odoo_completion ................   Passed    0.15 sec
+      Start 19: python_pylint_live_diagnostics
+19/29 Test #19: python_pylint_live_diagnostics ...............   Passed    3.24 sec
+      Start 20: python_syntax_without_pylint
+20/29 Test #20: python_syntax_without_pylint .................   Passed    0.45 sec
+      Start 21: python_lint_bridge_failures
+21/29 Test #21: python_lint_bridge_failures ..................   Passed    0.12 sec
+      Start 22: diagnostic_views_without_window
+22/29 Test #22: diagnostic_views_without_window ..............   Passed    0.03 sec
+      Start 23: ui_readability_without_window
+23/29 Test #23: ui_readability_without_window ................   Passed    0.04 sec
+      Start 24: native_file_clipboard_without_display
+24/29 Test #24: native_file_clipboard_without_display ........   Passed    0.00 sec
+      Start 25: frameless_controls_and_file_safety
+25/29 Test #25: frameless_controls_and_file_safety ...........   Passed    0.02 sec
+      Start 26: fullscreen_native_surface_without_window
+26/29 Test #26: fullscreen_native_surface_without_window .....   Passed    0.00 sec
+      Start 27: fullscreen_retina_surface_without_window
+27/29 Test #27: fullscreen_retina_surface_without_window .....   Passed    0.00 sec
+      Start 28: prisme_invalid_display
+28/29 Test #28: prisme_invalid_display .......................   Passed    0.01 sec
+      Start 29: constellation_invalid_display
+29/29 Test #29: constellation_invalid_display ................   Passed    0.01 sec
+
+100% tests passed out of 29
+
+Total Test time (real) =   9.81 sec

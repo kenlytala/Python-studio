@@ -1,0 +1,30 @@
+{
+  "fixtures": [
+    {
+      "version": "18.0",
+      "bytes": 69395,
+      "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc",
+      "ids": 46,
+      "native_and_python_edits": 3,
+      "atomic_history": true,
+      "stdlib_wellformed": true,
+      "python_actual_controller_configured_base": true,
+      "source_unchanged": true
+    },
+    {
+      "version": "19.0",
+      "bytes": 69477,
+      "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543",
+      "ids": 47,
+      "native_and_python_edits": 3,
+      "atomic_history": true,
+      "stdlib_wellformed": true,
+      "python_actual_controller_configured_base": true,
+      "source_unchanged": true
+    }
+  ],
+  "full_document_edits": 6,
+  "python_controller_cases": 2,
+  "physical_gui": false,
+  "odoo_semantic_validation": false
+}

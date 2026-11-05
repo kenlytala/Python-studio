@@ -1,0 +1,27 @@
+Test project /home/user/.cache/python-studio-1100/asan
+      Start  1: xml_editor_tags_history_and_root_profiles
+ 1/11 Test  #1: xml_editor_tags_history_and_root_profiles ....   Passed    0.09 sec
+      Start  2: xml_identifiers_safe_parser_and_worker
+ 2/11 Test  #2: xml_identifiers_safe_parser_and_worker .......   Passed    0.27 sec
+      Start  3: xml_inline_actual_controller
+ 3/11 Test  #3: xml_inline_actual_controller .................   Passed    0.11 sec
+      Start  5: project_sessions_drafts_and_recovery
+ 4/11 Test  #5: project_sessions_drafts_and_recovery .........   Passed    0.04 sec
+      Start  6: multicursor_transactions
+ 5/11 Test  #6: multicursor_transactions .....................   Passed    0.09 sec
+      Start  9: native_ssh_profiles_command_and_guards
+ 6/11 Test  #9: native_ssh_profiles_command_and_guards .......   Passed    0.07 sec
+      Start 10: xml_editing_independent_stdlib_oracle
+ 7/11 Test #10: xml_editing_independent_stdlib_oracle ........   Passed    6.70 sec
+      Start 11: xml_fragments_independent_stdlib_oracle
+ 8/11 Test #11: xml_fragments_independent_stdlib_oracle ......   Passed    4.49 sec
+      Start 16: snippets_and_completion_actual_controllers
+ 9/11 Test #16: snippets_and_completion_actual_controllers ...   Passed    0.02 sec
+      Start 21: diagnostic_views_without_window
+10/11 Test #21: diagnostic_views_without_window ..............   Passed    0.37 sec
+      Start 24: frameless_controls_and_file_safety
+11/11 Test #24: frameless_controls_and_file_safety ...........   Passed    0.06 sec
+
+100% tests passed out of 11
+
+Total Test time (real) =  12.32 sec

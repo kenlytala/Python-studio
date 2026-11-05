@@ -1,0 +1,3 @@
+OK actual Pylint 4.1.3: errors, warnings, conventions, Unicode byte columns, unsaved contents, isolated imports/config
+OK real external framework: E0401 before, resolved by configured UTF-8/space/quote path, genuine E0602 retained, no module execution, E0401 returns after removal, missing directory explicit
+FAIL 393: has_code(&doc->report, "W0611") == (!i || i == 3)

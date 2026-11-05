@@ -1,0 +1,8 @@
+{
+  "contexts": 54,
+  "edits": 39,
+  "atomic_history_roundtrips": 37,
+  "catalog_snapshots": 5,
+  "unicode_offsets": "native UTF-8 bytes / Python code points",
+  "status": "passed"
+}

@@ -1,0 +1,177 @@
+{
+  "product": "Python Studio",
+  "version": "1.11.0",
+  "edition": "c",
+  "date": "2026-11-01",
+  "source_fingerprint": "99410fc0790606eb698bc223ba73937a3c074f647652ce63df58d32dd0000975",
+  "both_independent_editions": true,
+  "tests": {
+    "python": {
+      "total": 376,
+      "passed": 369,
+      "skipped": 7,
+      "seconds": 12.309,
+      "strict_ResourceWarning": true
+    },
+    "c": {
+      "groups": 29,
+      "passed": 29,
+      "seconds": 9.66,
+      "release": true,
+      "opengl": "2.1"
+    },
+    "sanitizers": {
+      "groups": 12,
+      "passed": 12,
+      "seconds": 4.61,
+      "address": true,
+      "undefined": true,
+      "leaks": true,
+      "non_pie": true
+    }
+  },
+  "new_python_directory_tests": 46,
+  "native_directory_core_assertions": 360,
+  "native_controls_assertions": 955,
+  "native_multicursor_key_checks": 325,
+  "directory_path_oracle": {
+    "contexts": 54,
+    "edits": 39,
+    "atomic_history_roundtrips": 37,
+    "catalog_snapshots": 5,
+    "unicode_offsets": "native UTF-8 bytes / Python code points",
+    "status": "passed"
+  },
+  "xml_editing_parity": {
+    "atomic_history_roundtrips": 268,
+    "cases": 275,
+    "python_and_c": true,
+    "stdlib_oracle": true,
+    "suggestion_contexts": 14,
+    "valid_xml_documents": 266
+  },
+  "xml_fragment_parity": {
+    "fragments": 291,
+    "identifiers": 291,
+    "invalid_documents": 10,
+    "python_and_c": true,
+    "stdlib_oracle": true,
+    "valid_documents": 48
+  },
+  "real_odoo_xml": [
+    {
+      "version": "18.0",
+      "url": "https://raw.githubusercontent.com/odoo/odoo/18.0/addons/sale/views/sale_order_views.xml",
+      "bytes": 69395,
+      "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc",
+      "ids": 46,
+      "record": "view_order_form",
+      "ordinal": 12,
+      "python_and_c": "pass",
+      "filename": "sale_order_views-18.0.xml"
+    },
+    {
+      "version": "19.0",
+      "url": "https://raw.githubusercontent.com/odoo/odoo/19.0/addons/sale/views/sale_order_views.xml",
+      "bytes": 69477,
+      "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543",
+      "ids": 47,
+      "record": "view_order_form",
+      "ordinal": 12,
+      "python_and_c": "pass",
+      "filename": "sale_order_views-19.0.xml"
+    }
+  ],
+  "real_python_directory_controller": {
+    "implementation": "actual Python controller, injected keys and mocked rendering; no window",
+    "cases": [
+      {
+        "version": "18.0",
+        "ids": 46,
+        "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc",
+        "workflow": "sale/ -> views/ -> XML filename -> ID -> element/fields/empty arch",
+        "atomic_undo_redo": true,
+        "source_unchanged": true,
+        "wellformed_stdlib": true
+      },
+      {
+        "version": "19.0",
+        "ids": 47,
+        "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543",
+        "workflow": "sale/ -> views/ -> XML filename -> ID -> element/fields/empty arch",
+        "atomic_undo_redo": true,
+        "source_unchanged": true,
+        "wellformed_stdlib": true
+      }
+    ],
+    "status": "passed"
+  },
+  "ssh_real": {
+    "cases_each_edition": 12,
+    "transport": "OpenSSH/SSHFS/OpenSSH SFTP, Unix QA socket",
+    "directory_to_file_to_xml_id": true,
+    "remote_project_and_configured_remote_base_from_local_project": true,
+    "no_additional_authentication": true,
+    "remote_python_execution": false
+  },
+  "limits": {
+    "choices": 32,
+    "scanned_entries": 8192,
+    "roots": 18,
+    "path_utf8_bytes": 4095,
+    "recursive": false,
+    "one_directory_worker": true
+  },
+  "protected_integrity": {
+    "unchanged": true,
+    "baseline_files": 14,
+    "historical_files": 27
+  },
+  "independent_extracted_acceptance": {
+    "status": "passed",
+    "date": "2026-11-01",
+    "independent_fresh_directories": true,
+    "native_recompiled_from_extracted_sources": true,
+    "source_fingerprints": {
+      "python": "3338e105e231d3486d3f3163dff71c9d259e7bb982104c27477904928b9be910",
+      "c": "99410fc0790606eb698bc223ba73937a3c074f647652ce63df58d32dd0000975"
+    },
+    "functional_payload": {
+      "python": {
+        "files": 139,
+        "bytes_and_archive_modes_identical": true
+      },
+      "c": {
+        "files": 200,
+        "bytes_and_archive_modes_identical": true
+      }
+    },
+    "python": {
+      "total": 376,
+      "passed": 369,
+      "skipped": 7,
+      "seconds": 12.342,
+      "strict_ResourceWarning": true,
+      "real_SSH": true,
+      "fresh_native_profile_interop": true
+    },
+    "c": {
+      "groups": 29,
+      "passed": 29,
+      "seconds": 9.81
+    },
+    "all_three_oracles_identical": true,
+    "actual_python_odoo_directory_cases_repeated": 2,
+    "launcher_versions_passed": true,
+    "final_repack_scope": "Current-version evidence, manifests and validation only; functional bytes/modes must stay identical"
+  },
+  "no_preview": true,
+  "limitations": [
+    "No physical desktop/GPU/GNOME or Windows/macOS validation",
+    "No Odoo schema/ORM/database validation",
+    "SSH guards are not a general hostile-filesystem sandbox",
+    "Seven Python exclusions: external PyLint matrix, historical glibc, Odoo Python fixtures, four physical GUI tests",
+    "Two unchanged historical native Python F401; isolated F,E9 only",
+    "A blocked filesystem syscall can outlive dismissal and delay shutdown"
+  ]
+}

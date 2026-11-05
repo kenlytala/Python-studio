@@ -1,0 +1,36 @@
+import hashlib,io,json,subprocess,sys,unittest
+from pathlib import Path
+from unittest import mock
+Q=Path('/home/user/.cache/python-studio-1160');root=Path('/home/user/python-studio-c');python_root=Path('/home/user/python-studio')
+def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
+protected=[root/'src/app.c',root/'src/keyboard.c',root/'src/keyboard_native.c',python_root/'editor/app.py',python_root/'editor/keyboard.py']
+before={str(p):sha(p) for p in protected}
+subprocess.run(['cmake','--build',str(Q/'native'),'--target','test_controls','-j4'],check=True,capture_output=True)
+p=Q/'native/prisme_frame_functions.inc';original=p.read_text();needle='keyboard_poll(&a->keyboard, ctrl, activity, GetTime(), keyboard_native_read, NULL);';assert needle in original
+mutant=original.replace(needle,'keyboard_poll(&a->keyboard, false, activity, GetTime(), keyboard_native_read, NULL);',1)
+try:
+    p.write_text(mutant)
+    built=subprocess.run(['cmake','--build',str(Q/'native'),'--target','test_controls','-j4'],capture_output=True,text=True);(Q/'keyboard-mutant-build.txt').write_text(built.stdout+built.stderr);assert built.returncode==0
+    result=subprocess.run([str(Q/'native/test_controls')],capture_output=True,text=True)
+    (Q/'keyboard-mutant.txt').write_text(result.stdout+result.stderr)
+    assert result.returncode!=0 and 'tab_close_actions == closed' in result.stderr,(result.returncode,result.stderr)
+finally:
+    p.write_text(original)
+    subprocess.run(['cmake','--build',str(Q/'native'),'--target','test_controls','-j4'],check=True,capture_output=True)
+restored=subprocess.run([str(Q/'native/test_controls')],check=True,capture_output=True,text=True);(Q/'keyboard-restored.txt').write_text(restored.stdout+restored.stderr)
+assert '263 REAL keyboard frame checks' in restored.stdout
+sys.path[:0]=[str(python_root),str(python_root/'tests')]
+from test_keyboard import KeyboardActualFrameTests
+stream=io.StringIO()
+with mock.patch('editor.keyboard.Keyboard.poll',lambda *args:None):
+    suite=unittest.TestSuite([KeyboardActualFrameTests('test_azerty_queued_z_undoes_without_closing_tab')])
+    negative=unittest.TextTestRunner(stream=stream,verbosity=2).run(suite)
+assert not negative.wasSuccessful() and len(negative.failures)==1 and not negative.errors
+(Q/'python-keyboard-mutant.txt').write_text(stream.getvalue())
+assert before=={str(p):sha(p) for p in protected}
+source=(root/'src/app.c').read_text();bodies={}
+for name,start,end in [('mouse','static bool mouse_update(App *a, bool ctrl, bool shift) {','static void emit(App *a) {'),('modal','static void modal_keys(App *a, const unsigned *chars, int count, bool ctrl, bool shift) {','static void editor_keys(App *a, const unsigned *chars, int count, bool ctrl, bool shift) {'),('editor','static void editor_keys(App *a, const unsigned *chars, int count, bool ctrl, bool shift) {','static bool window_shortcuts(App *a)'),('frame','static bool window_shortcuts(App *a)','static void load_settings(App *a) {')]:
+    text=source[source.index(start):source.index(end)];assert text in original
+    bodies[name]=hashlib.sha256(text.encode()).hexdigest()
+value=dict(status='passed',native_expected_failure=True,native_failure=result.stderr.strip(),native_restored_pass=True,python_expected_failure=True,production_source_files_unchanged=True,modified_only_generated_QA_include_and_in_memory_Python_method=True,actual_production_bodies_sha256=bodies,services_and_OS_simulated=True,no_window_server_or_layout_mutation=True)
+(Q/'keyboard-mutation.json').write_text(json.dumps(value,indent=2)+'\n');print(json.dumps(value,indent=2))

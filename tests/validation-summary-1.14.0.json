@@ -1,0 +1,313 @@
+{
+  "product": "Python Studio",
+  "version": "1.14.0",
+  "edition": "c",
+  "date": "2026-11-02",
+  "source_fingerprint": "2f2a7ffaff0905699548021d32789f8a73a4da23e9208b7a88d0011ebc07bf3e",
+  "tests": {
+    "python": {
+      "total": 515,
+      "passed": 508,
+      "skipped": 7,
+      "seconds": 14.739,
+      "ResourceWarning_strict": true,
+      "real_SSH": true,
+      "native_profile_interop": true
+    },
+    "native_cold": {
+      "passed": 30,
+      "seconds": 11.4
+    },
+    "native_warm": {
+      "passed": 30,
+      "seconds": 11.45
+    },
+    "sanitizers": {
+      "passed": 13,
+      "seconds": 3.9,
+      "address": true,
+      "undefined": true,
+      "leaks": true,
+      "non_pie": true
+    }
+  },
+  "new_Python_tests": 22,
+  "dedicated_search_Python_tests": 138,
+  "assertions": {
+    "native_core": 427,
+    "native_controls": 2382,
+    "native_views": 355526
+  },
+  "native_multicursor_keyboard_checks": 325,
+  "search_layouts": {
+    "existing_two_pane": 6,
+    "options_filters_maximize": 24
+  },
+  "progressive_acceptance": {
+    "real_worker_blocked_on_later_path": true,
+    "native_controller_files_before_done": 12,
+    "sorted_insertion_before_selected_path": true,
+    "selected_path_hit_focus_cached_view_and_scroll_preserved": true,
+    "no_reset_to_first_at_completion": true,
+    "F3_on_partial_files": true,
+    "cancel_and_error_preserve_validated_files": true,
+    "native_snapshots_outlive_worker_and_error_sort": true,
+    "trylock_does_not_wait": true,
+    "no_foreground_content_reads_or_scan_joins": true
+  },
+  "window_acceptance": {
+    "search_F11_dialog_only": true,
+    "native_window_mutator_calls": 0,
+    "existing_fullscreen_and_maximized_states_preserved": true,
+    "editor_global_F11_unchanged": true,
+    "Quitter_immediately_right_of_topbar_Effets": true,
+    "no_status_duplicate": true,
+    "bounds_and_nonoverlap_at_960px": true,
+    "dirty_confirmation_retained": true
+  },
+  "oracles": {
+    "options-parity": {
+      "status": "passed",
+      "models": 148,
+      "real_filesystem_scans": 37,
+      "global_navigation_steps": 650,
+      "independent_stdlib_regex_cases": 14,
+      "engine": "system PCRE2-8, UTF/UCP/multiline, no JIT; raw \\C forbidden",
+      "regex_limits": {
+        "match_steps": 200000,
+        "depth": 512,
+        "heap_kib": 8192,
+        "seconds_per_file": 2
+      },
+      "glob_grammar": "; separator; * and ? exclude /; ** crosses /; **/ may match no directory; [] literal; filenames case-sensitive",
+      "odoo_fixtures": [
+        {
+          "version": "18.0",
+          "bytes": 69395,
+          "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc"
+        },
+        {
+          "version": "19.0",
+          "bytes": 69477,
+          "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543"
+        }
+      ],
+      "scope": "actual independent Python and C controllers tested separately; this oracle covers both cores, flags, four filters, zero/multiline spans and global navigation; no display/capture/server"
+    },
+    "folder-parity": {
+      "status": "passed",
+      "literal_models": 110,
+      "real_filesystem_scans": 30,
+      "global_navigation_steps": 592,
+      "offset_comparison": "UTF-8 byte offsets; scalar cells/tabs=4; normalized LF snapshots",
+      "limits": {
+        "file_bytes": 2097152,
+        "read_bytes": 67108864,
+        "snapshot_bytes": 16777216,
+        "files": 256,
+        "hits": 16384,
+        "entries": 20000,
+        "depth": 64,
+        "lines": 65536
+      },
+      "odoo_fixtures": [
+        {
+          "version": "18.0",
+          "bytes": 69395,
+          "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc"
+        },
+        {
+          "version": "19.0",
+          "bytes": 69477,
+          "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543"
+        }
+      ],
+      "scope": "actual Python and C cores; separate actual-controller/CPU-view tests; no display/capture/server"
+    },
+    "path-parity": {
+      "contexts": 54,
+      "edits": 39,
+      "atomic_history_roundtrips": 37,
+      "catalog_snapshots": 5,
+      "unicode_offsets": "native UTF-8 bytes / Python code points",
+      "status": "passed"
+    },
+    "xml-edit-parity": {
+      "atomic_history_roundtrips": 268,
+      "cases": 275,
+      "python_and_c": true,
+      "stdlib_oracle": true,
+      "suggestion_contexts": 14,
+      "valid_xml_documents": 266
+    },
+    "xml-fragment-parity": {
+      "fragments": 291,
+      "identifiers": 291,
+      "invalid_documents": 10,
+      "python_and_c": true,
+      "stdlib_oracle": true,
+      "valid_documents": 48
+    }
+  },
+  "real_Odoo_controller": {
+    "status": "passed",
+    "implementation": "actual Python controller, injected Ctrl+Maj+F/Enter/F3/Maj+F3/Escape and mocked CPU rendering; no window/capture",
+    "advanced_filtered_files": 1,
+    "advanced_regex_occurrences": 24,
+    "dialog_only_F11_preserves_native_window": true,
+    "files": 2,
+    "occurrences": 38,
+    "global_F3_steps": 39,
+    "automatic_file_switch": true,
+    "global_wrap_forward_backward": true,
+    "vertical_and_horizontal_follow": true,
+    "two_separate_panes": true,
+    "editor_buffers_carets_and_history_unchanged": true,
+    "XML_and_import_roots_unchanged": true,
+    "source_bytes_unchanged": true,
+    "folder_only_persisted": true,
+    "fixtures": [
+      {
+        "version": "18.0",
+        "url": "https://raw.githubusercontent.com/odoo/odoo/18.0/addons/sale/views/sale_order_views.xml",
+        "bytes": 69395,
+        "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc",
+        "ids": 46,
+        "record": "view_order_form",
+        "ordinal": 12,
+        "python_and_c": "pass",
+        "filename": "sale_order_views-18.0.xml"
+      },
+      {
+        "version": "19.0",
+        "url": "https://raw.githubusercontent.com/odoo/odoo/19.0/addons/sale/views/sale_order_views.xml",
+        "bytes": 69477,
+        "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543",
+        "ids": 47,
+        "record": "view_order_form",
+        "ordinal": 12,
+        "python_and_c": "pass",
+        "filename": "sale_order_views-19.0.xml"
+      }
+    ]
+  },
+  "real_directory_XML_controller": {
+    "implementation": "actual Python controller, injected keys and mocked rendering; no window",
+    "cases": [
+      {
+        "version": "18.0",
+        "ids": 46,
+        "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc",
+        "workflow": "sale/ -> views/ -> XML filename -> ID -> element/fields/empty arch",
+        "atomic_undo_redo": true,
+        "source_unchanged": true,
+        "wellformed_stdlib": true
+      },
+      {
+        "version": "19.0",
+        "ids": 47,
+        "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543",
+        "workflow": "sale/ -> views/ -> XML filename -> ID -> element/fields/empty arch",
+        "atomic_undo_redo": true,
+        "source_unchanged": true,
+        "wellformed_stdlib": true
+      }
+    ],
+    "status": "passed"
+  },
+  "real_SSH_cases_each_edition": 13,
+  "integrity": {
+    "historical-before.json": {
+      "files": 39,
+      "unchanged": true
+    },
+    "protected-before.json": {
+      "files": 14,
+      "unchanged": true
+    }
+  },
+  "runtime_dependencies": {
+    "libpcre2-8": "10.46",
+    "libxml-2.0": "2.9.14",
+    "python-studio": {
+      "max_glibc": "2.38",
+      "has_unresolved_library": false
+    },
+    "python-studio-ssh-helper": {
+      "max_glibc": "2.34",
+      "has_unresolved_library": false
+    },
+    "constellation": {
+      "max_glibc": "2.38",
+      "has_unresolved_library": false
+    }
+  },
+  "independent_extracted_acceptance": {
+    "status": "passed",
+    "version": "1.14.0",
+    "editions": {
+      "python": {
+        "accepted_payload_files": 262,
+        "extracted_candidate_files": 293,
+        "all_payload_bytes_and_modes_unchanged_after_tests": true,
+        "manifest_valid": true,
+        "candidate_manifest_sha256": "8866142a4fe1f6a7689d59c30b89770e2b16599c1638e09eafb00d609c9ecb97"
+      },
+      "c": {
+        "accepted_payload_files": 360,
+        "extracted_candidate_files": 400,
+        "all_payload_bytes_and_modes_unchanged_after_tests": true,
+        "manifest_valid": true,
+        "candidate_manifest_sha256": "dd2cec56910db618dad0ca61ddcf64f2907b34b3ce832dfa81911d79e5c60cd4"
+      }
+    },
+    "candidate_archives": [
+      {
+        "edition": "python",
+        "archive": "python-studio-python-1.14.0.tar.gz",
+        "files": 293,
+        "bytes": 2069628,
+        "sha256": "2ae571583f94a594fd96081ec8086a4a9738a6232627c1cbb2398c69e99e7c8c",
+        "accepted_payload_files": 262
+      },
+      {
+        "edition": "c",
+        "archive": "python-studio-c-1.14.0.tar.gz",
+        "files": 400,
+        "bytes": 2596795,
+        "sha256": "00883e3273742244139879d50ce72eb412217a333d9affa92bb2b677d2ad252e",
+        "accepted_payload_files": 360
+      }
+    ],
+    "native_fresh_rebuild": {
+      "passed": 30,
+      "seconds": 11.0
+    },
+    "python_strict": {
+      "total": 515,
+      "passed": 508,
+      "skipped": 7,
+      "seconds": 15.606,
+      "real_SSH": true,
+      "native_profile_interop": "independently rebuilt extracted C driver"
+    },
+    "oracles_repeated": 5,
+    "real_Odoo_workflows_repeated": 2,
+    "fresh_install_launchers_help_pip_check": true,
+    "provided_binaries_match_accepted_production": true,
+    "source_fingerprints_match": true,
+    "payload_freeze_excludes_only_current_evidence_and_manifest": true,
+    "no_preview_capture_or_web_service": true
+  },
+  "no_preview_capture_or_web_service": true,
+  "limitations": [
+    "No physical desktop/GPU/GNOME/Windows/macOS validation",
+    "Seven historical Python skips unchanged",
+    "System PCRE2 not bundled or sanitizer-instrumented",
+    "Filesystem guards are not a hostile-filesystem sandbox",
+    "Kernel I/O can delay worker termination/shutdown; regex budgets are not hard realtime",
+    "Scalar Unicode columns/tabs4, not wcwidth",
+    "Two historical native Python F401 and upstream raylib warnings unchanged",
+    "Only the search folder is persisted"
+  ]
+}

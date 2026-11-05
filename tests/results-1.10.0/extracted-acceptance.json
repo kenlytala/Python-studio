@@ -1,0 +1,79 @@
+{
+  "edition": "c",
+  "python": {
+    "status": "passed",
+    "total": 330,
+    "passed": 323,
+    "skipped": 7,
+    "failures": 0,
+    "errors": 0,
+    "seconds": 13.794,
+    "native_profile_helper": "independently rebuilt extracted C executable"
+  },
+  "native": {
+    "status": "passed",
+    "independent_rebuild": true,
+    "total": 28,
+    "passed": 28,
+    "failed": 0,
+    "seconds": 11.4
+  },
+  "source_fingerprints": {
+    "python": "0f22b0561a6967fe1f057f7ba7d325e602553319bf7ce0867d82801faad6644b",
+    "c": "22008fe1b5093bda6517cdf8f4f49a2b48f9088d8fe54800425aaea0265aec82"
+  },
+  "functional_payload": {
+    "functional_files": 162,
+    "byte_identical": true,
+    "modes_identical": true
+  },
+  "editor_oracle": {
+    "atomic_history_roundtrips": 268,
+    "cases": 275,
+    "python_and_c": true,
+    "stdlib_oracle": true,
+    "suggestion_contexts": 14,
+    "valid_xml_documents": 266
+  },
+  "fragment_oracle": {
+    "fragments": 291,
+    "identifiers": 291,
+    "invalid_documents": 10,
+    "python_and_c": true,
+    "stdlib_oracle": true,
+    "valid_documents": 48
+  },
+  "real_odoo_editing": {
+    "fixtures": [
+      {
+        "version": "18.0",
+        "bytes": 69395,
+        "sha256": "7ae558d99b9dc744ea4b38d19dfbf1e2b9884fdceea987e23348c7f7ebe55cfc",
+        "ids": 46,
+        "native_and_python_edits": 3,
+        "atomic_history": true,
+        "stdlib_wellformed": true,
+        "python_actual_controller_configured_base": true,
+        "source_unchanged": true
+      },
+      {
+        "version": "19.0",
+        "bytes": 69477,
+        "sha256": "d6babae1d764e017636dc4498da5f01e0650535bcb3dc6cc14116691f71e2543",
+        "ids": 47,
+        "native_and_python_edits": 3,
+        "atomic_history": true,
+        "stdlib_wellformed": true,
+        "python_actual_controller_configured_base": true,
+        "source_unchanged": true
+      }
+    ],
+    "full_document_edits": 6,
+    "python_controller_cases": 2,
+    "physical_gui": false,
+    "odoo_semantic_validation": false
+  },
+  "source_launcher_checked": true,
+  "physical_desktop": false,
+  "preview_generated": false
+}

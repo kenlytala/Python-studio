@@ -1,0 +1,23 @@
+-- Install configuration: "Release"
+-- Installing: /home/user/.cache/python-studio-1180/install/lib/libraylib.a
+-- Installing: /home/user/.cache/python-studio-1180/install/include/raylib.h
+-- Installing: /home/user/.cache/python-studio-1180/install/include/rlgl.h
+-- Installing: /home/user/.cache/python-studio-1180/install/include/raymath.h
+-- Installing: /home/user/.cache/python-studio-1180/install/lib/pkgconfig/raylib.pc
+-- Installing: /home/user/.cache/python-studio-1180/install/lib/cmake/raylib/raylib-config-version.cmake
+-- Installing: /home/user/.cache/python-studio-1180/install/lib/cmake/raylib/raylib-config.cmake
+-- Installing: /home/user/.cache/python-studio-1180/install/bin/python-studio
+-- Installing: /home/user/.cache/python-studio-1180/install/bin/constellation
+-- Installing: /home/user/.cache/python-studio-1180/install/bin/python-studio-ssh-helper
+-- Installing: /home/user/.cache/python-studio-1180/install/bin/assets
+-- Installing: /home/user/.cache/python-studio-1180/install/bin/assets/fonts
+-- Installing: /home/user/.cache/python-studio-1180/install/bin/assets/fonts/JetBrainsMono-OFL.txt
+-- Installing: /home/user/.cache/python-studio-1180/install/bin/assets/fonts/JetBrainsMono-Regular.ttf
+-- Installing: /home/user/.cache/python-studio-1180/install/bin/assets/fonts/Inter.ttf
+-- Installing: /home/user/.cache/python-studio-1180/install/bin/assets/fonts/JetBrainsMono-Medium.ttf
+-- Installing: /home/user/.cache/python-studio-1180/install/bin/assets/fonts/Inter-OFL.txt
+-- Installing: /home/user/.cache/python-studio-1180/install/bin/examples
+-- Installing: /home/user/.cache/python-studio-1180/install/bin/examples/couleurs.py
+-- Installing: /home/user/.cache/python-studio-1180/install/bin/examples/notes.md
+-- Installing: /home/user/.cache/python-studio-1180/install/bin/examples/main.py
+Python Studio — édition C 1.18.0

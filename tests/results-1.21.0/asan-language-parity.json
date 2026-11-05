@@ -1,0 +1,11 @@
+{
+  "status": "passed",
+  "color_byte_cases": 6020,
+  "languages": [
+    "javascript",
+    "xml"
+  ],
+  "utf8": true,
+  "templates_regex_division_cdata_entities_and_incomplete_source": true,
+  "no_window_or_evaluation": true
+}

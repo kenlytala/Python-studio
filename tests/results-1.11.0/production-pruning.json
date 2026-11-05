@@ -1,0 +1,12 @@
+{
+  "removed_unused_raylib": [
+    "logo",
+    "examples",
+    "parser",
+    "projects",
+    ".github",
+    "_deps/raylib-subbuild/raylib-populate-prefix/src/archive.tar"
+  ],
+  "removed_previous_production": "build-1.10.0",
+  "sole_production": "build-1.11.0"
+}

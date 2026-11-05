@@ -1,0 +1,23 @@
+Test project /home/user/.cache/python-studio-190/asan
+    Start  1: xml_identifiers_safe_parser_and_worker
+1/9 Test  #1: xml_identifiers_safe_parser_and_worker ....   Passed    0.14 sec
+    Start  2: xml_inline_actual_controller
+2/9 Test  #2: xml_inline_actual_controller ..............   Passed    0.04 sec
+    Start  4: project_sessions_drafts_and_recovery
+3/9 Test  #4: project_sessions_drafts_and_recovery ......   Passed    0.02 sec
+    Start  7: explorer_file_operations
+4/9 Test  #7: explorer_file_operations ..................   Passed    0.02 sec
+    Start  8: native_ssh_profiles_command_and_guards
+5/9 Test  #8: native_ssh_profiles_command_and_guards ....   Passed    0.05 sec
+    Start  9: xml_fragments_independent_stdlib_oracle
+6/9 Test  #9: xml_fragments_independent_stdlib_oracle ...   Passed    2.43 sec
+    Start 10: native_encrypted_ssh_sftp_integration
+7/9 Test #10: native_encrypted_ssh_sftp_integration .....   Passed    4.66 sec
+    Start 19: diagnostic_views_without_window
+8/9 Test #19: diagnostic_views_without_window ...........   Passed    0.32 sec
+    Start 22: frameless_controls_and_file_safety
+9/9 Test #22: frameless_controls_and_file_safety ........   Passed    0.05 sec
+
+100% tests passed out of 9
+
+Total Test time (real) =   7.75 sec

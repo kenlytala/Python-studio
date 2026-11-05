@@ -1,0 +1,4 @@
+OK actual Pylint 4.0.10: errors, warnings, conventions, Unicode byte columns, unsaved contents, isolated imports/config
+OK real external framework: E0401 before, resolved by configured UTF-8/space/quote path, genuine E0602 retained, no module execution, E0401 returns after removal, missing directory explicit
+OK 58 REAL PyLint disabled-rule checks: IDs/names, remove/re-enable, syntax retained, unknown rule error, old process discarded, >256 warnings disabled BEFORE protocol truncation
+OK 211 unconditional diagnostic assertions; no display or preview

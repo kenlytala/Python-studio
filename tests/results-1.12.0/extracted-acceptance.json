@@ -1,0 +1,42 @@
+{
+  "status": "passed",
+  "date": "2026-11-01",
+  "source_fingerprints": {
+    "python": "2e6a7f01fddba32ff5025e1bc098fb47f83d1989290c908847315fdeed2f95cb",
+    "c": "2a740631338e3ff5fcee1415b0885a4ae245c75c1e6cf2689999e6e5ba736708"
+  },
+  "new_independent_extraction": true,
+  "candidate_members_all_bytes_and_modes_verified": {
+    "python": 194,
+    "c": 284
+  },
+  "accepted_payload_files": {
+    "python": 167,
+    "c": 248
+  },
+  "payload_equivalence": "Both source and independently extracted trees equal pre-acceptance candidate payload including old immutable evidence; only current 1.12 evidence and manifests excluded",
+  "native_from_extracted_source": {
+    "build": "new Release/Ninja/OpenGL2.1, fresh object compilation, no production build objects reused",
+    "third_party": "own copy of production pinned raylib5.5 source; upstream source override for offline reuse only",
+    "groups_passed": 30,
+    "seconds": 9.53,
+    "source_fingerprint_same": true
+  },
+  "python_from_extracted_source": {
+    "total": 437,
+    "passed": 430,
+    "skipped": 7,
+    "seconds": 12.167,
+    "strict_resource_warning": true,
+    "real_ssh": true,
+    "native_profiles_from_independently_recompiled_driver": true
+  },
+  "four_oracles_repeated_and_equal": true,
+  "odoo_18_19_real_folder_window_and_preserved_directory_XML_controllers_repeated_and_equal": true,
+  "python_fresh_venv_requirements_launch_version_help_pip_check": true,
+  "temporary_venv_removed": true,
+  "native_launcher_and_supplied_editor_version": true,
+  "three_supplied_native_binaries_modes_hashes_manifest_and_linkage_verified": true,
+  "final_repack_policy": "Only 1.12 evidence/validation/manifest changes permitted; accepted payload must stay byte-for-byte and mode-for-mode equal",
+  "no_preview_capture_or_web_server": true
+}

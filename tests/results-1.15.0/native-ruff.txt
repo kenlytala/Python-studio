@@ -1,0 +1,36 @@
+F401 [*] `os` imported but unused
+ --> tests/test_completion_bridge.py:4:8
+  |
+2 | import importlib.util
+3 | import io
+4 | import os
+  |        ^^
+5 | from pathlib import Path
+6 | import sys
+  |
+help: Remove unused import: `os`
+  |
+3 | import io
+  - import os
+4 | from pathlib import Path
+  |
+
+F401 [*] `base64` imported but unused
+ --> tools/lint_bridge.py:6:8
+  |
+4 | The protocol contains only ASCII (all text fields are UTF-8 encoded as hex).
+5 | """
+6 | import base64
+  |        ^^^^^^
+7 | import contextlib
+8 | import io
+  |
+help: Remove unused import: `base64`
+  |
+5 | """
+  - import base64
+6 | import contextlib
+  |
+
+Found 2 errors.
+[*] 2 fixable with `--fix`.

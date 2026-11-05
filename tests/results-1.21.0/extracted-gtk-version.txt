@@ -1,0 +1,2 @@
+Python Studio — édition GTK 4 1.21.0
+Sources SHA256 : 92df7e13559e376ef4238cbf7d314daafbb7fbc9fb6f03d93aaba1434a369d8f

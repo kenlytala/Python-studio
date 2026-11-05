@@ -1,0 +1,17 @@
+test_click_minimizes_without_dirty_document_or_session_changes (test_minimize.MinimizeMenuTests.test_click_minimizes_without_dirty_document_or_session_changes) ... FAIL
+
+======================================================================
+FAIL: test_click_minimizes_without_dirty_document_or_session_changes (test_minimize.MinimizeMenuTests.test_click_minimizes_without_dirty_document_or_session_changes)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/user/python-studio/tests/test_minimize.py", line 69, in test_click_minimizes_without_dirty_document_or_session_changes
+    native.assert_called_once_with()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/unittest/mock.py", line 990, in assert_called_once_with
+    raise AssertionError(msg)
+AssertionError: Expected 'minimize_window' to be called once. Called 0 times.
+
+----------------------------------------------------------------------
+Ran 1 test in 0.148s
+
+FAILED (failures=1)

@@ -1,0 +1,35 @@
+{
+  "status": "passed",
+  "layouts": 4,
+  "projection_values": 4096,
+  "xkb_abi": {
+    "XkbState": {
+      "size": 18,
+      "group": 0,
+      "ptr_buttons": 16
+    },
+    "XkbKeyName": {
+      "size": 4
+    },
+    "XkbAlias": {
+      "size": 8,
+      "real": 0,
+      "alias": 4
+    },
+    "XkbNames": {
+      "size": 496,
+      "keys": 456,
+      "key_aliases": 464,
+      "num_key_aliases": 489,
+      "phys_symbols": 480
+    },
+    "XkbDesc": {
+      "size": 72,
+      "min_key_code": 12,
+      "max_key_code": 13,
+      "names": 48,
+      "map": 32
+    }
+  },
+  "no_display_window_or_layout_mutation": true
+}

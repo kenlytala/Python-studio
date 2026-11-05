@@ -1,0 +1,68 @@
+{
+  "version": "1.7.0",
+  "edition": "c",
+  "date": "2026-11-01",
+  "source_fingerprint": "2b3d309da9a7400ab39f6c104e714b5d3c0ee2264cf13d3a2895cc8abe6bc2ce",
+  "production": {
+    "build_directory": "build-1.7.0",
+    "configuration": "Release",
+    "ctest_total": 22,
+    "ctest_passed": 22,
+    "ctest_failed": 0,
+    "seconds": 11.06,
+    "native_real_ssh_sftp_cases": 10
+  },
+  "sanitizers": {
+    "configuration": "Debug; ASan+UBSan; leak checking enabled",
+    "targeted_ctest_total": 5,
+    "targeted_ctest_passed": 5,
+    "targeted_ctest_failed": 0,
+    "seconds": 10.65,
+    "native_real_ssh_sftp_cases": 10
+  },
+  "interop": {
+    "python_tests": 5,
+    "concurrent_cross_edition_writers": 16,
+    "shared_schema": 1,
+    "max_profiles": 32
+  },
+  "abi_glibc_max": {
+    "prisme": "2.38",
+    "prisme-ssh-helper": "2.34",
+    "constellation": "2.38"
+  },
+  "warnings": {
+    "prisme": 0,
+    "upstream_raylib_jar_mod_audio": 4
+  },
+  "scope": "native C SSH integration; remote files only; local Python/PyLint/dependencies",
+  "credentials_stored": false,
+  "no_preview_or_capture_generated": true,
+  "limits": [
+    "No physical GNOME/GPU/fullscreen validation",
+    "No Windows/macOS validation",
+    "No external user server contacted",
+    "Not all network file operations asynchronous",
+    "Not a sandbox"
+  ],
+  "archive_acceptance": {
+    "original_archive_binaries_ctest": {
+      "total": 22,
+      "passed": 22,
+      "failed": 0,
+      "seconds": 10.45
+    },
+    "fresh_source_build_ctest": {
+      "total": 22,
+      "passed": 22,
+      "failed": 0,
+      "seconds": 9.98
+    },
+    "launcher_version": "Prisme C 1.7.0",
+    "source_fingerprint": "2b3d309da9a7400ab39f6c104e714b5d3c0ee2264cf13d3a2895cc8abe6bc2ce",
+    "upstream_audio_warnings": 4,
+    "manifest_hashes_sizes_modes_verified": true,
+    "launcher_verified": true,
+    "archive_payload_files_before_manifest": 135
+  }
+}

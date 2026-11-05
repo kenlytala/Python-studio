@@ -1,0 +1,5 @@
+/home/user/.cache/python-studio-1170/compat212/lib/python3.10/site-packages/astroid/interpreter/_import/util.py:7: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  import pkg_resources
+pylint 2.12.2
+astroid 2.9.3
+Python 3.10.22 (main, Oct  9 2026, 15:21:30) [Clang 22.1.3 ]
